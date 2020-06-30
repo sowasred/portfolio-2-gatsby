@@ -6,7 +6,7 @@ import Blogpost1Pic1 from "../images/hero-img-small.jpg"
 const Blogposts = () => (
   <section className="section blog">
     <div className="section-title">
-      <h2>Blog</h2>
+      <h2>Recent Blog Posts</h2>
       <div class="underline"></div>
     </div>
 

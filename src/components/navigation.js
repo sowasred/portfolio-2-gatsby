@@ -6,10 +6,7 @@
  */
 
 import React, { useState } from "react"
-import PropTypes from "prop-types"
 import { useStaticQuery, graphql, Link } from "gatsby"
-import Image from "./image"
-import Img from "gatsby-image"
 import Hamburger from "../images/hamburger.svg"
 import Close from "../images/close.svg"
 import MobileNavigation from "./mobilenavigation"
@@ -27,7 +24,6 @@ const Navigation = () => {
     }
   `)
   const [showNav, setShowNav] = useState(false)
-  const [scrollHeight, setScrollHeight] = useState(0)
 
   const toggleChecked = () => setShowNav(value => !value)
 
