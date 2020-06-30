@@ -27,7 +27,7 @@ const Navigation = () => {
     }
   `)
   const [showNav, setShowNav] = useState(false)
-  const [scrollHeight, setScrollHeight] = useState(window.pageYOffset)
+  const [scrollHeight, setScrollHeight] = useState(0)
 
   const toggleChecked = () => setShowNav(value => !value)
 
