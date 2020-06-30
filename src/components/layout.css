@@ -968,7 +968,6 @@ Footer
   font-size: 1.25rem;
   text-transform: capitalize;
   justify-content: center;
-  margin-right: 5%;
 }
 .fa-facebook {
   background-color: var(--clr-primary-5);
