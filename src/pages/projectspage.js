@@ -5,18 +5,16 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import Header from "../components/header"
-import Projects from "../components/projects"
+
 import Getintouch from "../components/getintouch"
 import Blogposts from "../components/blogposts"
+import ProjectsContent from "../components/projectscontent"
 
-const IndexPage = () => (
+const ProjectsPage = () => (
   <Layout>
-    <SEO title="Home" />
-    <Header />
-    <Projects />
-    <Getintouch />
-    <Blogposts />
+    <SEO title="Ozan Muldur's Projects" />
+    <ProjectsContent />
   </Layout>
 )
 
-export default IndexPage
+export default ProjectsPage

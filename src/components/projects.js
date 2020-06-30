@@ -10,7 +10,7 @@ const Projects = () => (
     <div className="section-title">
       <h2>Latest Works</h2>
       <div className="underline"></div>
-      <p className="projects-text">Check the project I've been part of.</p>
+      <p className="projects-text">Check the projects I've been part of.</p>
     </div>
     <div className="section-center projects-center">
       <a

@@ -18,21 +18,13 @@ const Header = () => (
         </a>
         <ul className="social-icons hero-icons">
           <li>
-            <a
-              target="_blank"
-              href="https://www.facebook.com/muldurozan/"
-              className="social-icon"
-            >
-              <img src={Fb} />
+            <a target="_blank" href="https://www.facebook.com/muldurozan/">
+              <img className="social-icon" src={Fb} />
             </a>
           </li>
           <li>
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/in/ozanm/"
-              className="social-icon"
-            >
-              <img src={Li} />
+            <a target="_blank" href="https://www.linkedin.com/in/ozanm/">
+              <img className="social-icon" src={Li} />
             </a>
           </li>
           <li>
@@ -41,7 +33,7 @@ const Header = () => (
               href="https://twitter.com/ozanmuldur1"
               className="social-icon"
             >
-              <img src={Tw} />
+              <img className="social-icon" src={Tw} />
             </a>
           </li>
           <li>
@@ -50,7 +42,7 @@ const Header = () => (
               href="https://github.com/sowasred"
               className="social-icon"
             >
-              <img src={Gh} />
+              <img className="social-icon" src={Gh} />
             </a>
           </li>
         </ul>

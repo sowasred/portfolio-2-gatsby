@@ -52,7 +52,7 @@ const Navigation = () => {
           </li>
           <li>
             <Link
-              to="/about"
+              to="/projectspage"
               style={{
                 textDecoration: `none`,
               }}
@@ -61,14 +61,7 @@ const Navigation = () => {
             </Link>
           </li>
           <li>
-            <Link
-              to="/about"
-              style={{
-                textDecoration: `none`,
-              }}
-            >
-              Contact
-            </Link>
+            <a href="mailto:ozanmuldur@outlook.com">Contact</a>
           </li>
         </ul>
       </div>
