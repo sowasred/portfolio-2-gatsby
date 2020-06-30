@@ -113,7 +113,7 @@ p {
     width: 50%;
   }
   .nav {
-    height: 5rem;
+    height: 3rem !important;
   }
 }
 .nav-logo {
@@ -347,7 +347,7 @@ Sidebar
 .social-icons {
   display: grid;
   margin-top: 3rem;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   justify-items: center;
   column-gap: 50px;
 }
@@ -371,9 +371,9 @@ Sidebar
   fill: var(--clr-primary-5);
 }
 .close-btn {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
   font-size: 3rem;
   background: transparent;
   border: transparent;
@@ -381,9 +381,11 @@ Sidebar
   transition: var(--transition);
   color: #bb2525;
   cursor: pointer;
+  z-index: 99999 !important;
 }
 .close-btn:hover {
   color: #e66b6b;
+  z-index: 9999999999;
 }
 /*
 =============== 

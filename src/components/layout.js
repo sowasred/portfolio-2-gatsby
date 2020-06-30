@@ -10,6 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Navigation from "./navigation"
+import MobileNavigation from "./mobilenavigation"
 
 import "./layout.css"
 import Footer from "./footer"
@@ -29,6 +30,7 @@ const Layout = ({ children }) => {
     <>
       <div>
         <Navigation />
+        <MobileNavigation />
         <main>{children}</main>
         <Footer />
       </div>
