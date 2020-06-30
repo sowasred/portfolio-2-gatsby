@@ -31,7 +31,7 @@ const Navigation = () => {
 
   const toggleChecked = () => setShowNav(value => !value)
 
-  if (window != undefined) {
+  if (typeof window !== `undefined`) {
     window.addEventListener("scroll", function () {
       const navbar = document.querySelector("#nav")
       const resume = document.querySelector("#resume")
