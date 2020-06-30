@@ -11,7 +11,6 @@ import Fb from "../images/fb.svg"
 import Tw from "../images/tw.svg"
 import Li from "../images/li.svg"
 import Gh from "../images/gh.svg"
-import Pp from "../images/pp.jpg"
 
 const MobileNavigation = ({ showNav }) => {
   return (

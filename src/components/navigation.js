@@ -31,20 +31,23 @@ const Navigation = () => {
 
   const toggleChecked = () => setShowNav(value => !value)
 
-  window.addEventListener("scroll", function () {
-    const navbar = document.querySelector("#nav")
-    const resume = document.querySelector("#resume")
+  if (window != undefined) {
+    window.addEventListener("scroll", function () {
+      const navbar = document.querySelector("#nav")
+      const resume = document.querySelector("#resume")
 
-    if (window.pageYOffset > 80) {
-      navbar.classList.add("navbar-fixed")
-      if (window.innerWidth > 768) {
-        resume.classList.remove("resume")
+      if (window.pageYOffset > 80) {
+        navbar.classList.add("navbar-fixed")
+        if (window.innerWidth > 768) {
+          resume.classList.remove("resume")
+        }
+      } else {
+        navbar.classList.remove("navbar-fixed")
+        resume.classList.add("resume")
       }
-    } else {
-      navbar.classList.remove("navbar-fixed")
-      resume.classList.add("resume")
-    }
-  })
+    })
+  }
+
   return (
     <nav className="nav" id="nav">
       <div className="nav-center">
