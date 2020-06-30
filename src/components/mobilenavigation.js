@@ -54,6 +54,14 @@ const MobileNavigation = ({ showNav }) => {
           <li>
             <a href="mailto:ozanmuldur@outlook.com">Contact</a>
           </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://drive.google.com/file/d/1Zb0z3PmsCGUloL_3In4sI1IFtDJip8Lw/view?usp=sharing"
+            >
+              Resume
+            </a>
+          </li>
         </ul>
         <ul className="social-icons">
           <li>

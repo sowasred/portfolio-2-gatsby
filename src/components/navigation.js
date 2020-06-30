@@ -27,7 +27,24 @@ const Navigation = () => {
     }
   `)
   const [showNav, setShowNav] = useState(false)
+  const [scrollHeight, setScrollHeight] = useState(window.pageYOffset)
+
   const toggleChecked = () => setShowNav(value => !value)
+
+  window.addEventListener("scroll", function () {
+    const navbar = document.querySelector("#nav")
+    const resume = document.querySelector("#resume")
+
+    if (window.pageYOffset > 80) {
+      navbar.classList.add("navbar-fixed")
+      if (window.innerWidth > 768) {
+        resume.classList.remove("resume")
+      }
+    } else {
+      navbar.classList.remove("navbar-fixed")
+      resume.classList.add("resume")
+    }
+  })
   return (
     <nav className="nav" id="nav">
       <div className="nav-center">
@@ -44,6 +61,14 @@ const Navigation = () => {
               <img src={Close} className="fas fa-times"></img>
             </button>
           ) : null}
+          <a
+            target="_blank"
+            href="https://drive.google.com/file/d/1Zb0z3PmsCGUloL_3In4sI1IFtDJip8Lw/view?usp=sharing"
+            id="resume"
+            className="resume btn hero-btn"
+          >
+            Resume
+          </a>
         </div>
         <ul className="nav-links">
           <li>

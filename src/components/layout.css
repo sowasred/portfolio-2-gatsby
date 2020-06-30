@@ -234,7 +234,7 @@ Navbar
   justify-self: end;
 }
 .resume {
-  display: none;
+  display: none !important;
   align-items: center;
   color: white;
   text-decoration: none;
@@ -242,6 +242,11 @@ Navbar
 }
 .resume:active {
   text-decoration: none;
+}
+#resume {
+  margin-top: 1.2em;
+  font-size: 1rem;
+  margin-left: 1em;
 }
 .btn2 {
   font-size: 1.2em;
