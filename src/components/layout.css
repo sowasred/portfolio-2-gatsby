@@ -908,6 +908,7 @@ Blog
 .card:hover .card-front {
   -webkit-transform: rotateY(-180deg);
   transform: rotateY(-180deg);
+  transition: 0.5s;
 }
 .card:hover .card-back {
   -webkit-transform: rotateY(0);

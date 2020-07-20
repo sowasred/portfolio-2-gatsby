@@ -49,7 +49,7 @@ const Footer = () => (
     </ul>
 
     <p>
-      &copy; <span id="date"></span> Ozan Muldur. all rights reserved
+      &copy; <span id="date"></span> Ozan Muldur. all rights reserved.
     </p>
   </footer>
 )

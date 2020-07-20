@@ -10,6 +10,12 @@ import { useStaticQuery, graphql, Link } from "gatsby"
 import Hamburger from "../images/hamburger.svg"
 import Close from "../images/close.svg"
 import MobileNavigation from "./mobilenavigation"
+import {
+  motion,
+  useAnimation,
+  useMotionValue,
+  useTransform,
+} from "framer-motion"
 
 const Navigation = () => {
   const data = useStaticQuery(graphql`
@@ -23,6 +29,18 @@ const Navigation = () => {
       }
     }
   `)
+  const controls = useAnimation()
+  const x = useMotionValue(0)
+
+  const list = {
+    visible: { opacity: 1 },
+    hidden: { opacity: 0 },
+  }
+
+  const item = {
+    visible: { opacity: 1, x: 0 },
+    hidden: { opacity: 0, x: -100 },
+  }
   const [showNav, setShowNav] = useState(false)
 
   const toggleChecked = () => setShowNav(value => !value)
@@ -69,8 +87,13 @@ const Navigation = () => {
             Resume
           </a>
         </div>
-        <ul className="nav-links">
-          <li>
+        <motion.ul
+          initial="hidden"
+          animate="visible"
+          variants={list}
+          className="nav-links"
+        >
+          <motion.li variants={item}>
             <Link
               to="/"
               style={{
@@ -79,8 +102,9 @@ const Navigation = () => {
             >
               Home
             </Link>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li variants={item}>
+            {" "}
             <Link
               to="/about"
               style={{
@@ -89,8 +113,9 @@ const Navigation = () => {
             >
               About
             </Link>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li variants={item}>
+            {" "}
             <Link
               to="/projectspage"
               style={{
@@ -99,11 +124,12 @@ const Navigation = () => {
             >
               Projects
             </Link>
-          </li>
-          <li>
+          </motion.li>{" "}
+          <motion.li variants={item}>
+            {" "}
             <a href="mailto:ozanmuldur@outlook.com">Contact</a>
-          </li>
-        </ul>
+          </motion.li>{" "}
+        </motion.ul>
       </div>
       {showNav ? <MobileNavigation showNav={showNav} /> : null}
     </nav>
