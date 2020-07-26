@@ -3,7 +3,7 @@ import React from "react"
 import Vid from "../images/video.mp4"
 
 const Getintouch = () => (
-  <section className="connect">
+  <section id="contact" className="connect">
     <video
       controls="false"
       autoplay="true"
@@ -23,9 +23,42 @@ const Getintouch = () => (
         If you like my work and want to connect, do not hesitate! I'll be glad
         to help you.
       </p>
-      <a href="mailto:ozanmuldur@outlook.com" class="btn">
-        contact me
-      </a>
+      <form
+        name="contact"
+        method="post"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+        action="/thank-you/"
+      >
+        <input type="hidden" name="form-name" value="contact" />
+        <div className="input-area">
+          <label className="label-name">
+            <span className="content-name">Name</span>
+          </label>
+          <input type="text" name="name" required autocomplete="off" />
+        </div>
+        <div className="input-area">
+          <label className="label-name">
+            <span className="content-name">Email</span>
+          </label>
+          <input type="email" name="email" required autocomplete="off" />
+        </div>
+        <div className="input-area">
+          <label className="label-name">
+            <span className="content-name">Message</span>
+          </label>
+          <textarea
+            type="text"
+            name="message"
+            rows="5"
+            required
+            autocomplete="off"
+          />
+        </div>
+        <button class="btn" cta="Send" type="submit">
+          Send
+        </button>
+      </form>
     </div>
   </section>
 )

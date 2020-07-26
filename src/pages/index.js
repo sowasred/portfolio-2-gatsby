@@ -8,6 +8,7 @@ import Header from "../components/header"
 import Projects from "../components/projects"
 import Getintouch from "../components/getintouch"
 import Blogposts from "../components/blogposts"
+import AboutContent from "../components/aboutcontent"
 
 const IndexPage = () => (
   <Layout>

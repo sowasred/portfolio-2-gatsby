@@ -14,11 +14,39 @@ export default function Template({
           <div class="underline"></div>
         </div>
         <div class="section-center">
-          <article class="about-info">
+          <article style={{ position: "relative" }} class="about-info">
             <div
               className="blog-post-content"
               dangerouslySetInnerHTML={{ __html: html }}
             />
+            <div
+              style={{ position: "absolute", right: "0vw", bottom: "0vh" }}
+              className="blog-footer"
+            >
+              <p
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  fontSize: "0.85em",
+                  fontWeight: "700",
+                }}
+              >
+                <time
+                  style={{ marginRight: "0.5em" }}
+                  datetime="2020-02-14 20:00"
+                >
+                  {frontmatter.date}
+                </time>
+                <span
+                  style={{
+                    marginRight: "0.5em",
+                    color: "#85144b",
+                  }}
+                >
+                  Ozan Muldur
+                </span>
+              </p>
+            </div>
           </article>
         </div>
       </section>

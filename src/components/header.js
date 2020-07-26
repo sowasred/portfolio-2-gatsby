@@ -30,7 +30,7 @@ const Header = () => {
     hidden: { opacity: 0, x: -100 },
   }
   return (
-    <header className="hero">
+    <header id="home" className="hero home">
       <div className="section-center hero-center">
         <article className="hero-info">
           <motion.div animate={controls}>
@@ -69,7 +69,6 @@ const Header = () => {
             variants={list}
             className="social-icons hero-icons"
           >
-            {" "}
             <motion.li variants={item}>
               <a target="_blank" href="https://www.facebook.com/muldurozan/">
                 <img className="social-icon" src={Fb} />
@@ -102,7 +101,7 @@ const Header = () => {
         </article>
         <motion.article
           whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
+          whileTap={{ scale: 1.2 }}
           className="hero-img"
         >
           <img src={Pp} className="hero-photo" alt="Ozan Muldur" />

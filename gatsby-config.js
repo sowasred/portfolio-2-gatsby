@@ -6,6 +6,16 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `limelight`,
+          `Recursive light \:300,400,400i,700`, // you can also specify font weights and styles
+        ],
+        display: "swap",
+      },
+    },
+    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         // The property ID; the tracking code won't be generated without it
@@ -27,7 +37,12 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
-
+    {
+      resolve: "gatsby-plugin-anchor-links",
+      options: {
+        offset: -110,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

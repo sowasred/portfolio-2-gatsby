@@ -10,6 +10,8 @@ import { useStaticQuery, graphql, Link } from "gatsby"
 import Hamburger from "../images/hamburger.svg"
 import Close from "../images/close.svg"
 import MobileNavigation from "./mobilenavigation"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
+
 import {
   motion,
   useAnimation,
@@ -66,7 +68,11 @@ const Navigation = () => {
     <nav className="nav" id="nav">
       <div className="nav-center">
         <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-          <button onClick={toggleChecked} className="nav-btn" id="nav-btn">
+          <button
+            onClick={toggleChecked}
+            className="nav-btn fixed-top"
+            id="nav-btn"
+          >
             <img src={Hamburger} className="fas fa-bars"></img>
           </button>
           {showNav ? (
@@ -94,19 +100,60 @@ const Navigation = () => {
           className="nav-links"
         >
           <motion.li variants={item}>
-            <Link
-              to="/"
+            <AnchorLink
+              to="/#home"
+              smooth={true}
+              duration={500}
               style={{
                 textDecoration: `none`,
               }}
             >
               Home
-            </Link>
+            </AnchorLink>
           </motion.li>
           <motion.li variants={item}>
             {" "}
+            <AnchorLink
+              to="/#projects"
+              smooth={true}
+              duration={500}
+              style={{
+                textDecoration: `none`,
+              }}
+            >
+              Projects
+            </AnchorLink>
+          </motion.li>
+          <motion.li variants={item}>
+            <AnchorLink
+              to="/#contact"
+              smooth={true}
+              duration={500}
+              style={{
+                textDecoration: `none`,
+              }}
+            >
+              Contact
+            </AnchorLink>
+          </motion.li>
+
+          <motion.li variants={item}>
+            <AnchorLink
+              to="/#blog"
+              smooth={true}
+              duration={500}
+              style={{
+                textDecoration: `none`,
+              }}
+            >
+              Blog
+            </AnchorLink>
+          </motion.li>
+          <motion.li variants={item}>
             <Link
               to="/about"
+              smooth={true}
+              duration={500}
               style={{
                 textDecoration: `none`,
               }}
@@ -114,24 +161,11 @@ const Navigation = () => {
               About
             </Link>
           </motion.li>
-          <motion.li variants={item}>
-            {" "}
-            <Link
-              to="/projectspage"
-              style={{
-                textDecoration: `none`,
-              }}
-            >
-              Projects
-            </Link>
-          </motion.li>{" "}
-          <motion.li variants={item}>
-            {" "}
-            <a href="mailto:ozanmuldur@outlook.com">Contact</a>
-          </motion.li>{" "}
         </motion.ul>
       </div>
-      {showNav ? <MobileNavigation showNav={showNav} /> : null}
+      {showNav ? (
+        <MobileNavigation onClick={toggleChecked} showNav={showNav} />
+      ) : null}
     </nav>
   )
 }

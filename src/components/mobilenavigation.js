@@ -11,6 +11,7 @@ import Fb from "../images/fb.svg"
 import Tw from "../images/tw.svg"
 import Li from "../images/li.svg"
 import Gh from "../images/gh.svg"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 const MobileNavigation = ({ showNav }) => {
   return (
@@ -21,38 +22,49 @@ const MobileNavigation = ({ showNav }) => {
       <div>
         <ul className="sidebar-links">
           <li>
-            <Link
-              to="/"
+            <AnchorLink
+              to="/#home"
               style={{
                 textDecoration: `none`,
               }}
             >
               Home
-            </Link>
+            </AnchorLink>
           </li>
           <li>
-            <Link
+            <AnchorLink
+              to="/#projects"
+              style={{
+                textDecoration: `none`,
+              }}
+            >
+              Projects
+            </AnchorLink>
+          </li>
+          <li>
+            <AnchorLink to="/#contact">Contact</AnchorLink>
+          </li>
+          <li>
+            <AnchorLink
+              to="/#blog"
+              style={{
+                textDecoration: `none`,
+              }}
+            >
+              Blog
+            </AnchorLink>
+          </li>
+          <li>
+            <AnchorLink
               to="/about"
               style={{
                 textDecoration: `none`,
               }}
             >
               About
-            </Link>
+            </AnchorLink>
           </li>
-          <li>
-            <Link
-              to="/projectspage"
-              style={{
-                textDecoration: `none`,
-              }}
-            >
-              Projects
-            </Link>
-          </li>
-          <li>
-            <a href="mailto:ozanmuldur@outlook.com">Contact</a>
-          </li>
+
           <li>
             <a
               target="_blank"

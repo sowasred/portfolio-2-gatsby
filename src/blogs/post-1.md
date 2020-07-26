@@ -36,8 +36,6 @@ files somewhere else or via CDNs.
 
 ### Mern Stack / MongoDB, ExpressJS, React, Node.js
 
-![Mern stack](../images/mern.jpg)
-
 #### Both Client and Server-side Code in JavaScript
 
 MERN primarily develops web applications that are based on
