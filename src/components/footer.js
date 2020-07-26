@@ -6,6 +6,7 @@ import Tw from "../images/tw.svg"
 import Li from "../images/li.svg"
 import Gh from "../images/gh.svg"
 import Pp from "../images/pp.jpg"
+import gatsby from "../images/gatsby.png"
 
 const Footer = () => (
   <footer class="footer">
@@ -50,6 +51,14 @@ const Footer = () => (
 
     <p>
       &copy; <span id="date"></span> Ozan Muldur. all rights reserved.
+    </p>
+    <p style={{ display: "flex", alignItems: "center" }}>
+      Powered by{" "}
+      <img
+        className="gatsbyicon"
+        style={{ maxHeight: "30px", marginLeft: "0.5em" }}
+        src={gatsby}
+      ></img>
     </p>
   </footer>
 )
