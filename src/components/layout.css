@@ -306,7 +306,7 @@ Navbar
   left: 0;
   width: 100vw !important;
   background: var(--clr-white);
-  z-index: 2;
+  z-index: 9999;
   box-shadow: var(--light-shadow);
 }
 .nav {
