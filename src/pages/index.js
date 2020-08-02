@@ -9,12 +9,14 @@ import Projects from "../components/projects"
 import Getintouch from "../components/getintouch"
 import Blogposts from "../components/blogposts"
 import AboutContent from "../components/aboutcontent"
+import Testimonials from "../components/testimonials"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <Header />
     <Projects />
+    <Testimonials />
     <Getintouch />
     <Blogposts />
   </Layout>

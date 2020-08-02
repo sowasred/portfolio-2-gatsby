@@ -28,7 +28,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <div>
+      <div style={{ overflow: "hidden" }}>
         <Navigation />
         <MobileNavigation />
         <main>{children}</main>

@@ -110,7 +110,11 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <a href="https://www.balodana.com/" className="view-site">
+          <a
+            target="_blank"
+            href="https://www.balodana.com/"
+            className="view-site"
+          >
             View Site
           </a>
         </article>
@@ -172,7 +176,11 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <a href="https://demob2b3shop.avetti.io/" className="view-site">
+          <a
+            target="_blank"
+            href="https://demob2b3shop.avetti.io/"
+            className="view-site"
+          >
             View Site
           </a>
         </article>
@@ -256,7 +264,11 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <a href="https://jacketstore.netlify.app/" className="view-site">
+          <a
+            target="_blank"
+            href="https://jacketstore.netlify.app/"
+            className="view-site"
+          >
             View Site
           </a>
         </article>
@@ -284,17 +296,18 @@ const Projects = () => {
                   className="tech-item"
                 />
                 <img
+                  src={nodejs}
+                  data-tip="Node.js"
+                  alt="Node.js"
+                  className="tech-item"
+                />
+                <img
                   data-tip="Sass"
                   alt="Sass"
                   src={sass}
                   className="tech-item"
                 />
-                <img
-                  data-tip="Figma"
-                  alt="Figma"
-                  src={figma}
-                  className="tech-item"
-                />
+
                 <img
                   data-tip="Photoshop CC"
                   alt="Photoshop CC"
@@ -311,7 +324,7 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <a href="https://teamar.netlify.app/" className="view-site">
+          <a target="_blank" href="https://teamar.ca" className="view-site">
             View Site
           </a>
         </article>
@@ -366,7 +379,11 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <a href="https://www.thediamondkart.com/" className="view-site">
+          <a
+            target="_blank"
+            href="https://www.thediamondkart.com/"
+            className="view-site"
+          >
             View Site
           </a>
         </article>
