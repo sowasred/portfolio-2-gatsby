@@ -8,7 +8,7 @@ const AutoplaySlider = withAutoplay(AwesomeSlider)
 const Testimonials = () => {
   return (
     <section id="testimonials" className="testimonials">
-      <AutoplaySlider play={true} cancelOnInteraction={false} interval={6000}>
+      <AutoplaySlider cancelOnInteraction={false} interval={6000}>
         {slides.map((slide, index) => (
           <div className="quote-wrap" key={index}>
             <p className="quote">
