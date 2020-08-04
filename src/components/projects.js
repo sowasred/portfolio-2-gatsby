@@ -201,8 +201,8 @@ const Projects = () => {
               <h5>Abstract</h5>
               <p>
                 Derry is a Leather Jacket Store for leather fashion chasers all
-                around world. Thanks to its modern web stack, it allows users to
-                shop in pretty fast and secure environment.
+                around the world. Thanks to its modern web stack, it allows
+                users to shop in a pretty fast and secure environment.
               </p>
             </div>
             <div className="project-info-item">
@@ -282,7 +282,7 @@ const Projects = () => {
               <p>
                 teamAR is an Augmented Reality startup from Vancouver. They
                 needed slick and simple design for their future customers and I
-                provided what they're looking.
+                provided what they're looking for.
               </p>
             </div>
             <div className="project-info-item">
@@ -336,7 +336,7 @@ const Projects = () => {
             <div className="project-info-item">
               <h5>Abstract</h5>
               <p>
-                Jewellery Manufacturer from India converted their ftont-end
+                Jewelry manufacturer from India converted their front-end
                 technology from Java-Spring to React for sake of speed and
                 reliability.
               </p>

@@ -11,6 +11,10 @@ import Hamburger from "../images/hamburger.svg"
 import Close from "../images/close.svg"
 import MobileNavigation from "./mobilenavigation"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
+import Fb from "../images/fb.svg"
+import Tw from "../images/tw.svg"
+import Li from "../images/li.svg"
+import Gh from "../images/gh.svg"
 
 import {
   motion,
@@ -164,7 +168,105 @@ const Navigation = () => {
         </motion.ul>
       </div>
       {showNav ? (
-        <MobileNavigation onClick={toggleChecked} showNav={showNav} />
+        <aside
+          className={showNav ? "sidebar show-sidebar" : "sidebar"}
+          id="sidebar"
+        >
+          <div>
+            <ul className="sidebar-links">
+              <li onClick={toggleChecked}>
+                <AnchorLink
+                  to="/#home"
+                  style={{
+                    textDecoration: `none`,
+                  }}
+                >
+                  Home
+                </AnchorLink>
+              </li>
+              <li onClick={toggleChecked}>
+                <AnchorLink
+                  to="/#projects"
+                  style={{
+                    textDecoration: `none`,
+                  }}
+                >
+                  Projects
+                </AnchorLink>
+              </li>
+              <li onClick={toggleChecked}>
+                <AnchorLink to="/#contact">Contact</AnchorLink>
+              </li>
+              <li onClick={toggleChecked}>
+                <AnchorLink
+                  to="/#blog"
+                  style={{
+                    textDecoration: `none`,
+                  }}
+                >
+                  Blog
+                </AnchorLink>
+              </li>
+              <li onClick={toggleChecked}>
+                <AnchorLink
+                  to="/about"
+                  style={{
+                    textDecoration: `none`,
+                  }}
+                >
+                  About
+                </AnchorLink>
+              </li>
+
+              <li>
+                <a
+                  target="_blank"
+                  href="https://drive.google.com/file/d/1Zb0z3PmsCGUloL_3In4sI1IFtDJip8Lw/view?usp=sharing"
+                >
+                  Resume
+                </a>
+              </li>
+            </ul>
+            <ul className="social-icons">
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.facebook.com/muldurozan/"
+                  className="social-icon"
+                >
+                  <img src={Fb} className="fab fa-facebook"></img>
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/ozanm/"
+                  className="social-icon"
+                >
+                  <img src={Li} className="fab fa-facebook"></img>
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://twitter.com/ozanmuldur1"
+                  className="social-icon"
+                >
+                  <img src={Tw} className="fab fa-facebook"></img>
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://github.com/sowasred"
+                  className="social-icon"
+                >
+                  <img src={Gh} className="fab fa-facebook"></img>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </aside>
       ) : null}
     </nav>
   )

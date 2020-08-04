@@ -425,6 +425,19 @@ Hero
 .hero-info h4 {
   color: var(--clr-grey-5);
 }
+.location {
+  color: var(--clr-grey-5);
+  font-size: 1.1em;
+  font-family: var(--ff-primary);
+  letter-spacing: 0.1em;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+}
+.location img {
+  width: 30px;
+}
+
 .hero-icons {
   justify-items: start;
 }
@@ -1075,7 +1088,6 @@ Blog
   /* talk later */
   -webkit-perspective: 1500px;
   perspective: 1500px;
-  margin-left: 1em;
 }
 .card:hover {
   box-shadow: 3px 3px 1.8px #888888;
@@ -1159,6 +1171,7 @@ Blog
   grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
   gap: 3rem 1rem;
 }
+
 /*
 =============== 
 Footer

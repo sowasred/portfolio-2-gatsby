@@ -5,6 +5,8 @@ import Tw from "../images/tw.svg"
 import Li from "../images/li.svg"
 import Gh from "../images/gh.svg"
 import Pp from "../images/pp.jpg"
+import Pin from "../images/pin2.svg"
+
 import {
   motion,
   useAnimation,
@@ -57,6 +59,16 @@ const Header = () => {
             >
               Freelancer, Web & Mobile Application Developer
             </motion.h4>
+            <motion.div
+              drag="x"
+              dragConstraints={{ left: 0, right: 0 }}
+              style={{ x }}
+              whileTap={{ scale: 1.2 }}
+              className="location"
+            >
+              <img alt="Ozan Muldur Location" src={Pin}></img>
+              ON, Canada
+            </motion.div>
           </motion.div>
           <motion.div animate={controls}>
             <a href="mailto:ozanmuldur@outlook.com" className="btn hero-btn">
