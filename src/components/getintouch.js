@@ -1,6 +1,6 @@
 import { Link } from "gatsby"
 import React from "react"
-import Vid from "../images/video.mp4"
+import Vid from "../images/video1.mp4"
 
 const Getintouch = () => (
   <section id="contact" className="connect">
