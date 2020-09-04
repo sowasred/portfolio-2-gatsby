@@ -1,31 +1,8 @@
 import { Link } from "gatsby"
 import React, { useState, useEffect } from "react"
-import Pr1 from "../images/balodana.jpg"
-import Pr2 from "../images/avettipic.jpg"
-import Pr3 from "../images/dkmob.jpg"
-import Pr4 from "../images/temarrr.jpg"
-import Pr5 from "../images/derry2.jpg"
-import react from "../images/react.png"
-import pp from "../images/pp.png"
-import aws from "../images/aws.png"
-import git from "../images/git.png"
-import redux from "../images/redux.png"
-import javascript from "../images/javascript.png"
-import npm from "../images/npm.png"
-import webpack from "../images/webpack.png"
-import undercons from "../images/under.png"
-import sass from "../images/sass.png"
 
-import gatsbyimg from "../images/gatsby.png"
-import nodejs from "../images/nodejs.png"
-import figma from "../images/figma.png"
-import strapi from "../images/strapi.png"
-import material from "../images/material.png"
+import projectsdata from "../constants/projectsdata"
 
-import graphqlimg from "../images/graphql.png"
-import mongodb from "../images/mongodb.png"
-
-import Pr6 from "../images/project-4.jpg"
 import { useInView } from "react-intersection-observer"
 
 import {
@@ -36,357 +13,123 @@ import {
 } from "framer-motion"
 
 const Projects = () => {
+  const [activeProjects, setActiveProjects] = useState([])
+  const [selectedProjects, setSelectedProjects] = useState([])
+
   const controls = useAnimation()
+
+  let technologies = [
+    "React",
+    "JavaScript",
+    "Node.js",
+    "Gatsby.JS",
+    "CMS",
+    "WordPress",
+    "AWS",
+    "Sass",
+    "Photoshop",
+  ]
+  const selectTech = e => {
+    let name = e.target.innerText
+    let include = selectedProjects.includes(name)
+    if (!include) {
+      setSelectedProjects([...selectedProjects, name])
+    } else {
+      let arr = selectedProjects.filter(b => b !== e.target.innerText)
+      setSelectedProjects(arr)
+    }
+    console.info(selectedProjects)
+  }
+
+  useEffect(() => {
+    let newarr = []
+
+    if (selectedProjects.length == 0) {
+      setActiveProjects(projectsdata)
+    } else if (selectedProjects.length > 0) {
+      projectsdata.forEach(item => {
+        const found = item.techImages.some(
+          r => selectedProjects.indexOf(r.alt) >= 0
+        )
+        if (found && selectedProjects.length == 1) {
+          newarr = [...newarr, item]
+          setActiveProjects(newarr)
+        } else if (found && selectedProjects.length > 1) {
+          newarr = [...newarr, item]
+          setActiveProjects(newarr)
+        }
+      })
+    }
+  }, [selectedProjects])
 
   return (
     <section id="projects" className="section projects">
       <div className="section-title">
         <h2>Latest Works</h2>
         <div className="underline"></div>
-        <p className="projects-text">Check the projects I've been part of.</p>
+        <p className="projects-text">
+          Filter the projects according to technologies.
+        </p>
+        <div className="techwrapper">
+          {technologies.map(item => (
+            <span
+              className={
+                selectedProjects.includes(item)
+                  ? `techit selected`
+                  : `techit unselected`
+              }
+              onClick={e => selectTech(e)}
+              value={item}
+            >
+              {item}
+            </span>
+          ))}
+        </div>
       </div>
       <div className="section-center projects-center">
-        <article className="project project-1">
-          <img src={Pr1} alt="single project" className="project-img" />
-          <div className="project-info">
-            <h4>balodana</h4>
-            <span className="project-type">Collabrative Work</span>
-            <div className="project-info-item">
-              <h5>Abstract</h5>
-              <p>
-                Balodana is a company that tailors clothes for women, all made
-                to measure and manufactured from all around the world.
-              </p>
-            </div>
-            <div className="project-info-item">
-              <h5>Technologies</h5>
-              <div className="project-techs">
-                <img
-                  src={javascript}
-                  data-tip="JavaScript"
-                  alt="JavaScript"
-                  className="tech-item"
-                />
-                <img data-tip="npm" alt="npm" src={npm} className="tech-item" />
-                <img
-                  data-tip="React"
-                  alt="React"
-                  src={react}
-                  className="tech-item"
-                />
-                <img
-                  data-tip="Redux"
-                  alt="Redux"
-                  src={redux}
-                  className="tech-item"
-                />
-                <img
-                  data-tip="Amazon Web Services"
-                  alt="Amazon Web Services"
-                  src={aws}
-                  className="tech-item"
-                />
-                <img
-                  data-tip="Git Version Control"
-                  alt="Git Version Control"
-                  src={git}
-                  className="tech-item"
-                />
-                <img
-                  data-tip="Photoshop CC"
-                  alt="Photoshop CC"
-                  src={pp}
-                  className="tech-item"
-                />
+        {activeProjects.map(item => {
+          return (
+            <article className="project">
+              <img
+                src={item.background}
+                alt="single project"
+                className="project-img"
+              />
+              <div className="project-info">
+                <h4>{item.name}</h4>
+                <span className="project-type">{item.collabtype}</span>
+                <div className="project-info-item">
+                  <h5>Abstract</h5>
+                  <p>{item.description}</p>
+                </div>
+                <div className="project-info-item">
+                  <h5>Technologies</h5>
+                  <div className="project-techs">
+                    {item.techImages.map(techimg => (
+                      <img
+                        src={techimg.img}
+                        data-tip={techimg.alt}
+                        alt={techimg.alt}
+                        className="tech-item"
+                      />
+                    ))}
+                  </div>
+                </div>
+                <div className="project-info-item extra-info">
+                  <h5>Completed Tasks </h5>
+                  <div className="project-task">
+                    {item.tasks.map(txt => (
+                      <span>{txt} &#10003;</span>
+                    ))}
+                  </div>
+                </div>
               </div>
-            </div>
-            <div className="project-info-item extra-info">
-              <h5>Completed Tasks </h5>
-              <div className="project-task">
-                <span>Site Search Functionality &#10003;</span>
-                <span>Shopping Cart &#10003;</span>
-                <span>Social Media Share &#10003;</span>
-                <span>Single Sign-on &#10003;</span>
-              </div>
-            </div>
-          </div>
-          <a
-            target="_blank"
-            href="https://www.balodana.com/"
-            className="view-site"
-          >
-            View Site
-          </a>
-        </article>
-
-        <article className="project">
-          <img src={Pr2} alt="single project" className="project-img" />
-          <div className="project-info">
-            <h4>Avetti Demo Marketplace</h4>
-            <span className="project-type">Collabrative Work</span>
-            <div className="project-info-item">
-              <h5>Abstract</h5>
-              <p>
-                This marketplace has gathered various e-commerce
-                functionalities. Thanks to its latest technology stack, it
-                offers secure and fast e-shopping.
-              </p>
-            </div>
-            <div className="project-info-item">
-              <h5>Technologies</h5>
-              <div className="project-techs">
-                <img
-                  src={javascript}
-                  data-tip="JavaScript"
-                  alt="JavaScript"
-                  className="tech-item"
-                />
-                <img data-tip="npm" alt="npm" src={npm} className="tech-item" />
-                <img
-                  data-tip="React"
-                  alt="React"
-                  src={react}
-                  className="tech-item"
-                />
-                <img
-                  data-tip="Redux"
-                  alt="Redux"
-                  src={redux}
-                  className="tech-item"
-                />
-                <img
-                  data-tip="Webpack"
-                  alt="Webpack"
-                  src={webpack}
-                  className="tech-item"
-                />
-                <img
-                  data-tip="Git Version Control"
-                  alt="Git Version Control"
-                  src={git}
-                  className="tech-item"
-                />
-              </div>
-            </div>
-            <div className="project-info-item extra-info">
-              <h5>Completed Tasks </h5>
-              <div className="project-task">
-                <span>Reusable React Components &#10003;</span>
-                <span>Product Compare Feature &#10003;</span>
-              </div>
-            </div>
-          </div>
-          <a
-            target="_blank"
-            href="https://demob2b3shop.avetti.io/"
-            className="view-site"
-          >
-            View Site
-          </a>
-        </article>
-
-        <article className="project">
-          <img
-            src={Pr5}
-            alt="single project"
-            id="avett-com"
-            className="project-img"
-          />
-          <div className="project-info">
-            <h4>Derry</h4>
-            <span className="project-type">Individual Work</span>
-            <img src={undercons} className="project-cons"></img>
-
-            <div className="project-info-item">
-              <h5>Abstract</h5>
-              <p>
-                Derry is a Leather Jacket Store for leather fashion chasers all
-                around the world. Thanks to its modern web stack, it allows
-                users to shop in a pretty fast and secure environment.
-              </p>
-            </div>
-            <div className="project-info-item">
-              <h5>Technologies</h5>
-              <div className="project-techs">
-                <img
-                  style={{ maxHeight: "30px" }}
-                  src={gatsbyimg}
-                  data-tip="Gatsby"
-                  alt="Gatsby"
-                  className="tech-item"
-                />
-                <img
-                  src={nodejs}
-                  data-tip="Node.js"
-                  alt="Node.js"
-                  className="tech-item"
-                />
-                <img
-                  data-tip="Redux"
-                  alt="Redux"
-                  src={redux}
-                  className="tech-item"
-                />
-                <img
-                  data-tip="Graphql"
-                  alt="Graphql"
-                  src={graphqlimg}
-                  className="tech-item"
-                />
-                <img
-                  data-tip="MongoDB"
-                  alt="MongoDB"
-                  src={mongodb}
-                  className="tech-item"
-                />
-                <img
-                  style={{ maxHeight: "30px" }}
-                  data-tip="Strapi"
-                  alt="Strapi"
-                  src={strapi}
-                  className="tech-item"
-                />
-                <img
-                  style={{ maxHeight: "35px" }}
-                  data-tip="Amazon Web Services"
-                  alt="Amazon Web Services"
-                  src={aws}
-                  className="tech-item"
-                />
-              </div>
-            </div>
-            <div className="project-info-item extra-info">
-              <h5>Completed Tasks </h5>
-              <div className="project-task">
-                <span>Gatsby Store &#10003;</span>
-                <span>Headless CMS Strapi Integration &#10003;</span>
-                <span>Deploy On AWS &#10003;</span>
-              </div>
-            </div>
-          </div>
-          <a
-            target="_blank"
-            href="https://jacketstore.netlify.app/"
-            className="view-site"
-          >
-            View Site
-          </a>
-        </article>
-        <article className="project">
-          <img src={Pr4} alt="single project" className="project-img" />
-          <div className="project-info">
-            <h4>teamAR</h4>
-            <span className="project-type">Individual Work</span>
-            <div className="project-info-item">
-              <h5>Abstract</h5>
-              <p>
-                teamAR is an Augmented Reality startup from Vancouver. They
-                needed slick and simple design for their future customers and I
-                provided what they're looking for.
-              </p>
-            </div>
-            <div className="project-info-item">
-              <h5>Technologies</h5>
-              <div className="project-techs">
-                <img
-                  style={{ maxHeight: "30px" }}
-                  src={gatsbyimg}
-                  data-tip="Gatsby"
-                  alt="Gatsby"
-                  className="tech-item"
-                />
-                <img
-                  src={nodejs}
-                  data-tip="Node.js"
-                  alt="Node.js"
-                  className="tech-item"
-                />
-                <img
-                  data-tip="Sass"
-                  alt="Sass"
-                  src={sass}
-                  className="tech-item"
-                />
-
-                <img
-                  data-tip="Photoshop CC"
-                  alt="Photoshop CC"
-                  src={pp}
-                  className="tech-item"
-                />
-              </div>
-            </div>
-            <div className="project-info-item extra-info">
-              <h5>Completed Tasks </h5>
-              <div className="project-task">
-                <span>Gatsby PWA &#10003;</span>
-                <span>Design Implementation &#10003;</span>
-              </div>
-            </div>
-          </div>
-          <a target="_blank" href="https://teamar.ca" className="view-site">
-            View Site
-          </a>
-        </article>
-        <article className="project">
-          <img src={Pr3} alt="single project" className="project-img" />
-          <div className="project-info">
-            <h4>THE DIAMOND STORE</h4>
-            <span className="project-type">Collabrative Work</span>
-            <div className="project-info-item">
-              <h5>Abstract</h5>
-              <p>
-                Jewelry manufacturer from India converted their front-end
-                technology from Java-Spring to React for sake of speed and
-                reliability.
-              </p>
-            </div>
-            <div className="project-info-item">
-              <h5>Technologies</h5>
-              <div className="project-techs">
-                <img
-                  src={sass}
-                  data-tip="Sass"
-                  alt="Sass"
-                  className="tech-item"
-                />
-                <img
-                  data-tip="React"
-                  alt="React"
-                  src={react}
-                  className="tech-item"
-                />
-
-                <img
-                  style={{ width: "30px" }}
-                  data-tip="material ui"
-                  alt="material ui"
-                  src={material}
-                  className="tech-item"
-                />
-                <img
-                  data-tip="Figma"
-                  alt="Figma"
-                  src={figma}
-                  className="tech-item"
-                />
-              </div>
-            </div>
-            <div className="project-info-item extra-info">
-              <h5>Completed Tasks </h5>
-              <div className="project-task">
-                <span>Design Implementations &#10003;</span>
-              </div>
-            </div>
-          </div>
-          <a
-            target="_blank"
-            href="https://www.thediamondkart.com/"
-            className="view-site"
-          >
-            View Site
-          </a>
-        </article>
+              <a target="_blank" href={item.link} className="view-site">
+                View Site
+              </a>
+            </article>
+          )
+        })}
       </div>
     </section>
   )

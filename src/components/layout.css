@@ -584,6 +584,7 @@ Projects
   margin: 0 auto;
   font-size: 1.2em;
   font-weight: 700;
+  text-align: center;
 }
 .project {
   position: relative;
@@ -735,7 +736,7 @@ p {
   width: auto;
 }
 .section-title p {
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 @media screen and (max-width: 767px) {
   .project .project-img {
@@ -753,7 +754,7 @@ p {
     margin-top: 2em !important;
   }
   .section-title p {
-    margin-bottom: 2em !important;
+    margin-bottom: 1em !important;
   }
   .project-cons {
     width: 18vw !important;
@@ -774,7 +775,34 @@ p {
     margin: auto 0;
   }
 }
-
+.techwrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2vh;
+}
+.techit {
+  padding: 5px;
+  background: white;
+  border-radius: 7px;
+  margin: 5px;
+  box-shadow: 1px 1px 1px 1px #ccc;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.techit:hover {
+  background: black;
+  color: white;
+}
+.selected {
+  background: black !important;
+  color: white !important;
+}
+.unselected {
+  background: white !important;
+  color: black !important;
+}
 @media screen and (min-width: 768px) {
   .projects-center {
     display: flex;
@@ -812,6 +840,10 @@ p {
   }
 }
 @media screen and (min-width: 992px) {
+  .techit {
+    padding: 10px;
+    margin: 8px;
+  }
   .projects-center {
     display: flex;
     flex-wrap: wrap;
