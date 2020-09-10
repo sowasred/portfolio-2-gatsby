@@ -8,6 +8,7 @@ import npm from "../images/npm.png"
 import webpack from "../images/webpack.png"
 import undercons from "../images/under.png"
 import sass from "../images/sass.png"
+import php from "../images/php.png"
 
 import gatsbyimg from "../images/gatsby.png"
 import nodejs from "../images/nodejs.png"
@@ -29,6 +30,7 @@ import Pr3 from "../images/derry1.png"
 import Pr4 from "../images/temarrr1.png"
 import Pr5 from "../images/dkmob1.png"
 import Pr6 from "../images/tuber1.png"
+import Pr7 from "../images/handyman1.png"
 
 export default [
   {
@@ -68,7 +70,10 @@ export default [
       { img: webpack, alt: "webpack" },
       { img: git, alt: "git Version Control" },
     ],
-    tasks: ["Reusable React Components", "Product Compare Feature"],
+    tasks: [
+      "Developing Reusable React Components",
+      "Product Compare Feature Building",
+    ],
     link: "https://demob2b3shop.avetti.io/",
   },
   {
@@ -86,9 +91,9 @@ export default [
       { img: aws, alt: "AWS" },
     ],
     tasks: [
-      "Gatsby Store",
+      "Gatsby Store Developing",
       "Headless CMS Strapi Integration",
-      "Deploy On AWS ",
+      "Deploying On AWS ",
     ],
     link: "https://jacketstore.netlify.app/",
   },
@@ -130,17 +135,35 @@ export default [
     description:
       "Team of YouTube expertises providing YouTube services for all kinds of YouTube channels. I've developed their budged friendly website using WordPress, Elementor Page Builder, Woo Commerce and many plugins with the support of HMTL, CSS and PHP programming languages.",
     techImages: [
+      { img: php, alt: "PHP" },
       { img: wordpress, alt: "WordPress" },
       { img: woo, alt: "Woo Commerce" },
       { img: elementor, alt: "Elementor" },
       { img: css, alt: "CMS" },
-      { img: pp, alt: "Photoshop" },
     ],
     tasks: [
-      "WordPress Website",
+      "WordPress Website Developing",
       "Theme Customization",
       "Search Engine Optimization",
     ],
     link: "https://www.tubersupport.com/",
+  },
+  {
+    name: "GTA - Handyman",
+    background: Pr7,
+    collabtype: "Individual Work",
+    description:
+      "Company called GTA - Handyman are giving renovation services all around Toronto GTA. I've built their WordPress site by creating a new WordPress theme from scratch according to their demands.",
+    techImages: [
+      { img: php, alt: "PHP" },
+      { img: wordpress, alt: "WordPress" },
+      { img: css, alt: "CMS" },
+    ],
+    tasks: [
+      "WordPress Theme Creation",
+      "WordPress Website Developing",
+      "Search Engine Optimization",
+    ],
+    link: "https://www.handymangta.ca/",
   },
 ]

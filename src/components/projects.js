@@ -25,6 +25,7 @@ const Projects = () => {
     "Gatsby.JS",
     "CMS",
     "WordPress",
+    "PHP",
     "AWS",
     "Sass",
     "Photoshop",
