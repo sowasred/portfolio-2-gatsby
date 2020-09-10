@@ -70,10 +70,7 @@ export default [
       { img: webpack, alt: "webpack" },
       { img: git, alt: "git Version Control" },
     ],
-    tasks: [
-      "Developing Reusable React Components",
-      "Product Compare Feature Building",
-    ],
+    tasks: ["Reusable React Components", "Product Compare Feature Building"],
     link: "https://demob2b3shop.avetti.io/",
   },
   {
