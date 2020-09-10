@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react"
 import projectsdata from "../constants/projectsdata"
 
 import { useInView } from "react-intersection-observer"
+import ItemsCarousel from "react-items-carousel"
 
 import {
   motion,
@@ -15,6 +16,12 @@ import {
 const Projects = () => {
   const [activeProjects, setActiveProjects] = useState([])
   const [selectedProjects, setSelectedProjects] = useState([])
+
+  const [activeItemIndex, setActiveItemIndex] = useState(0)
+
+  const [numberProjects, setNumberProjects] = useState(1)
+
+  const chevronWidth = 100
 
   const controls = useAnimation()
 
@@ -61,33 +68,60 @@ const Projects = () => {
         }
       })
     }
+
+    if (window != undefined) {
+      let windowsize = window.innerWidth
+      console.info("ozan", windowsize, typeof windowsize)
+      if (windowsize < 768) {
+        setNumberProjects(1)
+      } else if (windowsize <= 1440) {
+        setNumberProjects(3)
+      } else {
+        setNumberProjects(4)
+      }
+    }
   }, [selectedProjects])
 
   return (
-    <section id="projects" className="section projects">
-      <div className="section-title">
-        <h2>Latest Works</h2>
-        <div className="underline"></div>
-        <p className="projects-text">
-          Filter the projects according to technologies.
-        </p>
-        <div className="techwrapper">
-          {technologies.map(item => (
-            <span
-              className={
-                selectedProjects.includes(item)
-                  ? `techit selected`
-                  : `techit unselected`
-              }
-              onClick={e => selectTech(e)}
-              value={item}
-            >
-              {item}
-            </span>
-          ))}
+    <React.Fragment>
+      <section id="projects" className="section projects">
+        <div className="section-title">
+          <h2>Latest Works</h2>
+          <div className="underline"></div>
+          <p className="projects-text">
+            Filter the projects according to technologies.
+          </p>
+          <div className="techwrapper">
+            {technologies.map(item => (
+              <span
+                className={
+                  selectedProjects.includes(item)
+                    ? `techit selected`
+                    : `techit unselected`
+                }
+                onClick={e => selectTech(e)}
+                value={item}
+              >
+                {item}
+              </span>
+            ))}
+          </div>
         </div>
-      </div>
-      <div className="section-center projects-center">
+        {/* <div className="section-center projects-center"> */}
+
+        {/* </div> */}
+      </section>
+      <ItemsCarousel
+        style={{ position: "relative" }}
+        requestToChangeActive={setActiveItemIndex}
+        activeItemIndex={activeItemIndex}
+        numberOfCards={numberProjects}
+        gutter={0}
+        leftChevron={<button id="left-but">{"<"}</button>}
+        rightChevron={<button id="right-but">{">"}</button>}
+        outsideChevron
+        chevronWidth={chevronWidth}
+      >
         {activeProjects.map(item => {
           return (
             <article className="project">
@@ -131,8 +165,8 @@ const Projects = () => {
             </article>
           )
         })}
-      </div>
-    </section>
+      </ItemsCarousel>
+    </React.Fragment>
   )
 }
 
