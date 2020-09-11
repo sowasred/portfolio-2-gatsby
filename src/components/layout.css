@@ -648,18 +648,17 @@ Projects
 .view-site {
   opacity: 0;
   right: 0;
-  padding: 0.6em !important;
   position: absolute;
+  top: 3vh;
   right: 1vw;
-  top: 5vh;
   cursor: pointer !important;
   font-size: 0.8em;
   font-weight: 700;
-  padding: 0.5em;
   background-color: var(--clr-grey-1);
   border-radius: var(--radius);
   color: var(--clr-grey-10);
   z-index: 9999;
+  padding: 0.1em 0.4em;
 }
 .project-info span {
   font-size: 0.8em;
@@ -881,9 +880,7 @@ p {
   .section-title {
     margin-bottom: 0 !important;
   }
-  .view-site {
-    right: 2em;
-  }
+
   .project-type {
     font-size: 0.8em !important;
     top: -3em;
