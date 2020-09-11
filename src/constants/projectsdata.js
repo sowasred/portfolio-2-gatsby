@@ -19,18 +19,18 @@ import material from "../images/material.png"
 import graphqlimg from "../images/graphql.png"
 import mongodb from "../images/mongodb.png"
 
-import wordpress from "../images/wordpress.png"
+import wordpress from "../images/wordpress1.png"
 import woo from "../images/woo.png"
 import elementor from "../images/elementor.png"
 import css from "../images/css.png"
 
-import Pr1 from "../images/balodana1.png"
-import Pr2 from "../images/avettipic1.png"
-import Pr3 from "../images/derry12.png"
-import Pr4 from "../images/temarrr1.png"
-import Pr5 from "../images/dkmob1.png"
-import Pr6 from "../images/tuber1.png"
-import Pr7 from "../images/handyman1.png"
+import Pr1 from "../images/balodana12.png"
+import Pr2 from "../images/avettipic12.png"
+import Pr3 from "../images/derry123.png"
+import Pr4 from "../images/temarrr12.png"
+import Pr5 from "../images/dkmob12.png"
+import Pr6 from "../images/tuber12.png"
+import Pr7 from "../images/handyman12.png"
 
 export default [
   {
