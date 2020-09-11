@@ -815,8 +815,17 @@ p {
 }
 .imYUvI {
   margin-top: 5vh !important;
-  padding-top: 1vh;
+  padding-top: 2vh;
 }
+.gwZiig {
+  overflow-y: hidden;
+}
+@media screen and (max-width: 767px) {
+  #projectcount {
+    left: 33% !important;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .imYUvI {
     margin-top: 4vh !important;
@@ -880,6 +889,10 @@ p {
   }
 }
 @media screen and (min-width: 992px) {
+  .jbVrDP,
+  .gBiFdt {
+    top: -4vh !important;
+  }
   .techit {
     padding: 10px;
     margin: 8px;

@@ -74,6 +74,8 @@ const Projects = () => {
       console.info("ozan", windowsize, typeof windowsize)
       if (windowsize < 768) {
         setNumberProjects(1)
+      } else if (windowsize <= 991) {
+        setNumberProjects(2)
       } else if (windowsize <= 1440) {
         setNumberProjects(3)
       } else {
@@ -110,6 +112,19 @@ const Projects = () => {
         {/* <div className="section-center projects-center"> */}
 
         {/* </div> */}
+        <span
+          id="projectcount"
+          style={{
+            position: "absolute",
+            textAlign: "center",
+            left: "44%",
+            fontWeight: 700,
+          }}
+        >
+          {activeProjects.length === projectsdata.length
+            ? `Total  ${activeProjects.length} Projects`
+            : `${activeProjects.length} Projects`}
+        </span>
       </section>
       <ItemsCarousel
         style={{ position: "relative" }}
