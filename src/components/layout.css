@@ -613,6 +613,7 @@ Projects
   font-weight: 600;
   font-size: 0.8em;
 }
+
 .project:hover .project-info {
   opacity: 1;
 }
@@ -620,6 +621,15 @@ Projects
   opacity: 1;
   transition: 1s;
 }
+
+.project:hover .project-info {
+  opacity: 1;
+}
+.project:hover .view-site {
+  opacity: 1;
+  transition: 1s;
+}
+
 .view-site:hover {
   background-color: var(--clr-primary-5);
   color: black;
@@ -848,10 +858,7 @@ p {
   border: 2px solid gray;
   background: transparent !important;
 }
-#left-but:hover,
-#right-but:hover {
-  opacity: 0.3;
-}
+
 @media screen and (min-width: 768px) {
   .projects-center {
     display: flex;

@@ -26,7 +26,7 @@ import css from "../images/css.png"
 
 import Pr1 from "../images/balodana1.png"
 import Pr2 from "../images/avettipic1.png"
-import Pr3 from "../images/derry1.png"
+import Pr3 from "../images/derry12.png"
 import Pr4 from "../images/temarrr1.png"
 import Pr5 from "../images/dkmob1.png"
 import Pr6 from "../images/tuber1.png"
