@@ -12,15 +12,11 @@ import Testimonials from "../components/testimonials"
 
 import "react-awesome-slider/dist/styles.css"
 
-const IndexPage = () => (
+const ProjectPage = () => (
   <Layout>
-    <SEO title="Home" />
-    <Header />
+    <SEO title="Ozan Muldur Projects" />
     <Projects />
-    <Testimonials />
-    <Getintouch />
-    <Blogposts />
   </Layout>
 )
 
-export default IndexPage
+export default ProjectPage

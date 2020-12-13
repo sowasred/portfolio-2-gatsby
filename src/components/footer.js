@@ -8,7 +8,7 @@ import Gh from "../images/gh.svg"
 import gatsby from "../images/gatsby.png"
 
 const Footer = () => (
-  <footer class="footer">
+  <footer className="footer">
     <ul className="social-icons">
       <li>
         <a

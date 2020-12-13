@@ -27,10 +27,10 @@ import css from "../images/css.png"
 import Pr1 from "../images/balodana12.png"
 import Pr2 from "../images/avettipic12.png"
 import Pr3 from "../images/derry123.png"
-import Pr4 from "../images/temarrr12.png"
+import Pr4 from "../images/teamarnew.png"
 import Pr5 from "../images/dkmob12.png"
 import Pr6 from "../images/tuber12.png"
-import Pr7 from "../images/handyman123.png"
+import Pr7 from "../images/handymannew.png"
 
 export default [
   {
@@ -46,7 +46,6 @@ export default [
       { img: redux, alt: "redux" },
       { img: aws, alt: "AWS" },
       { img: git, alt: "git Version Control" },
-      { img: pp, alt: "Photoshop" },
     ],
     tasks: [
       "Site Search Functionality",
@@ -89,6 +88,22 @@ export default [
     link: "https://demob2b3shop.avetti.io/",
   },
   {
+    name: "teamAR",
+    background: Pr4,
+    collabtype: "Collabrative Work",
+    description:
+      "teamAR is an Augmented Reality startup from Vancouver. They needed slick and simple design for their future customers and as a development team we provided what they're looking for.",
+    techImages: [
+      { img: gatsbyimg, alt: "Gatsby.JS" },
+      { img: nodejs, alt: "Node.js" },
+      { img: strapi, alt: "CMS" },
+      { img: sass, alt: "Sass" },
+      { img: pp, alt: "Photoshop" },
+    ],
+    tasks: ["Progressive Web App", "CMS Integration", "Design Implementations"],
+    link: "https://teamar.ca",
+  },
+  {
     name: "GTA - Handyman",
     background: Pr7,
     collabtype: "Individual Work",
@@ -106,61 +121,46 @@ export default [
     ],
     link: "https://www.handymangta.ca/",
   },
-  {
-    name: "teamAR",
-    background: Pr4,
-    collabtype: "Collabrative Work",
-    description:
-      "teamAR is an Augmented Reality startup from Vancouver. They needed slick and simple design for their future customers and as a development team we provided what they're looking for.",
-    techImages: [
-      { img: gatsbyimg, alt: "Gatsby.JS" },
-      { img: nodejs, alt: "Node.js" },
-      { img: strapi, alt: "CMS" },
-      { img: sass, alt: "Sass" },
-      { img: pp, alt: "Photoshop" },
-    ],
-    tasks: ["Progressive Web App", "CMS Integration", "Design Implementations"],
-    link: "https://teamar.ca",
-  },
-  {
-    name: "Tuber Support",
-    background: Pr6,
-    collabtype: "Individual Work",
-    description:
-      "Team of YouTube expertises providing YouTube services for all kinds of YouTube channels. I've developed their budged friendly website using WordPress, Elementor Page Builder, Woo Commerce and many plugins with the support of HMTL, CSS and PHP programming languages.",
-    techImages: [
-      { img: php, alt: "PHP" },
-      { img: wordpress, alt: "WordPress" },
-      { img: woo, alt: "Woo Commerce" },
-      { img: elementor, alt: "Elementor" },
-      { img: css, alt: "CMS" },
-    ],
-    tasks: [
-      "WordPress Website Developing",
-      "Theme Customization",
-      "Search Engine Optimization",
-    ],
-    link: "https://www.tubersupport.com/",
-  },
-  {
-    name: "Derry",
-    background: Pr3,
-    collabtype: "Collabrative Work",
-    description:
-      "Derry is a Leather Jacket Store for leather fashion chasers all around the world. Thanks to its modern web stack, it allows users to shop in a pretty fast and secure environment.",
-    techImages: [
-      { img: gatsbyimg, alt: "Gatsby.JS" },
-      { img: nodejs, alt: "Node.js" },
-      { img: graphqlimg, alt: "graphql" },
-      { img: mongodb, alt: "mongodb" },
-      { img: strapi, alt: "CMS" },
-      { img: aws, alt: "AWS" },
-    ],
-    tasks: [
-      "Gatsby Store Developing",
-      "Headless CMS Strapi Integration",
-      "Deploying On AWS ",
-    ],
-    link: "https://jacketstore.netlify.app/",
-  },
+
+  // {
+  //   name: "Tuber Support",
+  //   background: Pr6,
+  //   collabtype: "Individual Work",
+  //   description:
+  //     "Team of YouTube expertises providing YouTube services for all kinds of YouTube channels. I've developed their budged friendly website using WordPress, Elementor Page Builder, Woo Commerce and many plugins with the support of HMTL, CSS and PHP programming languages.",
+  //   techImages: [
+  //     { img: php, alt: "PHP" },
+  //     { img: wordpress, alt: "WordPress" },
+  //     { img: woo, alt: "Woo Commerce" },
+  //     { img: elementor, alt: "Elementor" },
+  //     { img: css, alt: "CMS" },
+  //   ],
+  //   tasks: [
+  //     "WordPress Website Developing",
+  //     "Theme Customization",
+  //     "Search Engine Optimization",
+  //   ],
+  //   link: "https://www.tubersupport.com/",
+  // },
+  // {
+  //   name: "Derry",
+  //   background: Pr3,
+  //   collabtype: "Collabrative Work",
+  //   description:
+  //     "Derry is a Leather Jacket Store for leather fashion chasers all around the world. Thanks to its modern web stack, it allows users to shop in a pretty fast and secure environment.",
+  //   techImages: [
+  //     { img: gatsbyimg, alt: "Gatsby.JS" },
+  //     { img: nodejs, alt: "Node.js" },
+  //     { img: graphqlimg, alt: "graphql" },
+  //     { img: mongodb, alt: "mongodb" },
+  //     { img: strapi, alt: "CMS" },
+  //     { img: aws, alt: "AWS" },
+  //   ],
+  //   tasks: [
+  //     "Gatsby Store Developing",
+  //     "Headless CMS Strapi Integration",
+  //     "Deploying On AWS ",
+  //   ],
+  //   link: "https://jacketstore.netlify.app/",
+  // },
 ]

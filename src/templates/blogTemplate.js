@@ -9,12 +9,12 @@ export default function Template({
   return (
     <Layout>
       <section className="section single-page">
-        <div class="section-title">
+        <div className="section-title">
           <h1>{frontmatter.title}</h1>
-          <div class="underline"></div>
+          <div className="underline"></div>
         </div>
-        <div class="section-center">
-          <article style={{ position: "relative" }} class="about-info">
+        <div className="section-center">
+          <article style={{ position: "relative" }} className="about-info">
             <div
               className="blog-post-content"
               dangerouslySetInnerHTML={{ __html: html }}
@@ -33,7 +33,7 @@ export default function Template({
               >
                 <time
                   style={{ marginRight: "0.5em" }}
-                  datetime="2020-02-14 20:00"
+                  dateTime="2020-02-14 20:00"
                 >
                   {frontmatter.date}
                 </time>

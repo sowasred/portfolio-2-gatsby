@@ -9,19 +9,19 @@ const Blogposts = () => (
   <section id="blog" className="section blog">
     <div className="section-title">
       <h2>Recent Blog Posts</h2>
-      <div class="underline"></div>
+      <div className="underline"></div>
     </div>
 
     <div className="section-center blog-center">
       <div className="card">
-        <div class="card-side card-front">
+        <div className="card-side card-front">
           <img src={Blogpost1Pic} alt="Jam Stack Blog Post" />
           <div className="card-info">
             <h4>JAMStack vs MERN Stack</h4>
             <p style={{ fontSize: "0.85em", fontWeight: "700" }}>
               <time
                 style={{ marginRight: "0.5em" }}
-                datetime="2020-02-14 20:00"
+                dateTime="2020-02-14 20:00"
               >
                 2020-04-14
               </time>
@@ -52,14 +52,14 @@ const Blogposts = () => (
         </div> */}
       </div>
       <div className="card">
-        <div class="card-side card-front">
+        <div className="card-side card-front">
           <img src={Blogpost2Pic} alt="Jam Stack Blog Post" />
           <div className="card-info">
             <h4>Augmented Reality Usage in Businesses</h4>
             <p style={{ fontSize: "0.85em", fontWeight: "700" }}>
               <time
                 style={{ marginRight: "0.5em" }}
-                datetime="2020-02-14 20:00"
+                dateTime="2020-02-14 20:00"
               >
                 2020-06-16
               </time>

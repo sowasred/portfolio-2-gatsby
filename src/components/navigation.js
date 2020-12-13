@@ -106,7 +106,7 @@ const Navigation = () => {
           <motion.li variants={item}>
             <AnchorLink
               to="/#home"
-              smooth={true}
+              smooth="true"
               duration={500}
               style={{
                 textDecoration: `none`,

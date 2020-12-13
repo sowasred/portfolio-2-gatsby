@@ -3,6 +3,8 @@ import React, { useState, useEffect } from "react"
 
 import projectsdata from "../constants/projectsdata"
 
+import ProjectComponent from "../components/projectcomponent"
+
 import { useInView } from "react-intersection-observer"
 import ItemsCarousel from "react-items-carousel"
 
@@ -22,8 +24,6 @@ const Projects = () => {
   const [numberProjects, setNumberProjects] = useState(1)
 
   const chevronWidth = 100
-
-  const controls = useAnimation()
 
   let technologies = [
     "React",
@@ -46,7 +46,6 @@ const Projects = () => {
       let arr = selectedProjects.filter(b => b !== e.target.innerText)
       setSelectedProjects(arr)
     }
-    console.info(selectedProjects)
   }
 
   useEffect(() => {
@@ -71,15 +70,14 @@ const Projects = () => {
 
     if (window != undefined) {
       let windowsize = window.innerWidth
-      console.info("ozan", windowsize, typeof windowsize)
       if (windowsize < 768) {
         setNumberProjects(1)
       } else if (windowsize <= 991) {
         setNumberProjects(2)
       } else if (windowsize <= 1440) {
-        setNumberProjects(3)
+        setNumberProjects(2)
       } else {
-        setNumberProjects(4)
+        setNumberProjects(3)
       }
     }
   }, [selectedProjects])
@@ -88,10 +86,13 @@ const Projects = () => {
     <React.Fragment>
       <section id="projects" className="section projects">
         <div className="section-title">
-          <h2>Latest Works</h2>
+          <h2>Projects</h2>
           <div className="underline"></div>
           <p className="projects-text">
             Filter the projects according to technologies.
+            {activeProjects.length === projectsdata.length
+              ? ` Total  ${activeProjects.length} Projects Showing`
+              : ` Total ${activeProjects.length} Projects Showing`}
           </p>
           <div className="techwrapper">
             {technologies.map(item => (
@@ -109,9 +110,6 @@ const Projects = () => {
             ))}
           </div>
         </div>
-        {/* <div className="section-center projects-center"> */}
-
-        {/* </div> */}
         <span
           id="projectcount"
           style={{
@@ -120,11 +118,7 @@ const Projects = () => {
             left: "44%",
             fontWeight: 700,
           }}
-        >
-          {activeProjects.length === projectsdata.length
-            ? `Total  ${activeProjects.length} Projects`
-            : `${activeProjects.length} Projects`}
-        </span>
+        ></span>
       </section>
       <ItemsCarousel
         style={{ position: "relative" }}
@@ -137,49 +131,9 @@ const Projects = () => {
         outsideChevron
         chevronWidth={chevronWidth}
       >
-        {activeProjects.map(item => {
-          return (
-            <article className="project">
-              <img
-                src={item.background}
-                alt="single project"
-                className="project-img"
-              />
-              <div className="project-info">
-                <h4>{item.name}</h4>
-                <span className="project-type">{item.collabtype}</span>
-                <div className="project-info-item">
-                  <h5>Abstract</h5>
-                  <p>{item.description}</p>
-                </div>
-                <div className="project-info-item">
-                  <h5>Technologies</h5>
-                  <div className="project-techs">
-                    {item.techImages.map(techimg => (
-                      <img
-                        src={techimg.img}
-                        data-tip={techimg.alt}
-                        alt={techimg.alt}
-                        className="tech-item"
-                      />
-                    ))}
-                  </div>
-                </div>
-                <div className="project-info-item extra-info">
-                  <h5>Completed Tasks </h5>
-                  <div className="project-task">
-                    {item.tasks.map(txt => (
-                      <span>{txt} &#10003;</span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-              <a target="_blank" href={item.link} className="view-site">
-                View Site
-              </a>
-            </article>
-          )
-        })}
+        {activeProjects.map(item => (
+          <ProjectComponent item={item} />
+        ))}
       </ItemsCarousel>
     </React.Fragment>
   )

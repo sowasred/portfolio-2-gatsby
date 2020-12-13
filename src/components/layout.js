@@ -32,7 +32,7 @@ const Layout = ({ children }) => {
         <Navigation />
         <MobileNavigation />
         <main>{children}</main>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </>
   )

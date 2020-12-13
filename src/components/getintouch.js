@@ -5,21 +5,21 @@ import Vid from "../images/video1.mp4"
 const Getintouch = () => (
   <section id="contact" className="connect">
     <video
-      controls="false"
-      autoplay="true"
-      muted="true"
-      loop="true"
+      controls={false}
+      autoPlay={true}
+      muted={true}
+      loop={true}
       className="video-container"
     >
       <source src={Vid} type="video/mp4" />
       Sorry, your browser does not support embedded videos
     </video>
-    <div class="video-banner">
-      <div class="section-title">
+    <div className="video-banner">
+      <div className="section-title">
         <h2>Let's Get In Touch</h2>
-        <div class="underline"></div>
+        <div className="underline"></div>
       </div>
-      <p class="video-text">
+      <p className="video-text">
         If you like my work and want to connect, do not hesitate! I'll be glad
         to help you.
       </p>
@@ -35,13 +35,13 @@ const Getintouch = () => (
           <label className="label-name">
             <span className="content-name">Name</span>
           </label>
-          <input type="text" name="name" required autocomplete="off" />
+          <input type="text" name="name" required autoComplete="off" />
         </div>
         <div className="input-area">
           <label className="label-name">
             <span className="content-name">Email</span>
           </label>
-          <input type="email" name="email" required autocomplete="off" />
+          <input type="email" name="email" required autoComplete="off" />
         </div>
         <div className="input-area">
           <label className="label-name">
@@ -52,10 +52,10 @@ const Getintouch = () => (
             name="message"
             rows="5"
             required
-            autocomplete="off"
+            autoComplete="off"
           />
         </div>
-        <button class="btn" cta="Send" type="submit">
+        <button className="btn" cta="Send" type="submit">
           Send
         </button>
       </form>
