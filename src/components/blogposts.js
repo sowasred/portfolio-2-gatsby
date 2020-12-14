@@ -15,11 +15,11 @@ const Blogposts = () => (
     <div className="section-center blog-center">
       <div className="card">
         <div className="card-side card-front">
-          <Link to="/blog/jamstackvsmern">
+          <Link to="/blog/getintojamstack">
             <img src={Blogpost1Pic} alt="Jam Stack Blog Post" />
           </Link>
           <div className="card-info">
-            <h4>JAMStack vs MERN Stack</h4>
+            <h4>Get Into JAMStack</h4>
             <p style={{ fontSize: "0.85em", fontWeight: "700" }}>
               <time
                 style={{ marginRight: "0.5em" }}
