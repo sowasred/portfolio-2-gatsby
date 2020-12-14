@@ -15,7 +15,9 @@ const Blogposts = () => (
     <div className="section-center blog-center">
       <div className="card">
         <div className="card-side card-front">
-          <img src={Blogpost1Pic} alt="Jam Stack Blog Post" />
+          <Link to="/blog/jamstackvsmern">
+            <img src={Blogpost1Pic} alt="Jam Stack Blog Post" />
+          </Link>
           <div className="card-info">
             <h4>JAMStack vs MERN Stack</h4>
             <p style={{ fontSize: "0.85em", fontWeight: "700" }}>
@@ -44,16 +46,13 @@ const Blogposts = () => (
             </div>
           </div>
         </div>
-
-        {/* <div className="card-side card-back">
-          <Link to="/blog/jamstackvsmern">
-            <button className="btn">read more</button>
-          </Link>
-        </div> */}
       </div>
       <div className="card">
         <div className="card-side card-front">
-          <img src={Blogpost2Pic} alt="Jam Stack Blog Post" />
+          <Link to="/blog/arinbusiness">
+            {" "}
+            <img src={Blogpost2Pic} alt="Jam Stack Blog Post" />
+          </Link>
           <div className="card-info">
             <h4>Augmented Reality Usage in Businesses</h4>
             <p style={{ fontSize: "0.85em", fontWeight: "700" }}>
@@ -74,20 +73,14 @@ const Blogposts = () => (
               read
             </p>
             <p>
-              AR can help the customers in making right decision about the size
-              and style of new furniture they are planning to buy.
+              AR can be extremely helpful for the customers in terms of making
+              right decision.
             </p>
             <div className="card-footer">
               <Link to="/blog/arinbusiness">Read Full Article</Link>
             </div>
           </div>
         </div>
-
-        {/* <div className="card-side card-back">
-          <Link to="/blog/jamstackvsmern">
-            <button className="btn">read more</button>
-          </Link>
-        </div> */}
       </div>
     </div>
   </section>

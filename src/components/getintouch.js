@@ -20,8 +20,8 @@ const Getintouch = () => (
         <div className="underline"></div>
       </div>
       <p className="video-text">
-        If you like my work and want to connect, do not hesitate! I'll be glad
-        to help you.
+        If you like my work and want to connect, do not hesitate! <br></br>I'll
+        be glad to help you.
       </p>
       <form
         name="contact"
