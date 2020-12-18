@@ -41,3 +41,5 @@ As all of us knows well, that the internet is the best place for home buyers and
 AR can help you in making right decision about the size and style of new furniture you are planning to buy or trying to buy. Moreover, anyone can see that how that particular furniture will look in room. The most common example of this AR use is the Swedish retail giant IKEA and its IKEA Place AR application.
 
 ![Interior Design AR](../images/wall.jpg)
+
+[More Detail](https://teamar.ca/ "More Detail")

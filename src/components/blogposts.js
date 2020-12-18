@@ -33,7 +33,7 @@ const Blogposts = () => (
                   color: "#85144b",
                 }}
               >
-                - 2 min
+                - 3 min
               </span>
               read
             </p>
@@ -68,7 +68,7 @@ const Blogposts = () => (
                   color: "#85144b",
                 }}
               >
-                - 5 min
+                - 4 min
               </span>
               read
             </p>
