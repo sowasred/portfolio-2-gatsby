@@ -1,5 +1,5 @@
 ---
-slug: "/blog/arinbusiness"
+slug: "/blog/no"
 date: "2020-11-20"
 title: "Add React Animation on State Transition"
 ---

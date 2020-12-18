@@ -26,6 +26,7 @@ As mentioned, JAMStack is a modern way of building websites & apps. Let's breakd
 <span style="color:black">**APIs:**</span> All server-side and database actions that are part of any regular web stack transformed into reusable APIs. These APIs are accesed by JavaScript using HTTPS and they might be custom built or a 3rd party SaaS.
 
 <span style="color:black">**Markup:**</span> This is basically templates of web pages and all content is pulled from APIs gathered together by static site generator at a [build time](https://www.gatsbyjs.com/docs/overview-of-the-gatsby-build-process/) and static files generated.
+![Traditional vs JamStack workflow](../images/traditional-jam-workflow.png)
 
 ### Pros
 
@@ -49,5 +50,16 @@ that can be served anywhere. Scaling is a matter of serving those
 files somewhere else or via CDNs.
 
 ### Cons
+
+There are two major disadvantanges of JAMstack which should be considered before choosing your technology stack and architecture.
+
+#### JAMstack is not suitable if you have daily multiple updates
+
+In JAMstack environment update means basically rebuilt of the static files (HTML, CSS, JS). Built time corelated with scale of application and this will lead to time consuming built time for especially large scale applications. Thus, this technology has a down side if you frequently update your content in your database. Also another down side is changing templates which requires a developer to make all changes in your template files inside of your application.
+
+#### JAMstack is dependent of third party APIs
+
+Third party APIs are in the nature of Jamstack and they're being used for bringing lots functionalities such as [authentication](https://auth0.com/), [media storage](https://cloudinary.com/) and etc.
+Even having these services in your application means consistentency and security for your environment, being dependent on third party system might have some downsides as well. For instance in case of any third party api/system goes down, there is nothing to do rather than waiting for the third party service to fix the problem.
 
 [More Detail](https://buttercms.com/blog/jamstack-vs-mean-vs-lamp-your-guide-to-picking-one "More Detail")
