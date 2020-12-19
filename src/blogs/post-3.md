@@ -1,7 +1,7 @@
 ---
 slug: "/blog/sqlvsnosql"
 date: "2020-12-18"
-title: "SQL vs NoSQL"
+title: "Which Database Best Fit For You?"
 ---
 
 When you start a new project, "How are you going to store the data?" is one of the main questions. To answer this, we should evaluate our project in terms of data structure, scale, query complexity, and schema flexibility. So I'll explain how each factor works for SQL and NoSQL databases and clarify the decision algorithm for this task at the end of this article.
@@ -12,7 +12,7 @@ When you start a new project, "How are you going to store the data?" is one of t
 <p style="text-align:center;">Retrieved from <a href="https://www.geeksforgeeks.org" target="_blank">GeeksforGeeks<a></p>
 </div>
 
-#### SQL and NoSQL Data Structures
+### SQL and NoSQL Data Structures
 
 SQL stands for "Structured Querry Language" which means storing data by well-structured tables and these tables connected with relations. These relations are provided by a bunch of keys such as primary&foreign keys. When we query the data, we sometimes use these relations and the keys as well.
 

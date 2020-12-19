@@ -36,7 +36,7 @@ const Blogposts = () => (
         slug="/blog/arinbusiness"
       />
       <Blogpostcard
-        title="SQL vs NoSQL"
+        title="Which Database Best Fit For You?"
         description="When you start a new project, How are you going to store the data? is one of the main questions. To answer this, read this article."
         img={Blogpost3Pic}
         date="2020-12-18"
