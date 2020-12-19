@@ -68,11 +68,11 @@ const AboutContent = () => (
           <h4 className="timeline-title">Front-end Developer | 2019 – 2020</h4>
           <p className="item-text">
             Thanks to my React knowledge in web application development helped
-            me to get into Avetti Commerce as a front-end developer just after
-            graduation. Working internationally with cross-functional teams has
-            contributed significantly to my coding and organizational skills. It
-            was a great experience in terms of being part of multiple projects
-            that I'm proud of most.
+            me to get into Avetti Commerce as a front-end developer. Working
+            internationally with cross-functional teams has contributed
+            significantly to my coding and organizational skills. It was a great
+            experience in terms of being part of multiple projects that I'm
+            proud of most.
           </p>
           <span className="number">5</span>
         </article>
