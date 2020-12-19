@@ -6,13 +6,20 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-google-fonts`,
+      resolve: `gatsby-transformer-remark`,
       options: {
-        fonts: [
-          `limelight`,
-          `Recursive light \:300,400,400i,700`, // you can also specify font weights and styles
+        plugins: [
+          {
+            resolve: `gatsby-remark-classes`,
+            options: {
+              classMap: {
+                "heading[depth=1]": "text-2xl",
+                "heading[depth=2]": "text-xl",
+                paragraph: "text-base",
+              },
+            },
+          },
         ],
-        display: "swap",
       },
     },
     {
@@ -65,6 +72,16 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `limelight`,
+          `Recursive light \:300,400,400i,700`, // you can also specify font weights and styles
+        ],
+        display: "swap",
+      },
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         excerpt_separator: `<!-- end -->`,
@@ -74,7 +91,6 @@ module.exports = {
             options: {
               maxWidth: 700,
               linkImagesToOriginal: false,
-              wrapperStyle: "margin:5vh 5vh !important",
             },
           },
         ],

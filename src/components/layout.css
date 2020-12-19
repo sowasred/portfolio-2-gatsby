@@ -111,7 +111,14 @@ p {
   font-size: 1.1em;
   font-weight: 700;
 }
-@media screen and (max-width: 768px) {
+@media all and (max-width: 768px) {
+  video {
+    display: none;
+  }
+  .connect {
+    margin: 0 !important;
+    padding: 0;
+  }
   .nav-logo {
     width: 50%;
   }

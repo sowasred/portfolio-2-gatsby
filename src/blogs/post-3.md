@@ -1,43 +1,85 @@
 ---
-slug: "/blog/no"
-date: "2020-11-20"
-title: "Add React Animation on State Transition"
+slug: "/blog/sqlvsnosql"
+date: "2020-12-18"
+title: "SQL vs NoSQL"
 ---
 
-You are buying a shirt and trying a couple of shirts to determine which one is more suitable for you. Or visit the Porto apartments you want to rent this summer. Or, if you are buying a new chair on the digital market, and you want to see how it looks in the living room. These are all possible solutions that we may encounter in one place or another. Now imagine that you can do this comfortably at home without having to visit any of these places. What are the gains? AR and VR applications.
+When you start a new project, "How are you going to store the data?" is one of the main questions. To answer this, we should evaluate our project in terms of data structure, scale, query complexity, and schema flexibility. So I'll explain how each factor works for SQL and NoSQL databases and clarify the decision algorithm for this task at the end of this article.
 
-![Hologram AR](../images/hologram23.png)
+<div>
+<img style="height:30px !important;" src="../images/sqlnosql.png" alt="SQL vs NOSQL"
+	title="SQL vs NOSQL"/>
+<p style="text-align:center;">Retrieved from <a href="https://www.geeksforgeeks.org" target="_blank">GeeksforGeeks<a></p>
+</div>
 
-Augmented reality (AR) and virtual reality (VR) are twin technologies that are trending this year. From the opening ceremony of the Olympic Games to the Consumer Electronics Show (CES) in Las Vegas last month, tech giants such as Facebook, Google, Lenovo and HTC showed off their equipment. It is foreseeable that Amazon intends to join this game, and there are rumors that it will explore AR, and Samsung is also developing products.
-AR and VR merge the boundary between the physical world and the digital world. They allow new ways to interact with users, fellows and the world around us. Most of us don’t know a much difference between AR and VR. Both these technologies have huge market potential and is only in the early stages of unlocking.
+#### SQL and NoSQL Data Structures
 
-### AR Market Expansion
+SQL stands for "Structured Querry Language" which means storing data by well-structured tables and these tables connected with relations. These relations are provided by a bunch of keys such as primary&foreign keys. When we query the data, we sometimes use these relations and the keys as well.
 
-According to Digi-Capital's basic " Augmented/Virtual Reality Report Q2 2015", the AR/VR market will expand to USD 150 billion by 2020. In addition, augmented reality has the largest share of the USD 120 billion.
-The latest market research provided by Juniper Research shows that the enterprise and industrial markets will seize a market share of US$2.4 billion in 2019. Compared with 2014's $247 million, the gap between the two is very impressive!
+When it comes to NoSQL(Not only SQL), there is tons of flexibility and dynamism with data. However, there is no relation at all between collections (basically tables in SQL). These collections consist of data objects(JSON or BSON objects) and, they remind more dynamic versions of table fields in SQL.
 
-### Uses of Augmented Reality
+<div>
+<img style="height:30px !important;" src="../images/datastrutres.jpg" alt="SQL vs NOSQL Data Structres"
+	title="SQL vs NOSQL Data Structres"  />
+<p style="text-align:center;">Retrieved from <a href="https://www.thorntech.com" target="_blank">Thorntech<a></p>
+</div>
 
-AR will change the Business experience completely in every aspect, like from the way of investment to the way of selling. In AR based business you have to invest more in you AR-enabled APP and then you will sell on that app.
-Augmented reality is applicable to various industries. Following are the most interesting industries.
+### Scalability Of SQL and NoSQL Databases
 
-#### 1. Education and Training
+SQL and NoSQL databases scale differently, so you're going to have to understand " How your data set is going to expand in the future? ".
 
-Bringing augmented reality technology into the classroom can make education more attractive and interactive, and even make the most boring subjects interesting. If students can download and access the apps on the phones, then they can get more detailed information about the things that they never understand. For example, if the students of Intermediate are taught on AR gadgets, then they can see how the Mitosis and miosis occurs and how the water flows inside the plant etc. The MBBS students can try their first surgery without harming the patient, and future astronauts can prepare for the next space flight.
-![Education AR](../images/edu.jpg)
+SQL databases scale vertically, meaning that to scale the database, you'll need to increase the capacity of a single server (increasing the CPU, RAM, or SSD). To preserve the integrity of the data, SQL databases have been built to operate on a single server, so they are not easy to scale.
 
-#### 2. Retail
+NoSQL databases expand horizontally, which ensures that more servers can be added to power the growing database. This is a huge advantage NoSQL has over SQL in terms of large scale applications.
 
-In the retail industry, there are countless opportunities for augmented reality. There can be two possibilities one is in-store experience and the other is out-of-store experience. In the in-store experience the customers will use the AR technology within the walls of store. This can be a virtual fitting room which is going to help the customers determining the size or color of the product. Out-of-store experience means that your customers can experience it without having to leave home. Just like Converse's Sampler app, it allows customers to try on a pair of sneakers to choose their favorite models. eBay Inc. recently announced that it is developing AR toolkits to make shopping more fun and efficient. For example, it will allow the seller to choose the appropriate box size for the product by overlaying the image of the box on the product.
-![Retail AR](../images/retail.jpg)
+### Query Complexity & Schema Flexibility
 
-#### 3. Real Estate
+The next thing to consider is how much your information will be queried, how easily you need to run queries, and who is responsible for running these queries.
 
-As all of us knows well, that the internet is the best place for home buyers and renters to find a home according to their choice, so AR has a lot of benefits in real estate business. Using AR buyers can explore homes by just sitting on their Couche, filter out the houses they like and dislike, and save a lot of their time. AR is also very useful for construction workers. They can provide vivid blueprints and Animated video to make them clear about the design of their building.
-![Real Estate AR](../images/real.jpg)
+Since your information is nicely structured and ordered, complex queries are often used in a SQL database.
 
-#### 4. Interior Design
+SQL is a popular language for programming that has been around for more than 45 years, so it is highly mature and well-known. It effectively executes queries and rapidly retrieves and edits data. It's very light and declarative, so it's very easy to understand. Cause of having "Structured Query Syntax", it also less differs trough out different database engines.
 
-AR can help you in making right decision about the size and style of new furniture you are planning to buy or trying to buy. Moreover, anyone can see that how that particular furniture will look in room. The most common example of this AR use is the Swedish retail giant IKEA and its IKEA Place AR application.
+On the other hand, NoSQL databases have complex unstructured data schemas, and data is stored in several ways: they can be column-oriented, document-oriented, graph-based, or organized as a key -value store.
 
-![Interior Design AR](../images/wall.jpg)
+<span style="color:black">_You do not need to define their structre and you can grow your structre as you go_</span>
+
+<span style="color:black">_Each document can have its own unique structure_</span>
+
+<span style="color:black">_There is no standard for syntax_</span>
+
+### When You Should Go With SQL
+
+As mentioned above, SQL databases are the perfect match for applications such as customer relationship management tools, accounting software, and e-commerce platforms that are transaction-oriented. Each row is a separate entity (e.g. a client) in a SQL database, and each column is an attribute that defines that entity (e.g. address, job title, item purchased, etc.).
+
+Due to these distinct, structured relationships in a table between rows and columns, when you need ACID compliance, SQL databases are best. ACID stands for:
+
+<span style="color:black">**Atomicity:**</span> – each transaction either succeeds completely or is fully rolled back.</br>
+<span style="color:black">**Consistency:**</span> – data written to a database must be valid according to all defined rules.</br>
+<span style="color:black">**Isolation:**</span> – When transactions are run concurrently, they do not contend with each other, and act as if they were being run sequentially.</br>
+<span style="color:black">**Durability:**</span> – Once a transaction has been committed to the database, it is considered permanent, even in the event of a system failure.</br>
+
+ACID compliance protects the integrity of your records, this is crucial for transactions required databases. SQL database provides us precise columns and rows with perfect synchronization. This will prevent mistakes and ensures transaction validity.
+
+If your data is well organized and ACID compliance is a must, a SQL database is a solution for your project.
+
+### What's NoSQL Best For
+
+A NoSQL database is a much better fit for storing information that would not fit neatly into a table, such as an article content, social media messages, sensor data, and other forms of unstructured data. With simplicity and scalability in mind, NoSQL databases have been constructed and adopt the BASE consistency model, which means:
+
+<span style="color:black">**Basic Availability:** </span>This means even database database ensures the availability of the data, you may not able access data, in case of a changing or inconsistent data structre.</br>
+
+<span style="color:black">**Soft State:** </span>The state of the database can change over time.</b
+
+<span style="color:black">**Eventual Consistency:** </span>Eventually, the database will become consistent, and at some stage in the future, data will spread everywhere.</br>
+
+The most important factor in deciding whether to use a SQL or NoSQL database is the architecture of your data, so before making a decision, it should be considered.
+
+<span style="color:gray;">_Just for heads up, There are also some NoSQL databases that are ACID compliant. You can read more about [here](https://blog.yugabyte.com/6-signs-you-might-be-misunderstanding-acid-transactions-in-distributed-databases/)._<span>
+
+#### Resources
+
+- [MongoDB vs. MySQL](https://dzone.com/articles/comparing-mongodb-amp-mysql)
+- [SQL vs NoSQL – What’s the best option for your database needs?](https://www.thorntech.com/2019/03/sql-vs-nosql/)
+- [SQL vs NoSQL: Which one is better to use?](https://www.geeksforgeeks.org/sql-vs-nosql-which-one-is-better-to-use/)
+- [SQL vs NoSQL: 5 Critical Differences](https://www.xplenty.com/blog/the-sql-vs-nosql-difference/)

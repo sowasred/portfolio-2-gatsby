@@ -1,7 +1,10 @@
 import { Link } from "gatsby"
 import React from "react"
+import Blogpostcard from "../components/blogpostcard"
+
 import Blogpost1Pic from "../images/jam.png"
 import Blogpost2Pic from "../images/wall.jpg"
+import Blogpost3Pic from "../images/sqlnosql.png"
 
 import Blogpost1Pic1 from "../images/hero-img-small.jpg"
 
@@ -13,75 +16,33 @@ const Blogposts = () => (
     </div>
 
     <div className="section-center blog-center">
-      <div className="card">
-        <div className="card-side card-front">
-          <Link to="/blog/getintojamstack">
-            <img src={Blogpost1Pic} alt="Jam Stack Blog Post" />
-          </Link>
-          <div className="card-info">
-            <h4>Get Into JAMStack</h4>
-            <p style={{ fontSize: "0.85em", fontWeight: "700" }}>
-              <time
-                style={{ marginRight: "0.5em" }}
-                dateTime="2020-02-14 20:00"
-              >
-                2020-04-14
-              </time>
-              <span
-                style={{
-                  marginRight: "0.5em",
-                  color: "#85144b",
-                }}
-              >
-                - 3 min
-              </span>
-              read
-            </p>
-            <p>
-              When it comes to minimizing the time of load, nothing beats
-              pre-built files served over a CDN.
-            </p>
-            <div className="card-footer">
-              <Link to="/blog/jamstackvsmern">Read Full Article</Link>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="card">
-        <div className="card-side card-front">
-          <Link to="/blog/arinbusiness">
-            {" "}
-            <img src={Blogpost2Pic} alt="Jam Stack Blog Post" />
-          </Link>
-          <div className="card-info">
-            <h4>Augmented Reality Usage in Businesses</h4>
-            <p style={{ fontSize: "0.85em", fontWeight: "700" }}>
-              <time
-                style={{ marginRight: "0.5em" }}
-                dateTime="2020-02-14 20:00"
-              >
-                2020-06-16
-              </time>
-              <span
-                style={{
-                  marginRight: "0.5em",
-                  color: "#85144b",
-                }}
-              >
-                - 4 min
-              </span>
-              read
-            </p>
-            <p>
-              AR can be extremely helpful for the customers in terms of making
-              right decision.
-            </p>
-            <div className="card-footer">
-              <Link to="/blog/arinbusiness">Read Full Article</Link>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Blogpostcard
+        title="Get Into JAMStack"
+        description="When it comes to minimizing the time of load, nothing beats
+              pre-built files served over a CDN."
+        img={Blogpost1Pic}
+        date="2020-04-14"
+        minutes="3"
+        slug="/blog/jamstackvsmern"
+      />
+
+      <Blogpostcard
+        title="Augmented Reality Usage in Businesses"
+        description="AR can be extremely helpful for the customers in terms of making
+              right decision."
+        img={Blogpost2Pic}
+        date="2020-06-16"
+        minutes="4"
+        slug="/blog/arinbusiness"
+      />
+      <Blogpostcard
+        title="SQL vs NoSQL"
+        description="When you start a new project, How are you going to store the data? is one of the main questions. To answer this, read this article."
+        img={Blogpost3Pic}
+        date="2020-12-18"
+        minutes="6"
+        slug="/blog/sqlvsnosql"
+      />
     </div>
   </section>
 )
