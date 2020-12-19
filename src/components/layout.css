@@ -111,6 +111,13 @@ p {
   font-size: 1.1em;
   font-weight: 700;
 }
+.timeline-title {
+  font-size: 1em !important;
+  padding: 0.5em 0;
+  font-weight: 600;
+  color: gray;
+}
+
 @media all and (max-width: 768px) {
   video {
     display: none;
