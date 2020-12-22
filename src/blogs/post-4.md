@@ -25,9 +25,9 @@ As time passes by new technologies are coming up with more flexible solutions an
 So there is a modern alternative type of CMS for these legacy systems, it's not coupled to the presentation layer(head) and for this reason, it's called headless CMS. A headless CMS is a Content Management System that allows you and members to manage and write content, and then access it across all your application using an API.
 
 <div>
-<img  src="../images/head.jpg" alt="Headless CMS"
-	title="Headless CMS"  />
-<p style="text-align:center;">Retrieved from <a style="font-style:italic;" href="https://strapi.io/wordpress-alternative" target="_blank">Are you looking for an alternative to WordPress?<a></p>
+<img  src="../images/ss.png" alt="CMS Structures"
+	title="CMS Structures"  />
+<p style="text-align:center;">Retrieved from <a style="font-style:italic;" href="https://strapi.io/blog/10-reasons-headless-cms" target="_blank">10 reasons to use a headless CMS<a></p>
 </div>
 
 In headless CMS, you can control the presentation layer with whichever technology you choose for the desired project goals.
