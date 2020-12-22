@@ -9,7 +9,7 @@ When you start a new project, "How are you going to store the data?" is one of t
 <div>
 <img style="height:30px !important;" src="../images/sqlnosql.png" alt="SQL vs NOSQL"
 	title="SQL vs NOSQL"/>
-<p style="text-align:center;">Retrieved from <a href="https://www.geeksforgeeks.org" target="_blank">GeeksforGeeks<a></p>
+<p style="text-align:center;">Retrieved from <a style="font-style:italic;" href="https://www.geeksforgeeks.org" target="_blank">GeeksforGeeks<a></p>
 </div>
 
 ### SQL and NoSQL Data Structures
@@ -21,7 +21,7 @@ When it comes to NoSQL(Not only SQL), there is tons of flexibility and dynamism 
 <div>
 <img style="height:30px !important;" src="../images/datastrutres.jpg" alt="SQL vs NOSQL Data Structres"
 	title="SQL vs NOSQL Data Structres"  />
-<p style="text-align:center;">Retrieved from <a href="https://www.thorntech.com" target="_blank">Thorntech<a></p>
+<p style="text-align:center;">Retrieved from <a style="font-style:italic;" href="https://www.thorntech.com" target="_blank">Thorntech<a></p>
 </div>
 
 ### Scalability Of SQL and NoSQL Databases

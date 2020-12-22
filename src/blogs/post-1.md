@@ -54,4 +54,6 @@ In the JAMstack environment, the update means rebuilt of the static files (HTML,
 Third-party APIs are part of Jamstack and they're being used for bringing lots of functionalities such as [authentication](https://auth0.com/), [media storage](https://cloudinary.com/), etc.
 Even having these services in your application means consistency and security for your environment. However, being dependent on a third party system might have some downsides as well. For instance, in case of any down third party API/system, there is nothing to do rather than waiting for the third party service to fix the problem.
 
-[More Detail](https://buttercms.com/blog/jamstack-vs-mean-vs-lamp-your-guide-to-picking-one "More Detail")
+#### Resources
+
+- [JAMStack vs MEAN vs LAMP: Your Guide to Picking One](https://buttercms.com/blog/jamstack-vs-mean-vs-lamp-your-guide-to-picking-one)

@@ -43,7 +43,7 @@ Even though I have a decent familiarity with the WordPress environment, I wouldn
 <div>
 <img  src="../images/strapi-img.png" alt="Strapi Headless CMS"
 	title="Strapi Headless CMS"  />
-<p style="text-align:center;">Retrieved from <a href="https://strapi.io/" target="_blank">Strapi<a></p>
+<p style="text-align:center;">Retrieved from <a style="font-style:italic;" href="https://strapi.io/" target="_blank">Strapi<a></p>
 </div>
 
 #### Strapi is fast
