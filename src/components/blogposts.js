@@ -50,7 +50,7 @@ const Blogposts = () => (
         img={Blogpost1Pic}
         date="2020-04-14"
         minutes="3"
-        slug="/blog/jamstackvsmern"
+        slug="/blog/getintojamstack"
       />
     </div>
   </section>
