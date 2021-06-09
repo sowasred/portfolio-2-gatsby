@@ -2,6 +2,9 @@
 slug: "/blog/arinbusiness"
 date: "2020-06-16"
 title: "Augmented Reality Usage in Businesses"
+readTime: "4 min"
+cardText: "AR can be extremely helpful for the customers in terms of making right decision."
+image: "../images/wall.jpg"
 ---
 
 You are buying a shirt and trying a couple of shirts to determine which one is more suitable for you. Or visit the Porto apartments you want to rent this summer. Or, if you are buying a new chair on the digital market, and you want to see how it looks in the living room. These are all possible solutions that we may encounter in one place or another. Now imagine that you can do this comfortably at home without having to visit any of these places. What are the gains? AR and VR applications.
@@ -42,4 +45,4 @@ AR can help you in making right decision about the size and style of new furnitu
 
 ![Interior Design AR](../images/wall.jpg)
 
-[More Detail](https://teamar.ca/ "More Detail")
+[More Detail](https://teamar.ca/)

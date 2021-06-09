@@ -1,4 +1,6 @@
 import React from "react"
+import { graphql } from "gatsby"
+
 
 import Layout from "../components/layout"
 import Image from "../components/image"
@@ -12,15 +14,43 @@ import Testimonials from "../components/testimonials"
 
 import "react-awesome-slider/dist/styles.css"
 
-const IndexPage = () => (
+
+
+const IndexPage = ({data}) => (
   <Layout>
     <SEO title="Home" />
     <Header />
     <Projects />
     <Testimonials />
     <Getintouch />
-    <Blogposts />
+    <Blogposts data={data} />
   </Layout>
 )
+
+export const query = graphql`
+query MyQuery {
+  allMarkdownRemark {
+    edges {
+      node {
+        frontmatter {
+          date
+          slug
+          title
+          readTime
+          cardText
+          image {
+            childImageSharp {
+              fluid {
+                src
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+`
+
 
 export default IndexPage

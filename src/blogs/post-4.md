@@ -2,6 +2,9 @@
 slug: "/blog/whystrapi"
 date: "2020-12-21"
 title: "Why Strapi CMS in 2021"
+readTime: "6 min"
+cardText: "There is a great chance that you might have heard headless CMS. In this article, I'm reasoning my favorite one."
+image: "../images/strapi-img.png"
 ---
 
 If you're a developer that using trending technologies for your front end like React, Vue, Angular or Gatsby, Next.Js, etc., then there is a chance that you might have heard the new CMS type called headless CMS.

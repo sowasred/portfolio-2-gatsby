@@ -1,18 +1,19 @@
 import React from "react"
 import { Link } from "gatsby"
 
-function Blogpostcard({ title, description, img, date, minutes, slug }) {
+function Blogpostcard({data}) {
+  console.log(data)
   return (
     <div className="card">
       <div className="card-side card-front">
-        <Link to={slug}>
-          <img src={img} alt={title} />
+        <Link to={data.frontmatter.slug}>
+          <img src={data.frontmatter.image.childImageSharp.fluid.src} alt={data.frontmatter.title} />
         </Link>
         <div className="card-info">
-          <h4>{title}</h4>
+          <h4>{data.frontmatter.title}</h4>
           <p style={{ fontSize: "0.85em", fontWeight: "700" }}>
-            <time style={{ marginRight: "0.5em" }} dateTime={date}>
-              {date}
+            <time style={{ marginRight: "0.5em" }} dateTime={data.frontmatter.date}>
+              {data.frontmatter.date}
             </time>
             <span
               style={{
@@ -20,13 +21,13 @@ function Blogpostcard({ title, description, img, date, minutes, slug }) {
                 color: "#85144b",
               }}
             >
-              - {minutes} min
+              - {data.frontmatter.minutes} min
             </span>
             read
           </p>
-          <p>{description}</p>
+          <p>{data.frontmatter.cardText}</p>
           <div className="card-footer">
-            <Link to={slug}>Read Full Article</Link>
+            <Link to={data.frontmatter.slug}>Read Full Article</Link>
           </div>
         </div>
       </div>

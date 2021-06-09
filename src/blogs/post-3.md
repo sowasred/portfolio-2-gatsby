@@ -2,6 +2,9 @@
 slug: "/blog/sqlvsnosql"
 date: "2020-12-18"
 title: "Which Database Best Fit For You?"
+readTime: "6 min"
+cardText: "When you start a new project, database choice is crtical, before making decision you'd better check this out."
+image: "../images/sqlnosql.png"
 ---
 
 When you start a new project, "How are you going to store the data?" is one of the main questions. To answer this, we should evaluate our project in terms of data structure, scale, query complexity, and schema flexibility. So I'll explain how each factor works for SQL and NoSQL databases and clarify the decision algorithm for this task at the end of this article.
