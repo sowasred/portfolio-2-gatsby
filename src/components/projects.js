@@ -126,8 +126,8 @@ const Projects = () => {
         activeItemIndex={activeItemIndex}
         numberOfCards={numberProjects}
         gutter={0}
-        leftChevron={<button id="left-but">{"<"}</button>}
-        rightChevron={<button id="right-but">{">"}</button>}
+        leftChevron={<button class="left-but">{"<"}</button>}
+        rightChevron={<button class="right-but">{">"}</button>}
         outsideChevron
         chevronWidth={chevronWidth}
       >
