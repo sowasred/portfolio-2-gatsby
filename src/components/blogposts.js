@@ -16,12 +16,11 @@ const Blogposts = ({data}) => {
         <ItemsCarousel
         requestToChangeActive={setActiveItemIndex}
         activeItemIndex={activeItemIndex}
-        numberOfCards={2}
+        numberOfCards={1}
         gutter={20}
         style={{ position: "relative" }}
-        leftChevron={<button class="left-but">{"<"}</button>}
-        rightChevron={<button class="right-but">{">"}</button>}
-        
+        leftChevron={<button class="left-but2">{"<"}</button>}
+        rightChevron={<button class="right-but2">{">"}</button>}
         chevronWidth={chevronWidth}
       >
 

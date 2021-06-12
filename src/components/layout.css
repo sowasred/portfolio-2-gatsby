@@ -119,6 +119,10 @@ p {
 }
 
 @media all and (max-width: 768px) {
+  .left-but2, .right-but2{
+    position: absolute;
+    top: -35px;
+  }
   video {
     display: none;
   }
@@ -875,7 +879,13 @@ p {
   border: 2px solid gray;
   background: transparent !important;
 }
-
+.left-but2,
+.right-but2 {
+  padding: 10px;
+  font-size: 2em;
+  background: transparent !important;
+  cursor: pointer;
+}
 @media screen and (min-width: 768px) {
   .projects-center {
     display: flex;

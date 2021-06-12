@@ -21,7 +21,7 @@ function Blogpostcard({data}) {
                 color: "#85144b",
               }}
             >
-              - {data.frontmatter.minutes} min
+              - {data.frontmatter.readTime} min
             </span>
             read
           </p>
