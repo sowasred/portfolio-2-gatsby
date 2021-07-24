@@ -48,22 +48,6 @@ const AboutContent = () => (
         </article>
 
         <article className="timeline-item">
-          <h4>GTA - Handyman </h4>
-          <h4 className="timeline-title">
-            Full Stack Developer(Co-op) | 2018 – 2019
-          </h4>
-          <p className="item-text">
-            After being familiar with the different fields in IT, I've started
-            in GTA - Handyman as a full stack developer co-op. It was an
-            excellent experience to work in this company as a co-op student.
-            I've tasted from coding to SEO, and I was even responsible for some
-            marketing tasks that allow me to see the bigger picture in a small
-            company environment.
-          </p>
-          <span className="number">4</span>
-        </article>
-
-        <article className="timeline-item">
           <h4>Avetti Commerce</h4>
           <h4 className="timeline-title">Front-end Developer | 2019 – 2020</h4>
           <p className="item-text">
@@ -74,23 +58,37 @@ const AboutContent = () => (
             experience in terms of being part of multiple projects that I'm
             proud of most.
           </p>
-          <span className="number">5</span>
+          <span className="number">4</span>
         </article>
 
         <article className="timeline-item">
-          <h4>Freelancer</h4>
+          <h4>teamAR</h4>
           <h4 className="timeline-title">
-            Web & Mobile Application Developer | 2020 - Present
+            Full Stack Developer | 2020 - 2021
           </h4>
           <p className="item-text">
             After all struggles and hard work, I'm ready and excited for
             valuable roles in the IT industry. I'm currently working
             independently as a freelancer.
           </p>
-          <a href="mailto:ozanmuldur@outlook.com" className="btn hero-btn">
-            hire me
-          </a>
 
+
+          <span className="number">5</span>
+        </article>
+        <article className="timeline-item">
+          <h4>ResortSuite</h4>
+          <h4 className="timeline-title">Full Stack Developer | 2021 - Current</h4>
+          <p className="item-text">
+            Thanks to my React knowledge in web application development helped
+            me to get into Avetti Commerce as a front-end developer. Working
+            internationally with cross-functional teams has contributed
+            significantly to my coding and organizational skills. It was a great
+            experience in terms of being part of multiple projects that I'm
+            proud of most.
+          </p>
+          <a href="mailto:ozanmuldur@outlook.com" className="btn hero-btn">
+            Contact Me
+          </a>
           <span className="number">6</span>
         </article>
       </div>

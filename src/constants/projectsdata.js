@@ -108,27 +108,27 @@ export default [
     tasks: ["Progressive Web App", "CMS Integration", "Design Implementations"],
     link: "https://teamar.ca",
   },
-  {
-    name: "GTA - Handyman",
-    background: Pr7,
-    collabtype: "Individual Work",
-    description:
-      "Company called GTA - Handyman are giving renovation services all around Toronto GTA. I've built their WordPress site by creating a new WordPress theme from scratch.",
-    techImages: [
-      { img: php, alt: "PHP" },
-      { img: wordpress, alt: "WordPress" },
-      { img: css, alt: "CMS" },
-    ],
-    tasks: [
-      "Theme Creation",
-      "Design Implementations",
-      "Search Engine Optimization",
-      "Search Engine Marketing",
-      "Email Marketing",
-      "Technical Support",
-    ],
-    link: "https://www.handymangta.ca/",
-  },
+  // {
+  //   name: "GTA - Handyman",
+  //   background: Pr7,
+  //   collabtype: "Individual Work",
+  //   description:
+  //     "Company called GTA - Handyman are giving renovation services all around Toronto GTA. I've built their WordPress site by creating a new WordPress theme from scratch.",
+  //   techImages: [
+  //     { img: php, alt: "PHP" },
+  //     { img: wordpress, alt: "WordPress" },
+  //     { img: css, alt: "CMS" },
+  //   ],
+  //   tasks: [
+  //     "Theme Creation",
+  //     "Design Implementations",
+  //     "Search Engine Optimization",
+  //     "Search Engine Marketing",
+  //     "Email Marketing",
+  //     "Technical Support",
+  //   ],
+  //   link: "https://www.handymangta.ca/",
+  // },
 
   // {
   //   name: "Tuber Support",

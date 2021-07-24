@@ -16,14 +16,12 @@ const Blogposts = ({data}) => {
         <ItemsCarousel
         requestToChangeActive={setActiveItemIndex}
         activeItemIndex={activeItemIndex}
-        numberOfCards={1}
-        gutter={20}
-        style={{ position: "relative" }}
+        numberOfCards={window.innerWidth <= 768 ? 1 : 3}
+        gutter={window.innerWidth <= 768 ? 0 : 20}
         leftChevron={<button class="left-but2">{"<"}</button>}
         rightChevron={<button class="right-but2">{">"}</button>}
         chevronWidth={chevronWidth}
       >
-
         {data.allMarkdownRemark.edges.map((el, i) => {
           return (
                   <Blogpostcard

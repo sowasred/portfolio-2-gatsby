@@ -31,8 +31,6 @@ const Projects = () => {
     "Node.js",
     "Gatsby.JS",
     "CMS",
-    "WordPress",
-    "PHP",
     "AWS",
     "Sass",
     "Photoshop",

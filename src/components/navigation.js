@@ -11,10 +11,8 @@ import Hamburger from "../images/hamburger.svg"
 import Close from "../images/close.svg"
 import MobileNavigation from "./mobilenavigation"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
-import Fb from "../images/fb.svg"
-import Tw from "../images/tw.svg"
-import Li from "../images/li.svg"
-import Gh from "../images/gh.svg"
+import gatsby from "../images/gatsby.png";
+
 
 import {
   motion,
@@ -77,7 +75,12 @@ const Navigation = () => {
             className="nav-btn fixed-top"
             id="nav-btn"
           >
-            <img src={Hamburger} className="fas fa-bars"></img>
+            <img style={{
+            height:"35px",
+            margin:"10px"
+            }} 
+            src={Hamburger} 
+            className="fas fa-bars logo"></img>
           </button>
           {showNav ? (
             <button
@@ -143,7 +146,7 @@ const Navigation = () => {
 
           <motion.li variants={item}>
             <AnchorLink
-              to="/#blog"
+              to="/blogposts"
               smooth={true}
               duration={500}
               style={{
@@ -199,7 +202,7 @@ const Navigation = () => {
               </li>
               <li onClick={toggleChecked}>
                 <AnchorLink
-                  to="/#blog"
+                  to="/blogposts"
                   style={{
                     textDecoration: `none`,
                   }}
@@ -227,44 +230,22 @@ const Navigation = () => {
                 </a>
               </li>
             </ul>
-            <ul className="social-icons">
-              <li>
-                <a
-                  target="_blank"
-                  href="https://www.facebook.com/muldurozan/"
-                  className="social-icon"
-                >
-                  <img src={Fb} className="fab fa-facebook"></img>
+            <div className="navfooter">
+              <p>
+                &copy; <span id="date">{new Date().getFullYear()}</span> Ozan Muldur. all rights reserved.
+              </p>
+              <p style={{ display: "flex", alignItems: "center",justifyContent:"center" }}>
+                Powered by{" "}
+                <a href="https://www.gatsbyjs.com/" target="_blank">
+                  <img
+                    className="gatsbyicon"
+                    style={{ maxHeight: "30px", marginLeft: "0.5em" }}
+                    src={gatsby}
+                  ></img>
                 </a>
-              </li>
-              <li>
-                <a
-                  target="_blank"
-                  href="https://www.linkedin.com/in/ozanm/"
-                  className="social-icon"
-                >
-                  <img src={Li} className="fab fa-facebook"></img>
-                </a>
-              </li>
-              <li>
-                <a
-                  target="_blank"
-                  href="https://twitter.com/ozanmuldur1"
-                  className="social-icon"
-                >
-                  <img src={Tw} className="fab fa-facebook"></img>
-                </a>
-              </li>
-              <li>
-                <a
-                  target="_blank"
-                  href="https://github.com/sowasred"
-                  className="social-icon"
-                >
-                  <img src={Gh} className="fab fa-facebook"></img>
-                </a>
-              </li>
-            </ul>
+              </p>
+            </div>
+
           </div>
         </aside>
       ) : null}

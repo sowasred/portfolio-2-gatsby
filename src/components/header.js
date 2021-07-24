@@ -6,6 +6,8 @@ import Li from "../images/li.svg"
 import Gh from "../images/gh.svg"
 import Pp from "../images/pp2.jpg"
 import Pin from "../images/pin2.svg"
+import { FiMail } from 'react-icons/fi';
+
 
 import {
   motion,
@@ -57,7 +59,7 @@ const Header = () => {
               style={{ x }}
               whileTap={{ scale: 1.2 }}
             >
-              Freelancer, Web & Mobile Application Developer
+              Full Stack Developer
             </motion.h4>
             <motion.div
               drag="x"
@@ -70,9 +72,10 @@ const Header = () => {
               ON, Canada
             </motion.div>
           </motion.div>
-          <motion.div animate={controls}>
-            <a href="mailto:ozanmuldur@outlook.com" className="btn hero-btn">
-              Hire Me
+          <motion.div className="mailwrap" animate={controls}>
+            <a href="mailto:ozanmuldur@outlook.com" className="mailbtn btn hero-btn">
+               Contact Me
+              <FiMail className="mailicon" />
             </a>
           </motion.div>
           <motion.ul
@@ -81,17 +84,17 @@ const Header = () => {
             variants={list}
             className="social-icons hero-icons"
           >
-            <motion.li variants={item}>
+            <motion.li whileHover={{ scale: 1.2, rotate: 270 }} variants={item}>
               <a target="_blank" href="https://www.facebook.com/muldurozan/">
                 <img className="social-icon" src={Fb} />
               </a>
             </motion.li>
-            <motion.li variants={item}>
+            <motion.li  whileHover={{ scale: 1.2, rotate: 270 }} variants={item}>
               <a target="_blank" href="https://www.linkedin.com/in/ozanm/">
                 <img className="social-icon" src={Li} />
               </a>
             </motion.li>
-            <motion.li variants={item}>
+            <motion.li  whileHover={{ scale: 1.2, rotate: 270 }} variants={item}>
               <a
                 target="_blank"
                 href="https://twitter.com/ozanmuldur1"
@@ -100,7 +103,7 @@ const Header = () => {
                 <img className="social-icon" src={Tw} />
               </a>
             </motion.li>
-            <motion.li variants={item}>
+            <motion.li  whileHover={{ scale: 1.2, rotate: 270 }} variants={item}>
               <a
                 target="_blank"
                 href="https://github.com/sowasred"

@@ -1,11 +1,10 @@
-import { Link } from "gatsby"
-import React from "react"
+import { Link } from "gatsby";
+import React from "react";
 
-import Fb from "../images/fb.svg"
-import Tw from "../images/tw.svg"
-import Li from "../images/li.svg"
-import Gh from "../images/gh.svg"
-import gatsby from "../images/gatsby.png"
+import { SiFacebook,SiLinkedin } from 'react-icons/si';
+import { VscTwitter, VscGithub } from 'react-icons/vsc';
+
+import gatsby from "../images/gatsby.png";
 
 const Footer = () => (
   <footer className="footer">
@@ -14,50 +13,52 @@ const Footer = () => (
         <a
           target="_blank"
           href="https://www.facebook.com/muldurozan/"
-          className="social-icon"
+          className="social-icon fb"
         >
-          <img src={Fb} className="fab fa-facebook"></img>
+          <SiFacebook />
         </a>
       </li>
       <li>
         <a
           target="_blank"
           href="https://www.linkedin.com/in/ozanm/"
-          className="social-icon"
+          className="social-icon linkedin"
         >
-          <img src={Li} className="fab fa-facebook"></img>
+          <SiLinkedin />
         </a>
       </li>
       <li>
         <a
           target="_blank"
           href="https://twitter.com/ozanmuldur1"
-          className="social-icon"
+          className="social-icon twitter"
         >
-          <img src={Tw} className="fab fa-facebook"></img>
+          <VscTwitter />
         </a>
       </li>
       <li>
         <a
           target="_blank"
           href="https://github.com/sowasred"
-          className="social-icon"
+          className="social-icon github"
         >
-          <img src={Gh} className="fab fa-facebook"></img>
+        <VscGithub />        
         </a>
       </li>
     </ul>
 
     <p>
-      &copy; <span id="date"></span> Ozan Muldur. all rights reserved.
+      &copy; <span id="date">{new Date().getFullYear()}</span> Ozan Muldur. all rights reserved.
     </p>
     <p style={{ display: "flex", alignItems: "center" }}>
       Powered by{" "}
-      <img
-        className="gatsbyicon"
-        style={{ maxHeight: "30px", marginLeft: "0.5em" }}
-        src={gatsby}
-      ></img>
+      <a href="https://www.gatsbyjs.com/" target="_blank">
+        <img
+          className="gatsbyicon"
+          style={{ maxHeight: "30px", marginLeft: "0.5em" }}
+          src={gatsby}
+        ></img>
+      </a>
     </p>
   </footer>
 )

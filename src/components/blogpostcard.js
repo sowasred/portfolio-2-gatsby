@@ -2,7 +2,6 @@ import React from "react"
 import { Link } from "gatsby"
 
 function Blogpostcard({data}) {
-  console.log(data)
   return (
     <div className="card">
       <div className="card-side card-front">
