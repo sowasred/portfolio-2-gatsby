@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import ItemsCarousel from "react-items-carousel"
 
 import Blogpostcard from "../components/blogpostcard"
@@ -6,6 +6,8 @@ const Blogposts = ({data}) => {
   const [activeItemIndex, setActiveItemIndex] = useState(0);
   const [mobileView, setMobileView] = useState(false)
   const chevronWidth = 100;
+
+  useEffect(() => {
   if (typeof window !== `undefined`) {
       if (window.innerWidth <= 768) {
         setMobileView(true);
@@ -13,6 +15,8 @@ const Blogposts = ({data}) => {
         setMobileView(false);
       }    
   }
+  }, [])
+
   return (
         <section id="blog" className="section blog">
         <div className="section-title">
