@@ -4,7 +4,15 @@ import ItemsCarousel from "react-items-carousel"
 import Blogpostcard from "../components/blogpostcard"
 const Blogposts = ({data}) => {
   const [activeItemIndex, setActiveItemIndex] = useState(0);
+  const [mobileView, setMobileView] = useState(false)
   const chevronWidth = 100;
+  if (typeof window !== `undefined`) {
+      if (window.innerWidth <= 768) {
+        setMobileView(true);
+      } else {
+        setMobileView(false);
+      }    
+  }
   return (
         <section id="blog" className="section blog">
         <div className="section-title">
@@ -16,8 +24,8 @@ const Blogposts = ({data}) => {
         <ItemsCarousel
         requestToChangeActive={setActiveItemIndex}
         activeItemIndex={activeItemIndex}
-        numberOfCards={window.innerWidth <= 768 ? 1 : 3}
-        gutter={window.innerWidth <= 768 ? 0 : 20}
+        numberOfCards={mobileView ? 1 : 3}
+        gutter={mobileView ? 0 : 20}
         leftChevron={<button class="left-but2">{"<"}</button>}
         rightChevron={<button class="right-but2">{">"}</button>}
         chevronWidth={chevronWidth}
