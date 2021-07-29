@@ -2,7 +2,7 @@
 slug: "/blog/whystrapi"
 date: "2020-12-21"
 title: "Why Strapi CMS in 2021"
-readTime: "6 min"
+readTime: "6"
 cardText: "There is a great chance that you might have heard headless CMS. In this article, I'm reasoning my favorite one."
 image: "../images/strapi-img.png"
 ---
@@ -57,7 +57,7 @@ From installation to using the admin panel, Strapi is always faster than using W
 
 If you're a real WordPress developer, you should have already experienced in digging into WordPress code and modifying some part to fit your project. In Strapi, there is no need for that kind of labor anymore, they've thought everything. There is also no need to get an external plugin to create our content structure as we do in WordPress with the "Advanced Custom Fields" plugin.
 
-Strapi gives us extreme flexibility with content relation features while we creating our content. Afterward, it handles the data storing in the database, also provides an interface to manage our content.
+Strapi gives us extreme flexibility with content relation features while we are creating our content. Afterward, it handles the data storing in the database, also provides an interface to manage our content.
 At the same time, our data exposed via API for authentication rules that we set.
 
 #### Strapi fully customizable

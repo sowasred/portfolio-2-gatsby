@@ -1,7 +1,5 @@
-import { Link } from "gatsby"
 import React from "react"
-import Blogpost1Pic from "../images/jam.png"
-import Blogpost1Pic1 from "../images/hero-img-small.jpg"
+
 
 const AboutContent = () => (
   <section className="section single-page">
@@ -30,9 +28,9 @@ const AboutContent = () => (
             When I started working in the field, I quickly figured out that it
             is fun and all, but it is not the sole job that I want to do for the
             rest of my life. In the meantime, I was coming across programming
-            videos on YouTube and even started to code along with some of them.
+            videos on YouTube and even started to code along with some of them.<br></br>
             After a week I was hooked on being able to create whatever I want in
-            terms of coding and this makes me dig into deep more and more...
+            terms of coding and this made me dig into deep more and more...
           </p>
           <span className="number">2</span>
         </article>
@@ -41,8 +39,7 @@ const AboutContent = () => (
           <h4 className="timeline-title">Computer Programmer | 2017 – 2019</h4>
           <p className="item-text">
             Those desires have led me to study abroad in Canada. It was a great
-            challenge but I've tackled it well and finished my program and my
-            co-op work terms on time.
+            challenge but I've tackled it well and finished the program on time.
           </p>
           <span className="number">3</span>
         </article>
@@ -67,24 +64,21 @@ const AboutContent = () => (
             Full Stack Developer | 2020 - 2021
           </h4>
           <p className="item-text">
-            After all struggles and hard work, I'm ready and excited for
-            valuable roles in the IT industry. I'm currently working
-            independently as a freelancer.
+            In terms of having my first full-stack position, teamAR was a great challenge 
+            and contribution to my career. <br></br> Working on Gatsby projects which are coupled 
+            bunch of different CMS solutions, taught me how tightly bonded data structures 
+            and the user interface is.
           </p>
-
-
           <span className="number">5</span>
         </article>
         <article className="timeline-item">
           <h4>ResortSuite</h4>
           <h4 className="timeline-title">Full Stack Developer | 2021 - Current</h4>
           <p className="item-text">
-            Thanks to my React knowledge in web application development helped
-            me to get into Avetti Commerce as a front-end developer. Working
-            internationally with cross-functional teams has contributed
-            significantly to my coding and organizational skills. It was a great
-            experience in terms of being part of multiple projects that I'm
-            proud of most.
+            In my current position I'm working on company's various hospitality managements 
+            softwares as a full-stack dev. Dealing with multiple projects based on different 
+            technology stacks has made me more versatile since I've started. I'm also grateful 
+            for being part of such a great team and culture in ResortSuite. 
           </p>
           <a href="mailto:ozanmuldur@outlook.com" className="btn hero-btn">
             Contact Me

@@ -2,7 +2,7 @@
 slug: "/blog/sqlvsnosql"
 date: "2020-12-18"
 title: "Which Database Best Fit For You?"
-readTime: "6 min"
+readTime: "6"
 cardText: "When you start a new project, database choice is crtical, before making decision you'd better check this out."
 image: "../images/sqlnosql.png"
 ---
@@ -45,11 +45,11 @@ SQL is a popular language for programming that has been around for more than 45 
 
 On the other hand, NoSQL databases have complex unstructured data schemas, and data is stored in several ways: they can be column-oriented, document-oriented, graph-based, or organized as a key -value store.
 
-<span style="color:black">_You do not need to define their structre and you can grow your structre as you go_</span>
+> <span style="color:black">_You do not need to define their structre and you can grow your structre as you go_</span>
 
-<span style="color:black">_Each document can have its own unique structure_</span>
+> <span style="color:black">_Each document can have its own unique structure_</span>
 
-<span style="color:black">_There is no standard for syntax_</span>
+> <span style="color:black">_There is no standard for syntax_</span>
 
 ### When You Should Go With SQL
 
@@ -70,9 +70,9 @@ If your data is well organized and ACID compliance is a must, a SQL database is 
 
 A NoSQL database is a much better fit for storing information that would not fit neatly into a table, such as an article content, social media messages, sensor data, and other forms of unstructured data. With simplicity and scalability in mind, NoSQL databases have been constructed and adopt the BASE consistency model, which means:
 
-<span style="color:black">**Basic Availability:** </span>This means even database database ensures the availability of the data, you may not able access data, in case of a changing or inconsistent data structre.</br>
+<span style="color:black">**Basic Availability:** </span>This means even database ensures the availability of the data, you may not able to access data, in case of a changing or inconsistent data structure.</br>
 
-<span style="color:black">**Soft State:** </span>The state of the database can change over time.</b
+<span style="color:black">**Soft State:** </span>The state of the database can change over time.</b>
 
 <span style="color:black">**Eventual Consistency:** </span>Eventually, the database will become consistent, and at some stage in the future, data will spread everywhere.</br>
 
