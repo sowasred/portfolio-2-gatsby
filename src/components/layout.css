@@ -120,6 +120,7 @@ p {
 .codeback{
   background-color: #1A1A1A;
   color: #1DA1F2;
+  font-weight: 700;
   padding: 20px;
 }
 
@@ -526,6 +527,16 @@ Hero
 }
 .blog-post-content ul:last-of-type{
   padding-bottom:6vh;
+}
+.blog-post-content a{
+  text-decoration: underline;
+  color: #0077b5;
+}
+.blog-post-content li{
+  padding: 5px 0;
+}
+.language-javascript{
+  display: flex;
 }
 /*
 =============== 
@@ -1321,6 +1332,7 @@ Blog
 .card-footer {
   position: absolute;
   bottom: 1em;
+  right:1em;
   display: grid;
   grid-template-columns: auto 1fr;
   -webkit-box-align: center;

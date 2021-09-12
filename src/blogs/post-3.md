@@ -1,5 +1,5 @@
 ---
-slug: "/blog/sqlvsnosql"
+slug: "/blog/sql-vs-nosql"
 date: "2020-12-18"
 title: "Which Database Best Fit For You?"
 readTime: "6"
@@ -10,9 +10,9 @@ image: "../images/sqlnosql.png"
 When you start a new project, "How are you going to store the data?" is one of the main questions. To answer this, we should evaluate our project in terms of data structure, scale, query complexity, and schema flexibility. So I'll explain how each factor works for SQL and NoSQL databases and clarify the decision algorithm for this task at the end of this article.
 
 <div>
-<img style="height:30px !important;" src="../images/sqlnosql.png" alt="SQL vs NOSQL"
-	title="SQL vs NOSQL"/>
-<p style="text-align:center;">Retrieved from <a style="font-style:italic;" href="https://www.geeksforgeeks.org" target="_blank">GeeksforGeeks<a></p>
+	<img style="height:30px !important;" src="../images/sqlnosql.png" alt="SQL vs NOSQL"
+		title="SQL vs NOSQL"/>
+	<p style="text-align:center;">Retrieved from <a style="font-style:italic;" href="https://www.geeksforgeeks.org" target="_blank">GeeksforGeeks<a></p>
 </div>
 
 ### SQL and NoSQL Data Structures

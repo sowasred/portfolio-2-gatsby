@@ -1,5 +1,5 @@
 ---
-slug: "/blog/angularvsreactvsvue"
+slug: "/blog/angular-vs-react-vs-vue"
 date: "2021-07-20"
 title: "Angular & React & Vue Comparison"
 readTime: "7"
@@ -12,9 +12,8 @@ I won't get into why you'd need such a framework in this article.
 Instead, I'd like to discuss how those frameworks and libraries relate, as well as which of the three you might want to use for your next project.
 
 <div>
-<img  src="../images/companies.png" alt="Front end library frameworks usage by companies"
-	title="Front end library frameworks usage by companies"  />
-<p style="text-align:center;">Retrieved from <a style="font-style:italic;" href="https://dzone.com/articles/react-vs-angular-vs-vue-the-complete-comparison-to" target="_blank">React vs. Angular vs. Vue: The Complete Comparison<a></p>
+  <img  src="../images/companies.png" alt="Front end library frameworks usage by companies" title="Front end library frameworks usage by companies"  />
+  <p style="text-align:center;">Retrieved from <a style="font-style:italic;" href="https://dzone.com/articles/react-vs-angular-vs-vue-the-complete-comparison-to" target="_blank">React vs. Angular vs. Vue: The Complete Comparison<a></p>
 </div>
 
 ## How to Decide

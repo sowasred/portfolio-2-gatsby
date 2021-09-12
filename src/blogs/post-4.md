@@ -1,5 +1,5 @@
 ---
-slug: "/blog/whystrapi"
+slug: "/blog/why-strapi-cms"
 date: "2020-12-21"
 title: "Why Strapi CMS in 2021"
 readTime: "6"

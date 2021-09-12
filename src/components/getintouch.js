@@ -1,4 +1,3 @@
-import { Link } from "gatsby"
 import React from "react"
 import Vid from "../images/video1.mp4"
 
@@ -32,8 +31,8 @@ const Getintouch = () => (
       >
         <input type="hidden" name="form-name" value="contact" />
         <div className="input-area">
-          <label className="label-name">
-            <span className="content-name">Name</span>
+          <label htmlFor="contentName" className="label-name">
+            <span id="contentName" className="content-name">Name</span>
           </label>
           <input type="text" name="name" required autoComplete="off" />
         </div>

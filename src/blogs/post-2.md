@@ -1,5 +1,5 @@
 ---
-slug: "/blog/getintojamstack"
+slug: "/blog/get-into-jamstack"
 date: "2020-06-16"
 title: "Get Into JAMStack"
 readTime: "3"
@@ -9,11 +9,15 @@ image: "../images/jam.png"
 
 ### JAMStack / JavaScript, APIs, and Markup
 
-Developers are making tons of decisions while developing applications. Selecting the web stack according to your application needs are one of the critical decisions. While some developers stick with traditional web stacks, some of them exploring the new ways to make future application efficient, fast and cost-effective.
+Developers are making tons of decisions while developing applications. Selecting the web stack according to your application needs is one of the critical decisions. While some developers stick with traditional web stacks, some of them exploring the new ways to make future application efficient, fast and cost-effective.
 
 JAMStack is one of the trending technologies that simplify the development process and meanwhile giving fast and secure Progressive Web Application as a product. The most popular three main frameworks for JAMStack applications according to GitHub as follows, [Next.js](https://nextjs.org/), [HUGO](https://gohugo.io/) and [Gatsby](https://www.gatsbyjs.com/).
 
-![Jam stack](../images/jam1.png)
+<div>
+<img style="height:30px !important;" src="../images/jam1.png" alt="Jam stack"
+	title="Jam stack"/>
+<p style="text-align:center;">Retrieved from <a style="font-style:italic;" href="https://github.com/ningo-agilityio/jam-stack" target="_blank">Content Management with Contentful, Gatsby and Netlify<a></p>
+</div>
 
 ### WHY and WHEN JAMStack?
 
@@ -24,7 +28,12 @@ As mentioned, JAMStack is a modern way of building websites & apps. Let's breakd
 <span style="color:black">**APIs:**</span> All server-side and database actions that are part of any regular web stack transformed into reusable APIs. These APIs are accessed by JavaScript using HTTPS. They might be custom-built or a 3rd party SaaS such as headless CMS.
 
 <span style="color:black">**Markup:**</span> These are templates of web pages and all content pulled from third party APIs gathered together by a static site generator at a [build time](https://www.gatsbyjs.com/docs/overview-of-the-gatsby-build-process/) and static files generated.
-![Traditional vs JamStack workflow](../images/traditional-jam-workflow.png)
+
+<div>
+    <img style="height:30px !important;" src="../images/traditional-jam-workflow.png" alt="Traditional vs JamStack workflow"
+        title="Traditional vs JamStack workflow"/>
+    <p style="text-align:center;">Retrieved from <a style="font-style:italic;" href="https://snipcart.com/blog/jamstack" target="_blank">New to Jamstack? Everything You Need to Know to Get Started<a></p>
+</div>
 
 ### Pros
 

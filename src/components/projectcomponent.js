@@ -1,5 +1,4 @@
-import { Link } from "gatsby"
-import React, { useState, useEffect } from "react"
+import React from "react"
 
 const ProjectComponent = item => {
   return (

@@ -109,7 +109,6 @@ const Navigation = () => {
           <motion.li variants={item}>
             <AnchorLink
               to="/#home"
-              smooth="true"
               duration={500}
               style={{
                 textDecoration: `none`,
@@ -122,7 +121,6 @@ const Navigation = () => {
             {" "}
             <AnchorLink
               to="/#projects"
-              smooth={true}
               duration={500}
               style={{
                 textDecoration: `none`,
@@ -134,7 +132,6 @@ const Navigation = () => {
           <motion.li variants={item}>
             <AnchorLink
               to="/#contact"
-              smooth={true}
               duration={500}
               style={{
                 textDecoration: `none`,
@@ -147,7 +144,6 @@ const Navigation = () => {
           <motion.li variants={item}>
             <AnchorLink
               to="/blogposts"
-              smooth={true}
               duration={500}
               style={{
                 textDecoration: `none`,
@@ -159,7 +155,6 @@ const Navigation = () => {
           <motion.li variants={item}>
             <Link
               to="/about"
-              smooth={true}
               duration={500}
               style={{
                 textDecoration: `none`,

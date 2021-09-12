@@ -1,4 +1,3 @@
-import { Link } from "gatsby";
 import React from "react";
 
 import { SiFacebook,SiLinkedin } from 'react-icons/si';
@@ -57,6 +56,7 @@ const Footer = () => (
           className="gatsbyicon"
           style={{ maxHeight: "30px", marginLeft: "0.5em" }}
           src={gatsby}
+          alt="Gatsby Official Site"
         ></img>
       </a>
     </p>

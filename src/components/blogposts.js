@@ -30,8 +30,8 @@ const Blogposts = ({data}) => {
         activeItemIndex={activeItemIndex}
         numberOfCards={mobileView ? 1 : 3}
         gutter={mobileView ? 0 : 20}
-        leftChevron={<button class="left-but2">{"<"}</button>}
-        rightChevron={<button class="right-but2">{">"}</button>}
+        leftChevron={<button className="left-but2">{"<"}</button>}
+        rightChevron={<button className="right-but2">{">"}</button>}
         chevronWidth={chevronWidth}
       >
         {data.allMarkdownRemark.edges.map((el, i) => {
