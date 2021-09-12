@@ -47,7 +47,7 @@ const Footer = () => (
     </ul>
 
     <p>
-      &copy; <span id="date">{new Date().getFullYear()}</span> Ozan Muldur. all rights reserved.
+      &copy; <span id="date">{new Date().getFullYear()}</span> Ozan Muldur all rights reserved.
     </p>
     <p style={{ display: "flex", alignItems: "center" }}>
       Powered by{" "}
