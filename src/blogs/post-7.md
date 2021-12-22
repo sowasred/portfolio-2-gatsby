@@ -20,7 +20,7 @@ And in this blog post, I'll summarize how I approached the project in terms of S
 ## SEO Best Practices
 
 Before getting our feet dirty with Strapi, we should refresh our memories about SEO best practices.
-The major purpose of SEO is to improve the ranking of a website/web application in search engine listings. \
+The major purpose of SEO is to improve the ranking of a website/web application in search engine listings.
 
 This can be done using various SEO aspects strategically. So when you want to create content for your website, you must take into account these:
 
@@ -48,7 +48,7 @@ The most important tags are:
     <p style="text-align:center;">Strapi SEO Component</p>
 </div>
 
-As you can see picture above, all the metadata fields are created in the SEO component in Stapi, such as metaTitle, metaDescription and the keywords. preventIndexing boolean field is also used for Robots attribute in the project.
+As you can see picture above, all the metadata fields are created in the SEO component in Stapi, such as metaTitle, metaDescription and the keywords. preventIndexing boolean field is also used for Robots metadata in the project. We set this field to true if we want that particular page indexed by search engines.
 
 Cause of this SEO component used for every collection type that'll render new page in the application, it makes everything very flexible and effective in terms of SEO.
 
