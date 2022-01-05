@@ -3,7 +3,7 @@ slug: "/blog/strapi-seo-best-practices"
 date: "2021-11-07"
 title: "Strapi SEO Best Practices"
 readTime: "4"
-cardText: "Strapi is the beast when it comes to the headless CMS, I've managed Search Engine Optimization of our new web application without getting into a hardship of coding."
+cardText: "Strapi is the beast when it comes to the headless CMS, let me show you how easy was creating a Search Engine Optimized web application witht it."
 image: "../images/seostrapi.png"
 ---
 
