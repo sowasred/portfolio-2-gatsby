@@ -92,7 +92,7 @@ It is possible to construct a slug based on the name of your content using Strap
 
 ### 5. Additional Customized Stuff
 
-f you paid attention to some other fields that we have in SEO component such as favicon, logo, and published date are not needed for SEO purposes. We've added those fields to cover some cases that we needed throughout the application. 
+If you paid attention to some other fields that we have in SEO component such as favicon, logo, and published date are not needed for SEO purposes. We've added those fields to cover some cases that we needed throughout the application. 
 
 You might need some or you might need completely something different, also making those fields required another developer preference. 
 
