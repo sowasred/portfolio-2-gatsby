@@ -26,7 +26,7 @@ function Blogpostcard({data}) {
           </p>
           <p>{data.frontmatter.cardText}</p>
           <div className="card-footer">
-            <Link to={data.frontmatter.slug}>Read Full Article</Link>
+            <Link to={data.frontmatter.slug}>Read Article</Link>
           </div>
         </div>
       </div>
