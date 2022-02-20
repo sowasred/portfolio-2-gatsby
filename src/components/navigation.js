@@ -57,11 +57,11 @@ const Navigation = () => {
       if (window.pageYOffset > 80) {
         navbar.classList.add("navbar-fixed")
         if (window.innerWidth > 768) {
-          resume.classList.remove("resume")
+          // resume.classList.remove("resume")
         }
       } else {
         navbar.classList.remove("navbar-fixed")
-        resume.classList.add("resume")
+        // resume.classList.add("resume")
       }
     })
   }

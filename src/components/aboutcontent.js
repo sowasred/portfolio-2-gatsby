@@ -46,7 +46,7 @@ const AboutContent = () => (
 
         <article className="timeline-item">
           <h4>Avetti Commerce</h4>
-          <h4 className="timeline-title">Front-end Developer | 2019 – 2020</h4>
+          <h4 className="timeline-title">Front-end Developer | 2019 – 2021</h4>
           <p className="item-text">
             Thanks to my React knowledge in web application development helped
             me to get into Avetti Commerce as a front-end developer. Working
@@ -57,20 +57,7 @@ const AboutContent = () => (
           </p>
           <span className="number">4</span>
         </article>
-
-        <article className="timeline-item">
-          <h4>teamAR</h4>
-          <h4 className="timeline-title">
-            Full Stack Developer | 2020 - 2021
-          </h4>
-          <p className="item-text">
-            In terms of having my first full-stack position, teamAR was a great challenge 
-            and contribution to my career. <br></br> Working on Gatsby projects which are coupled 
-            bunch of different CMS solutions, taught me how tightly bonded data structures 
-            and the user interface is.
-          </p>
-          <span className="number">5</span>
-        </article>
+        
         <article className="timeline-item">
           <h4>ResortSuite</h4>
           <h4 className="timeline-title">Full Stack Developer | 2021 - Current</h4>
@@ -83,7 +70,7 @@ const AboutContent = () => (
           <a href="mailto:ozanmuldur@outlook.com" className="btn hero-btn">
             Contact Me
           </a>
-          <span className="number">6</span>
+          <span className="number">5</span>
         </article>
       </div>
     </div>

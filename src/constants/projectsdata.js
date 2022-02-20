@@ -80,20 +80,20 @@ export default [
     ],
     link: "https://demob2b3shop.avetti.io/",
   },
-  {
-    name: "teamAR",
-    background: Pr4,
-    collabtype: "Collabrative Work",
-    description:
-      "teamAR is an Augmented Reality startup from Vancouver. They needed slick and simple design for their future customers and as a development team we provided what they're looking for.",
-    techImages: [
-      { img: gatsbyimg, alt: "Gatsby.JS" },
-      { img: nodejs, alt: "Node.js" },
-      { img: strapi, alt: "CMS" },
-      { img: sass, alt: "Sass" },
-      { img: pp, alt: "Photoshop" },
-    ],
-    tasks: ["Progressive Web App", "CMS Integration", "Design Implementations"],
-    link: "https://teamar.ca",
-  }
+  // {
+  //   name: "teamAR",
+  //   background: Pr4,
+  //   collabtype: "Collabrative Work",
+  //   description:
+  //     "teamAR is an Augmented Reality startup from Vancouver. They needed slick and simple design for their future customers and as a development team we provided what they're looking for.",
+  //   techImages: [
+  //     { img: gatsbyimg, alt: "Gatsby.JS" },
+  //     { img: nodejs, alt: "Node.js" },
+  //     { img: strapi, alt: "CMS" },
+  //     { img: sass, alt: "Sass" },
+  //     { img: pp, alt: "Photoshop" },
+  //   ],
+  //   tasks: ["Progressive Web App", "CMS Integration", "Design Implementations"],
+  //   link: "https://teamar.ca",
+  // }
 ]

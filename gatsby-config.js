@@ -39,7 +39,7 @@ module.exports = {
         defer: false,
         // Any additional optional fields
         sampleRate: 5,
-        siteSpeedSampleRate: 10,
+        siteSpeedSampleRate: 10,  
         cookieDomain: "ozanmuldur.com",
       },
     },
