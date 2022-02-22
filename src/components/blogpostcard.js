@@ -19,7 +19,7 @@ function Blogpostcard({ data }) {
               style={{ marginRight: "0.5em" }}
               dateTime={data.frontmatter.date}
             >
-              {data.frontmatter.date}
+              {data.frontmatter.humanDate}
             </time>
             <span
               style={{
@@ -27,7 +27,7 @@ function Blogpostcard({ data }) {
                 color: "#85144b",
               }}
             >
-              - {data.frontmatter.readTime} min
+              - {Math.ceil(data.wordCount.words / 200)} min
             </span>
             read
           </p>

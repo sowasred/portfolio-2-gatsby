@@ -1,8 +1,8 @@
 ---
 slug: "/blog/sql-vs-nosql"
 date: "2020-12-18"
+humanDate: "December 18, 2020"
 title: "Which Database Best Fit For You?"
-readTime: "6"
 cardText: "When you start a new project, database choice is crtical, before making decision you'd better check this out."
 image: "../images/sqlnosql.png"
 ---

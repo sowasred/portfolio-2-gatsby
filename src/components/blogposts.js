@@ -25,14 +25,27 @@ const Blogposts = ({ data }) => {
         <div className="underline"></div>
       </div>
 
-      <div style={{ padding: "0 60px", maxWidth: 1200, margin: "0 auto" }}>
+      <div
+        className="carouselWrapper"
+        style={{ padding: "0 60px", maxWidth: 1200, margin: "0 auto" }}
+      >
         <ItemsCarousel
           requestToChangeActive={setActiveItemIndex}
           activeItemIndex={activeItemIndex}
           numberOfCards={mobileView ? 1 : 3}
           gutter={mobileView ? 0 : 20}
-          leftChevron={<FaArrowAltCircleLeft className="arrowCarousel" />}
-          rightChevron={<FaArrowAltCircleRight className="arrowCarousel" />}
+          leftChevron={
+            <FaArrowAltCircleLeft
+              style={{ marginLeft: "20px" }}
+              className="arrowCarousel left"
+            />
+          }
+          rightChevron={
+            <FaArrowAltCircleRight
+              style={{ marginRight: "20px" }}
+              className="arrowCarousel right"
+            />
+          }
           chevronWidth={chevronWidth}
           outsideChevron
         >

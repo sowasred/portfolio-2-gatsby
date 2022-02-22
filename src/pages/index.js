@@ -29,11 +29,16 @@ export const query = graphql`
     allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
       edges {
         node {
+          wordCount {
+            paragraphs
+            sentences
+            words
+          }
           frontmatter {
             date
+            humanDate
             slug
             title
-            readTime
             cardText
             image {
               childImageSharp {

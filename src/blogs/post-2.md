@@ -1,8 +1,8 @@
 ---
 slug: "/blog/get-into-jamstack"
 date: "2020-06-16"
+humanDate: "June 16, 2020"
 title: "Get Into JAMStack"
-readTime: "3"
 cardText: "When it comes to minimizing the time of load, nothing beats pre-built files served over a CDN."
 image: "../images/jam.png"
 ---

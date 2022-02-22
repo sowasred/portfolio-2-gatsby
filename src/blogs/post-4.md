@@ -1,8 +1,8 @@
 ---
 slug: "/blog/why-strapi-cms"
 date: "2020-12-21"
+humanDate: "December 21, 2020"
 title: "Why Strapi CMS in 2021"
-readTime: "6"
 cardText: "There is a great chance that you might have heard headless CMS. In this article, I'm reasoning my favorite one."
 image: "../images/strapi-img.png"
 ---

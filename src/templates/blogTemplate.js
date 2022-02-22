@@ -11,6 +11,7 @@ export default function Template({
       <section className="section single-page">
         <div className="section-title">
           <h1>{frontmatter.title}</h1>
+          <span className="postDate">{frontmatter.humanDate}</span>
           <div className="underline"></div>
         </div>
         <div className="section-center">
@@ -19,34 +20,6 @@ export default function Template({
               className="blog-post-content"
               dangerouslySetInnerHTML={{ __html: html }}
             />
-            <div
-              style={{ position: "absolute", right: "0vw", bottom: "0vh" }}
-              className="blog-footer"
-            >
-              <p
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  fontSize: "0.85em",
-                  fontWeight: "700",
-                }}
-              >
-                <time
-                  style={{ marginRight: "0.5em" }}
-                  dateTime="2020-02-14 20:00"
-                >
-                  {frontmatter.date}
-                </time>
-                <span
-                  style={{
-                    marginRight: "0.5em",
-                    color: "#85144b",
-                  }}
-                >
-                  Ozan Muldur
-                </span>
-              </p>
-            </div>
           </article>
         </div>
       </section>
@@ -58,7 +31,8 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
+        date
+        humanDate
         slug
         title
       }

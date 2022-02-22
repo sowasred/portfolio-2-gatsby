@@ -128,13 +128,13 @@ const Projects = () => {
           leftChevron={
             <FaArrowAltCircleLeft
               style={{ marginLeft: "20px" }}
-              className="arrowCarousel"
+              className="arrowCarousel left"
             />
           }
           rightChevron={
             <FaArrowAltCircleRight
               style={{ marginRight: "20px" }}
-              className="arrowCarousel"
+              className="arrowCarousel right"
             />
           }
         >
