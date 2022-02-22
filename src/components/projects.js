@@ -14,6 +14,7 @@ import {
   useMotionValue,
   useTransform,
 } from "framer-motion"
+import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa"
 
 const Projects = () => {
   const [activeProjects, setActiveProjects] = useState([])
@@ -32,8 +33,6 @@ const Projects = () => {
     "Gatsby.JS",
     "CMS",
     "AWS",
-    "Sass",
-    "Photoshop",
   ]
   const selectTech = e => {
     let name = e.target.innerText
@@ -47,35 +46,27 @@ const Projects = () => {
   }
 
   useEffect(() => {
-    let newarr = []
-
     if (selectedProjects.length == 0) {
       setActiveProjects(projectsdata)
     } else if (selectedProjects.length > 0) {
-      projectsdata.forEach(item => {
-        const found = item.techImages.some(
-          r => selectedProjects.indexOf(r.alt) >= 0
-        )
-        if (found && selectedProjects.length == 1) {
-          newarr = [...newarr, item]
-          setActiveProjects(newarr)
-        } else if (found && selectedProjects.length > 1) {
-          newarr = [...newarr, item]
-          setActiveProjects(newarr)
-        }
+      console.log(selectedProjects)
+      let filteredProjects = projectsdata.filter(project => {
+        let exist = project.techImages.some(el => {
+          return selectedProjects.includes(el.alt)
+        })
+        return exist
       })
+      setActiveProjects(filteredProjects)
     }
 
     if (window != undefined) {
       let windowsize = window.innerWidth
       if (windowsize < 768) {
         setNumberProjects(1)
-      } else if (windowsize <= 991) {
-        setNumberProjects(2)
-      } else if (windowsize <= 1440) {
+      } else if (windowsize <= 1800) {
         setNumberProjects(2)
       } else {
-        setNumberProjects(3)
+        setNumberProjects(2)
       }
     }
   }, [selectedProjects])
@@ -87,13 +78,16 @@ const Projects = () => {
           <h2>Projects</h2>
           <div className="underline"></div>
           <p className="projects-text">
-            Filter the projects according to technologies.
+            Checkout the project that I've been part of.
+          </p>
+          <p className="projects-text">
+            You can also filter the projects according to used technologies.
             {activeProjects.length === projectsdata.length
-              ? ` Total  ${activeProjects.length} Projects Showing`
-              : ` Total ${activeProjects.length} Projects Showing`}
+              ? ` There are total  ${activeProjects.length} projects exists.`
+              : ` Total ${activeProjects.length} projects found from ${projectsdata.length} projects.`}
           </p>
           <div className="techwrapper">
-            {technologies.map(item => (
+            {technologies.map((item, i) => (
               <span
                 className={
                   selectedProjects.includes(item)
@@ -102,6 +96,7 @@ const Projects = () => {
                 }
                 onClick={e => selectTech(e)}
                 value={item}
+                key={i}
               >
                 {item}
               </span>
@@ -118,21 +113,36 @@ const Projects = () => {
           }}
         ></span>
       </section>
-      <ItemsCarousel
-        style={{ position: "relative" }}
-        requestToChangeActive={setActiveItemIndex}
-        activeItemIndex={activeItemIndex}
-        numberOfCards={numberProjects}
-        gutter={0}
-        leftChevron={<button className="left-but">{"<"}</button>}
-        rightChevron={<button className="right-but">{">"}</button>}
-        outsideChevron
-        chevronWidth={chevronWidth}
+      <div
+        className="carouselWrapper"
+        style={{ padding: "0 60px", maxWidth: 1200, margin: "0 auto" }}
       >
-        {activeProjects.map(item => (
-          <ProjectComponent item={item} />
-        ))}
-      </ItemsCarousel>
+        <ItemsCarousel
+          style={{ position: "relative" }}
+          requestToChangeActive={setActiveItemIndex}
+          activeItemIndex={activeItemIndex}
+          numberOfCards={numberProjects}
+          gutter={60}
+          chevronWidth={chevronWidth}
+          outsideChevron
+          leftChevron={
+            <FaArrowAltCircleLeft
+              style={{ marginLeft: "20px" }}
+              className="arrowCarousel"
+            />
+          }
+          rightChevron={
+            <FaArrowAltCircleRight
+              style={{ marginRight: "20px" }}
+              className="arrowCarousel"
+            />
+          }
+        >
+          {activeProjects.map((item, i) => (
+            <ProjectComponent key={i} item={item} />
+          ))}
+        </ItemsCarousel>
+      </div>
     </React.Fragment>
   )
 }

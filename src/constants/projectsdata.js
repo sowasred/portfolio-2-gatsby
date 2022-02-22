@@ -13,12 +13,12 @@ import nodejs from "../images/nodejs.png"
 import figma from "../images/figma.png"
 import strapi from "../images/strapi.png"
 import material from "../images/material.png"
+import bootstrap from "../images/bootstrap.png"
 
-import Pr1 from "../images/balodana12.png"
-import Pr2 from "../images/avettipic12.png"
+import Pr1 from "../images/screenshotbaladona2.png"
+import Pr2 from "../images/screenshotdemob2bc.png"
 import Pr4 from "../images/teamarnew.png"
-import Pr5 from "../images/dkmob12.png"
-
+import Pr5 from "../images/screenshotdiamondcart.png"
 
 export default [
   {
@@ -31,8 +31,11 @@ export default [
       { img: javascript, alt: "JavaScript" },
       { img: npm, alt: "npm" },
       { img: react, alt: "React" },
-      { img: redux, alt: "CMS" },
+      { img: redux, alt: "redux" },
+      { img: strapi, alt: "CMS" },
       { img: aws, alt: "AWS" },
+      { img: figma, alt: "figma" },
+      { img: material, alt: "material ui" },
       { img: git, alt: "git Version Control" },
     ],
     tasks: [
@@ -43,21 +46,6 @@ export default [
       "CMS Integration",
     ],
     link: "https://www.balodana.com/",
-  },
-  {
-    name: "THE DIAMOND STORE",
-    background: Pr5,
-    collabtype: "Collabrative Work",
-    description:
-      "Jewelry manufacturer from India converted their front-end technology from Java-Spring to React for sake of speed and reliability.",
-    techImages: [
-      { img: react, alt: "React" },
-      { img: material, alt: "material ui" },
-      { img: sass, alt: "Sass" },
-      { img: figma, alt: "figma" },
-    ],
-    tasks: ["Design Implemantations", "Facets Functionality"],
-    link: "https://www.thediamondkart.com/",
   },
   {
     name: "Avetti Demo Marketplace",
@@ -79,6 +67,25 @@ export default [
       "Wish List Feature Building",
     ],
     link: "https://demob2b3shop.avetti.io/",
+  },
+  {
+    name: "THE DIAMOND STORE",
+    background: Pr5,
+    collabtype: "Collabrative Work",
+    description:
+      "Jewelry manufacturer from India converted their front-end technology from Java-Spring to React for sake of speed and reliability.",
+    techImages: [
+      { img: javascript, alt: "JavaScript" },
+      { img: npm, alt: "npm" },
+      { img: react, alt: "React" },
+      { img: redux, alt: "redux" },
+      { img: bootstrap, alt: "bootstrap" },
+      { img: sass, alt: "Sass" },
+      { img: figma, alt: "figma" },
+      { img: git, alt: "git Version Control" },
+    ],
+    tasks: ["Design Implemantations", "Facets Functionality"],
+    link: "https://www.thediamondkart.com/",
   },
   // {
   //   name: "teamAR",

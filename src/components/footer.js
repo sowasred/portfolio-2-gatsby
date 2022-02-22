@@ -1,14 +1,14 @@
-import React from "react";
+import React from "react"
 
-import { SiFacebook,SiLinkedin } from 'react-icons/si';
-import { VscTwitter, VscGithub } from 'react-icons/vsc';
+import { SiFacebook, SiLinkedin } from "react-icons/si"
+import { VscTwitter, VscGithub } from "react-icons/vsc"
 
-import gatsby from "../images/gatsby.png";
+import gatsby from "../images/gatsby.png"
 
 const Footer = () => (
   <footer className="footer">
     <ul className="social-icons">
-      <li>
+      {/* <li>
         <a
           target="_blank"
           href="https://www.facebook.com/muldurozan/"
@@ -16,7 +16,7 @@ const Footer = () => (
         >
           <SiFacebook />
         </a>
-      </li>
+      </li> */}
       <li>
         <a
           target="_blank"
@@ -26,7 +26,7 @@ const Footer = () => (
           <SiLinkedin />
         </a>
       </li>
-      <li>
+      {/* <li>
         <a
           target="_blank"
           href="https://twitter.com/ozanmuldur1"
@@ -34,20 +34,21 @@ const Footer = () => (
         >
           <VscTwitter />
         </a>
-      </li>
+      </li> */}
       <li>
         <a
           target="_blank"
           href="https://github.com/sowasred"
           className="social-icon github"
         >
-        <VscGithub />        
+          <VscGithub />
         </a>
       </li>
     </ul>
 
     <p>
-      &copy; <span id="date">{new Date().getFullYear()}</span> Ozan Muldur all rights reserved.
+      &copy; <span id="date">{new Date().getFullYear()}</span> Ozan Muldur all
+      rights reserved.
     </p>
     <p style={{ display: "flex", alignItems: "center" }}>
       Powered by{" "}

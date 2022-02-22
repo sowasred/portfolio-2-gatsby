@@ -84,17 +84,17 @@ const Header = () => {
             variants={list}
             className="social-icons hero-icons"
           >
-            <motion.li whileHover={{ scale: 1.2, rotate: 270 }} variants={item}>
+            {/* <motion.li whileHover={{ scale: 1.2, rotate: 270 }} variants={item}>
               <a target="_blank" href="https://www.facebook.com/muldurozan/">
                 <img className="social-icon" src={Fb} />
               </a>
-            </motion.li>
+            </motion.li> */}
             <motion.li  whileHover={{ scale: 1.2, rotate: 270 }} variants={item}>
               <a target="_blank" href="https://www.linkedin.com/in/ozanm/">
                 <img className="social-icon" src={Li} />
               </a>
             </motion.li>
-            <motion.li  whileHover={{ scale: 1.2, rotate: 270 }} variants={item}>
+            {/* <motion.li  whileHover={{ scale: 1.2, rotate: 270 }} variants={item}>
               <a
                 target="_blank"
                 href="https://twitter.com/ozanmuldur1"
@@ -102,7 +102,7 @@ const Header = () => {
               >
                 <img className="social-icon" src={Tw} />
               </a>
-            </motion.li>
+            </motion.li> */}
             <motion.li  whileHover={{ scale: 1.2, rotate: 270 }} variants={item}>
               <a
                 target="_blank"

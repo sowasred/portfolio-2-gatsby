@@ -1,31 +1,23 @@
 import React from "react"
+import { FaLongArrowAltRight } from "react-icons/fa"
 
 const ProjectComponent = item => {
   return (
     <div className="project">
-      <img
-        src={item.item.background}
-        alt="single project"
-        className="project-img"
-      />
-      <a
-        className="project-titlelink view-site"
-        target="_blank"
-        href={item.item.link}
-      >
-        {item.item.name}
-      </a>
-      <div className="project-info">
-        {/* <span className="project-type">{item.item.collabtype}</span> */}
-        {/* <div className="project-info-item"> */}
-        {/* <h5>Abstract</h5> */}
-        <p>{item.item.description}</p>
-        {/* </div> */}
-        <div className="project-info-item">
+      <a href={item.item.link} target="_blank">
+        <img
+          src={item.item.background}
+          alt="single project"
+          className="project-img"
+        />
+        <h4 className="projectTitle">{item.item.name}</h4>
+        <div className="texhnologiesWrapper">
+          <p>{item.item.description}</p>
           <h5>Technologies</h5>
-          <div className="project-techs">
-            {item.item.techImages.map(techimg => (
+          <div className="techBadges">
+            {item.item.techImages.map((techimg, i) => (
               <img
+                key={i}
                 src={techimg.img}
                 data-tip={techimg.alt}
                 alt={techimg.alt}
@@ -33,16 +25,11 @@ const ProjectComponent = item => {
               />
             ))}
           </div>
+          <span className="checkLive">
+            Check the live site <FaLongArrowAltRight className="arrowCheck" />
+          </span>
         </div>
-        <div className="project-info-item extra-info">
-          <h5>Completed Tasks </h5>
-          <div className="project-task">
-            {item.item.tasks.map(txt => (
-              <span>{txt} &#10003;</span>
-            ))}
-          </div>
-        </div>
-      </div>
+      </a>
     </div>
   )
 }
