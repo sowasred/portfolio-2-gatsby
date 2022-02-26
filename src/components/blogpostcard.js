@@ -13,7 +13,9 @@ function Blogpostcard({ data }) {
           />
         </Link>
         <div className="card-info">
-          <h4>{data.frontmatter.title}</h4>
+          <Link to={data.frontmatter.slug}>
+            <h4>{data.frontmatter.title}</h4>
+          </Link>
           <p style={{ fontSize: "0.85em", fontWeight: "700" }}>
             <time
               style={{ marginRight: "0.5em" }}
