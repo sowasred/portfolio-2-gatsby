@@ -17,7 +17,7 @@ import strapi from "../images/strapi.png"
 import material from "../images/material.png"
 import bootstrap from "../images/bootstrap.png"
 
-import Pr1 from "../images/screenshotbaladona.png"
+import Pr1 from "../images/screenshotbaladon.png"
 import Pr2 from "../images/screenshotB2BC.png"
 import Pr4 from "../images/teamarnew.png"
 import Pr5 from "../images/screenshotdiamondcart.png"
