@@ -850,6 +850,10 @@ p {
   text-align: left;
   width: 100%;
 }
+.texhnologiesWrapper > p {
+  min-height: 100px;
+  margin-bottom: 0;
+}
 .project-img {
   -webkit-transition: var(--transition);
   transition: var(--transition);

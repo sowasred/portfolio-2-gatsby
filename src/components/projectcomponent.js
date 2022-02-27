@@ -20,6 +20,7 @@ const ProjectComponent = item => {
                 key={i}
                 src={techimg.img}
                 data-tip={techimg.alt}
+                title={techimg.alt}
                 alt={techimg.alt}
                 className="tech-item"
               />

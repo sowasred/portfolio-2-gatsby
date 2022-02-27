@@ -7,6 +7,8 @@ import javascript from "../images/javascript.png"
 import npm from "../images/npm.png"
 import webpack from "../images/webpack.png"
 import sass from "../images/sass.png"
+import jquery from "../images/jquery.png"
+import vue from "../images/vue.png"
 
 import gatsbyimg from "../images/gatsby.png"
 import nodejs from "../images/nodejs.png"
@@ -15,10 +17,12 @@ import strapi from "../images/strapi.png"
 import material from "../images/material.png"
 import bootstrap from "../images/bootstrap.png"
 
-import Pr1 from "../images/screenshotbaladona2.png"
-import Pr2 from "../images/screenshotdemob2bc.png"
+import Pr1 from "../images/screenshotbaladona11.png"
+import Pr2 from "../images/screenshotB2BC.png"
 import Pr4 from "../images/teamarnew.png"
 import Pr5 from "../images/screenshotdiamondcart.png"
+import Pr6 from "../images/screenshotDK.png"
+import Pr7 from "../images/screenshotFoxhills.png"
 
 export default [
   {
@@ -48,6 +52,27 @@ export default [
     link: "https://www.balodana.com/",
   },
   {
+    name: "Destination Kohler",
+    background: Pr6,
+    collabtype: "Collabrative Work",
+    description:
+      "Pack your bags! Use Destination Kohler's booking engine to find the perfect place for any occasion. This slick site offers a smooth user experience.",
+    techImages: [
+      { img: javascript, alt: "JavaScript" },
+      { img: jquery, alt: "jQuery" },
+      { img: vue, alt: "Vue.js" },
+      { img: nodejs, alt: "Node.js" },
+      { img: bootstrap, alt: "bootstrap" },
+      { img: git, alt: "git Version Control" },
+    ],
+    tasks: [
+      "Skinning the whole UI according to brand guidelines",
+      "Configured UI according to users' access restrictions",
+      "Developed custom features with respect to client needs",
+    ],
+    link: "https://reservations.destinationkohler.com/dk/",
+  },
+  {
     name: "Avetti Demo Marketplace",
     background: Pr2,
     collabtype: "Collabrative Work",
@@ -67,6 +92,29 @@ export default [
       "Wish List Feature Building",
     ],
     link: "https://demob2b3shop.avetti.io/",
+  },
+  {
+    name: "Foxhills",
+    background: Pr7,
+    collabtype: "Collabrative Work",
+    description:
+      "Is it any wonder Foxhills is one of the best resorts in Britain? Their booking engine has the same assertiveness for sure. Check it out for yourself.",
+    techImages: [
+      { img: javascript, alt: "JavaScript" },
+      { img: jquery, alt: "jQuery" },
+      { img: vue, alt: "Vue.js" },
+      { img: nodejs, alt: "Node.js" },
+      { img: bootstrap, alt: "bootstrap" },
+      { img: git, alt: "git Version Control" },
+    ],
+    tasks: [
+      "Site Search Functionality",
+      "Shopping Cart",
+      "Social Media Share",
+      "Single Sign-on Authentication",
+      "CMS Integration",
+    ],
+    link: "https://rsweb.foxhills.co.uk/#/",
   },
   {
     name: "THE DIAMOND STORE",

@@ -26,14 +26,7 @@ const Projects = () => {
 
   const chevronWidth = 100
 
-  let technologies = [
-    "React",
-    "JavaScript",
-    "Node.js",
-    "Gatsby.JS",
-    "CMS",
-    "AWS",
-  ]
+  let technologies = ["React", "Vue.js", "jQuery", "Node.js", "CMS", "AWS"]
   const selectTech = e => {
     let name = e.target.innerText
     let include = selectedProjects.includes(name)
