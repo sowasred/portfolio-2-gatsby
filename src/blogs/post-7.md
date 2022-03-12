@@ -20,7 +20,7 @@ And in this blog post, I'll summarize how I approached the project in terms of S
 ## SEO Best Practices
 
 Before getting our feet dirty with Strapi, we should refresh our memories about SEO best practices.
-The major purpose of SEO is to improve the ranking of a website/web application in search engine listings.
+The primary purpose of SEO is to improve the ranking of a website/web application in search engine listings.
 
 This can be done using various SEO aspects strategically. So when you want to create content for your website, you must take into account these:
 
@@ -36,7 +36,7 @@ This can be done using various SEO aspects strategically. So when you want to cr
 
 ### 1. Metadata
 
-Search engines place a high value on metadata. Metadata is not visible to users (except the title), but they assist search engines in determining the topic of your page.
+Search engines place a high value on metadata. Metadata is not visible to users (except the title), but they assist search engines in determining your page's topic.
 
 The most important tags are:
 
@@ -62,13 +62,13 @@ Cause of this SEO component used for every collection type that'll render new pa
 
 ### 2. Content Clustering
 
-Content clustering is an SEO approach that organises content around subjects into pillar and cluster pages to improve a website's structure and internal links.
+Content clustering is an SEO approach that organizes subjects into pillar and cluster pages to improve a website's structure and internal links.
 
-So that you may link your cluster content to your pillar page which will need to cover each of these themes in general. Each cluster's content can then elaborate on that issue.
+So that you may link your cluster content to your pillar page, which will need to cover each of these themes in general, each cluster's content can then elaborate on that issue.
 
-It can be clearly seen how blog pages are important in terms of content clustering for SEO.
+It can be seen how blog pages are essential in content clustering for SEO.
 
-We've created blog collection type in this example below and also included SEO component in this collection type.
+We've created a blog collection type in the example below and also included an SEO component in this collection type.
 
 <div>
     <img  src="../images/mainblog.jpg" alt="Strapi Blog Collection Type"
@@ -78,21 +78,21 @@ We've created blog collection type in this example below and also included SEO c
 
 ### 3. Organized and Structured Data
 
-Structured data is critical for SEO because it helps search engines in locating and comprehending your content and website.
+Structured data is critical for SEO because it helps search engines locate and comprehend your content and website.
 
-It's also a good approach to get ready for the future of search, as Google and other engines continue to personalize the user experience and answer questions right on their Search Engine Results Page.
+It's also an excellent approach to get ready for the future of search, as Google and other engines continue to personalize the user experience and answer questions right on their Search Engine Results Page.
 
-Organized and Structured Data is directly related to the language that you're using while creating your content. The main goal is your site markup should be universally as understandable as possible.
+Organized and Structured Data is directly related to the language you're using while creating your content. The main goal is your site markup should be universally as understandable as possible.
 
 ### 4. Url Construction
 
-For the search engines that will crawl your website, the URLs of your content are quite significant. It is critical to make use of it and while using be as descriptive as possible, that'll help dramatically SEO of your site.
+For the search engines that will crawl your website, the URLs of your content are pretty significant. It is critical to make use of it, and while using be as descriptive as possible, that'll help SEO of your site dramatically.
 
 #### Good Example ==> myrestaurant/menu/foods/spicy-calamari
 
 #### Bad Example ==> mysrestaurant/menu/foods/232453
 
-It is possible to construct a slug based on the name of your content using Strapi. We've created a slug inside the SEO component which is a short text field, it's required and must be unique while creating the content.
+It is possible to construct a slug based on the name of your content using Strapi. We've created a slug inside the SEO component, a short text field, and it's required and must be unique while creating the content.
 
 <div>
     <img  src="../images/strapislug.jpg" alt="Strapi SEO Component Slug Field"
@@ -104,11 +104,11 @@ It is possible to construct a slug based on the name of your content using Strap
 
 If you paid attention to some other fields that we have in SEO component such as favicon, logo, and published date are not needed for SEO purposes. We've added those fields to cover some cases that we needed throughout the application.
 
-You might need some or you might need completely something different, also making those fields required another developer preference.
+You might need some, or you might need something different entirely, also making those fields require another developer preference.
 
-As it's clearly seen Strapi makes everything easier in an organized matter, also you're writing literally zero lines of code.
+As seen, Strapi makes everything more accessible in an organized matter, and also, you're writing zero lines of code.
 
-However, I'd like to warn you about the major challenge of Strapi projects which is building well-structured components - content type architecture and content type relationships. Other than that, I don't think anything will prevent you to build your dream project.
+However, I'd like to warn you about the significant challenge of Strapi projects, which is building well-structured components - content type architecture and content type relationships. Other than that, I don't think anything will prevent you from building your dream project.
 
 #### Resources
 

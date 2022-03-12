@@ -3,7 +3,7 @@ slug: "/blog/angular-vs-react-vs-vue"
 date: "2021-07-20"
 humanDate: "July 20, 2021"
 title: "Angular & React & Vue Comparison"
-cardText: "In this post I've made a comparison about application life cycle of 3 trending UI library&frameworks."
+cardText: "In this post, I've made a comparison about the application life cycle of 3 trending UI library&frameworks."
 image: "../images/comparison1.png"
 ---
 
@@ -24,14 +24,14 @@ They all have advantages and disadvantages, and you can use either of the librar
 
 In this article, we’ll look at some strengths and weaknesses, as well as "what the market says.".
 
-But let me be clear right away: if you don't like a technology, you won't be able to work with it successfully!
-On the other hand, if you simply enjoy working with libraries, you will be able to get a lot out of them!
+But let me be clear right away: if you don't like technology, you won't be able to work with it successfully!
+On the other hand, if you enjoy working with libraries, you will get a lot out of them!
 
 ## First, some context
 
 Google created the Angular framework: Angular is also used internally by Google, so we won't see it go away overnight. It will be maintained and improved indefinitely.
-Facebook created the React library: Because Facebook uses React internally, we won't see it go away overnight. It will be maintained and improved indefinitely.
-Vue is a "standalone" project that was not created within a company. It used to be a one-man show (founded by Evan You), but those days are long gone. It now has a dedicated team of core contributors working on Vue.
+Facebook created the React library: Because Facebook uses React internally, we won't see it go away overnight, and it will be maintained and improved indefinitely.
+Vue is a "standalone" project not created within a company. It used to be a one-person show (founded by Evan You), but those days are long gone. It now has a dedicated team of core contributors working on Vue.
 
 ### Angular
 
@@ -41,29 +41,29 @@ Angular is fundamentally about creating reusable user interface components that 
 
 ### React
 
-Whereas Angular provides everything, React provides only one thing: a library for rendering content to the DOM and efficiently controlling it afterwards. It's also all about components and creating user interfaces from them. It also provides you with all of the "tools" you need to define what should be rendered in which way and under what conditions.
-However, it lacks built-in form validation support. It lacks a router (to render different components based on URL changes) and does not include its own HTTP client. It includes some state management support, but not for all scenarios.
+Whereas Angular provides everything, React provides only a library for rendering content to the DOM and efficiently controlling it afterward. It's also all about components and creating user interfaces, and it provides you with all of the "tools" you need to define what should be rendered in which way and under what conditions.
+However, it lacks built-in form validation support. It lacks a router (to render different components based on URL changes) and does not include its HTTP client. It consists of some state management support, but not for all scenarios.
 
 ### Vue
 
 Vue is a framework that sits somewhere between React and Angular.
-It isn't as "big" as Angular, but it has far more features than React.
+It isn't as "big" as Angular, but it has more features than React.
 Vue does include built-in state management as well as a router.
 However, it does not include form validation or HTTP client functionality.
-Vue, like Angular and React, is all about creating user interfaces by combining reusable components.
+Like Angular and React, Vue is all about creating user interfaces by combining reusable components.
 Beyond that, it provides a little more than React and a little less than Angular.
 
 > <span style="color:black">_Note: I’ve used the term "framework" even though React.js is technically a "library"_</span>
 
 ## Let’s Get into Code
 
-You've seen how the frameworks are conceptually similar. Let's take a look at their technical aspects now.
+You've seen how the frameworks are conceptually similar, and let's take a look at their technical aspects now.
 
 ### Angular
 
 Components are referred to as directives in Angular.
-Directives are simply DOM element markers that Angular can track and associate with specific behavior.
-As a result, Angular separates the UI part of components as HTML tag attributes and their behaviors as JavaScript code.
+Directives are simply DOM element markers that Angular can track and associate with specific behaviour.
+As a result, Angular separates the UI components as HTML tag attributes and their behaviours as JavaScript code.
 When comparing Angular vs React, this is what distinguishes it.
 Let’s check a directive example.
 
@@ -108,7 +108,7 @@ Finally, the inline token {{counter}} allows for outputting the data-bound varia
 
 ### React
 
-React, interestingly, combines the UI and behavior of components. In React, the same part of the code is responsible for creating a UI element and dictating its behavior.
+React, interestingly, combines the UI and behaviour of components. In React, the same code creates a UI element and dictates its behaviour.
 
 <div class="codeback">
 
@@ -139,8 +139,8 @@ The count token in the template markup is also used to access the state.
 
 ### Vue
 
-When comparing Vue and React, it is worth noting that in Vue, UI and behavior are both components, making things more intuitive.
-Also, because Vue is highly customizable, you can combine the UI and behavior of components from within a script.
+When comparing Vue and React, it is worth noting that in Vue, UI and behaviour are both components, making things more intuitive.
+Also, because Vue is highly customizable, you can combine the UI and behaviour of components from within a script.
 
 <div class="codeback">
 
@@ -177,16 +177,17 @@ The syntax for outputting bound variables in Vue is the same as in Angular: coun
 <p style="text-align:center;">Retrieved from <a style="font-style:italic;" href="https://www.angularminds.com/blog/article/comparison-between-angular-vs-react-vs-vue.html" target="_blank">Comparison Between Angular Vs React Vs Vue<a></p>
 </div>
 
-Please keep in mind that when it comes to selecting a technology to use for your next project, it is extremely difficult to find solutions that will work in every situation. When starting a new project, you may encounter a plethora of different situations. Furthermore, all of the tools we discussed perform well in general and are already established technologies for developers out there.
+Please keep in mind that it is tough to find solutions that will work in every situation when it comes to selecting a technology to use for your next project. When starting a new project, you may encounter many different problems. Furthermore, all of the tools we discussed perform well in general and are already established technologies for developers out there.
+
 But here's our best shot at guiding you through this decision:
 
 ### Angular
 
 The following application types can benefit from the use of Angular.
 Apps with highly dynamic content:
-Because of its structure and efficient data binding, Angular is extremely useful for all applications where the displayed content must be changed dynamically based on user behavior.
+Because of its structure and efficient data binding, Angular is beneficial for all applications where the displayed content must be changed dynamically based on user behaviour.
 Large-scale, enterprise-grade applications:
-Even though Angular updates itself frequently, necessitating frequent code updates, its core structure and the tools it provides make it a great framework for large applications.
+Even though Angular updates itself frequently, necessitating frequent code updates, its core structure and the tools it provides make it an excellent framework for large applications.
 
 ### React
 
@@ -194,7 +195,7 @@ Using this well-known framework can provide numerous benefits when dealing with:
 Applications that require speed include:
 React is an excellent framework for speed and performance in your application because it was designed with performance in mind and supports the virtual DOM.
 Applications requiring versatility:
-React can be used almost anywhere without sacrificing performance. You don't need to use any special techniques to make it work on different platforms. The framework ecosystem will support you with things like React Native for mobile app development.
+React can be used almost anywhere without sacrificing performance, and you don't need to use any special techniques to work on different platforms. The framework ecosystem will support you with React Native for mobile app development.
 General websites that require good SEO:
 React's speed and overall performance can help improve SEO in Google's eyes by providing a better user experience.
 Suitable for a global audience:
@@ -204,16 +205,16 @@ Because many projects today are geared toward a global audience, you will have p
 
 This newly created but rapidly establishing framework is useful in many different situations, such as:
 Applications that require speed:
-Vue.js applications, like React, are extremely fast and can improve the speed of your project.
-When you need extremely lightweight applications:
+Vue.js applications, like React, are high-speed and can improve the speed of your project.
+When you need highly lightweight applications:
 Vue is not only fast but also extremely light. This provides benefits such as improved performance for machines with limited resources and increased accessibility for people with slower connections.
 
 When you want to integrate a framework into an existing app:
-you can do so easily and gradually thanks to Vue's internal structure. In the long run, this will save time and money, making Vue a very efficient tool for startups and growing ideas.
+you can do so quickly and gradually, thanks to Vue's internal structure. In the long run, this will save time and money, making Vue a very efficient tool for startups and growing ideas.
 
 The answer to the Angular vs. React vs. Vue debate is that there is no absolute right choice, which you probably expected.
 
-Each of these libraries has advantages and disadvantages. One of these will be more appropriate than the others depending on the project you're working on and your individual needs. It's always important to do your own research before making a decision, especially if you're working on a business venture rather than a personal project.
+Each of these libraries has advantages and disadvantages. One of these will be more appropriate than the others depending on the project you're working on and your individual needs. It's always important to do your research before making a decision, especially if you're working on a business venture rather than a personal project.
 
 #### Resources
 

@@ -3,11 +3,11 @@ slug: "/blog/sql-vs-nosql"
 date: "2020-12-18"
 humanDate: "December 18, 2020"
 title: "Which Database Best Fit For You?"
-cardText: "When you start a new project, database choice is crtical, before making decision you'd better check this out."
+cardText: "When you start a new project, database choice is critical. Before making a decision, you'd better check this out."
 image: "../images/sqlnosql.png"
 ---
 
-When you start a new project, "How are you going to store the data?" is one of the main questions. To answer this, we should evaluate our project in terms of data structure, scale, query complexity, and schema flexibility. So I'll explain how each factor works for SQL and NoSQL databases and clarify the decision algorithm for this task at the end of this article.
+When you start a new project, "How are you going to store the data?" is one of the main questions. To answer this, we should evaluate our project regarding data structure, scale, query complexity, and schema flexibility. So I'll explain how each factor works for SQL and NoSQL databases and clarify the decision algorithm for this task at the end of this article.
 
 <div>
 	<img style="height:30px !important;" src="../images/sqlnosql.png" alt="SQL vs NOSQL"
@@ -17,9 +17,9 @@ When you start a new project, "How are you going to store the data?" is one of t
 
 ### SQL and NoSQL Data Structures
 
-SQL stands for "Structured Querry Language" which means storing data by well-structured tables and these tables connected with relations. These relations are provided by a bunch of keys such as primary&foreign keys. When we query the data, we sometimes use these relations and the keys as well.
+SQL stands for "Structured Querry Language" which means storing data by well-structured tables and these tables connected with relations. These relations are provided by multiple keys, such as primary&foreign keys. When we query the data, we sometimes use these relations and the keys.
 
-When it comes to NoSQL(Not only SQL), there is tons of flexibility and dynamism with data. However, there is no relation at all between collections (basically tables in SQL). These collections consist of data objects(JSON or BSON objects) and, they remind more dynamic versions of table fields in SQL.
+There is tons of flexibility and dynamism with data when it comes to NoSQL(Not only SQL). However, there is no relation between collections (basic tables in SQL). These collections consist of data objects(JSON or BSON objects), reminding more dynamic versions of table fields in SQL.
 
 <div>
 <img style="height:30px !important;" src="../images/datastrutres.jpg" alt="SQL vs NOSQL Data Structres"
@@ -33,7 +33,7 @@ SQL and NoSQL databases scale differently, so you're going to have to understand
 
 SQL databases scale vertically, meaning that to scale the database, you'll need to increase the capacity of a single server (increasing the CPU, RAM, or SSD). To preserve the integrity of the data, SQL databases have been built to operate on a single server, so they are not easy to scale.
 
-NoSQL databases expand horizontally, which ensures that more servers can be added to power the growing database. This is a huge advantage NoSQL has over SQL in terms of large scale applications.
+NoSQL databases expand horizontally, ensuring that more servers can be added to power the growing database. This is a considerable advantage NoSQL has over SQL in large-scale applications.
 
 ### Query Complexity & Schema Flexibility
 
@@ -41,9 +41,9 @@ The next thing to consider is how much your information will be queried, how eas
 
 Since your information is nicely structured and ordered, complex queries are often used in a SQL database.
 
-SQL is a popular language for programming that has been around for more than 45 years, so it is highly mature and well-known. It effectively executes queries and rapidly retrieves and edits data. It's very light and declarative, so it's very easy to understand. Cause of having "Structured Query Syntax", it also less differs trough out different database engines.
+SQL is a popular language for programming that has been around for more than 45 years, so it is highly mature and well-known. It effectively executes queries and rapidly retrieves and edits data, and it's very light and declarative, so it's easy to understand. Cause of having "Structured Query Syntax," it also less differs throughout different database engines.
 
-On the other hand, NoSQL databases have complex unstructured data schemas, and data is stored in several ways: they can be column-oriented, document-oriented, graph-based, or organized as a key -value store.
+On the other hand, NoSQL databases have complex unstructured data schemas, and data is stored in several ways: they can be column-oriented, document-oriented, graph-based, or organized as a key-value store.
 
 > <span style="color:black">_You do not need to define their structre and you can grow your structre as you go_</span>
 
@@ -62,13 +62,13 @@ Due to these distinct, structured relationships in a table between rows and colu
 <span style="color:black">**Isolation:**</span> – When transactions are run concurrently, they do not contend with each other, and act as if they were being run sequentially.</br>
 <span style="color:black">**Durability:**</span> – Once a transaction has been committed to the database, it is considered permanent, even in the event of a system failure.</br>
 
-ACID compliance protects the integrity of your records, this is crucial for transactions required databases. SQL database provides us precise columns and rows with perfect synchronization. This will prevent mistakes and ensures transaction validity.
+ACID compliance protects your records' integrity, which is crucial for transactions requiring databases. SQL database provides us with precise columns and rows with perfect synchronization, which will prevent mistakes and ensure transaction validity.
 
-If your data is well organized and ACID compliance is a must, a SQL database is a solution for your project.
+If your data is well organized and ACID compliance is a must, a SQL database is the solution for your project.
 
 ### What's NoSQL Best For
 
-A NoSQL database is a much better fit for storing information that would not fit neatly into a table, such as an article content, social media messages, sensor data, and other forms of unstructured data. With simplicity and scalability in mind, NoSQL databases have been constructed and adopt the BASE consistency model, which means:
+A NoSQL database is a much better fit for storing information that would not fit neatly into a table, such as article content, social media messages, sensor data, and other forms of unstructured data. With simplicity and scalability in mind, NoSQL databases have been constructed and adopt the BASE consistency model, which means:
 
 <span style="color:black">**Basic Availability:** </span>This means even database ensures the availability of the data, you may not able to access data, in case of a changing or inconsistent data structure.</br>
 

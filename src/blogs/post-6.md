@@ -7,19 +7,19 @@ cardText: "While ReactJS is taking over industry, I'd like to gather together it
 image: "../images/reactjspost.png"
 ---
 
-[React is a front-end library developed by Facebook.](https://reactjs.org/) For web and mobile apps, it is used to manage the view layer. We can construct reusable UI components with ReactJS. It has a strong foundation and a vast community behind it, making it one of the most popular JavaScript libraries.
+[React is a front-end library developed by Facebook.](https://reactjs.org/) It is used to manage the view layer for web and mobile apps. We can construct reusable UI components with ReactJS. It has a strong foundation and a vast community behind it, making it one of the most popular JavaScript libraries.
 
-React is a single-page application, which means it just loads one HTML page and all of the necessary assets (such as JavaScript and CSS) for the app to run. Any interactions with the page or subsequent pages do not necessitate a round trip to the server, therefore the page does not need to be refreshed.
+React is a single-page application, which means it just loads one HTML page and all of the necessary assets (such as JavaScript and CSS) for the app to run. Interactions with the page or subsequent pages do not necessitate a round trip to the server; therefore, the page does not need refreshing.
 
 ## ! Warning React Prerequisites
 
-You'll need a basic understanding of **JavaScript**, **HTML5**, and **CSS** to work with ReactJS. Even while ReactJS does not use HTML, the JSX is extremely similar, thus knowing HTML will come in handy. We'll go over this in greater detail in one of the following chapters. We'll also be using **EcmaScript 2015** syntax, so any prior experience in this area will be beneficial.
+You'll need a basic understanding of **JavaScript**, **HTML5**, and **CSS** to work with ReactJS. While ReactJS does not use HTML, the JSX is extremely similar; thus, knowing HTML will come in handy. We'll go over this in greater detail in one of the following chapters. We'll also be using **EcmaScript 2015** syntax, so any prior experience in this area will be beneficial.
 
 ### Virtual DOM
 
-The virtual DOM, like the DOM, is a node tree. It will be simple to grasp the virtual DOM if you are familiar with how the DOM works in a web browser. It looks a lot like it, but it's entirely virtual. As JavaScript objects with properties, there is a list of elements, attributes, and content. When we use a render function - and each React component has one - it generates a node tree from that React component, regardless of whether we're rendering a single component or multiple child components.
+The virtual DOM, like the DOM, is a node tree. It will be simple to grasp the virtual DOM if you are familiar with how the DOM works in a web browser. It looks a lot like it, but it's entirely virtual. There is a list of elements, attributes, and content as JavaScript objects with properties. When we use a render function, each React component has one - it generates a node tree from that React component, regardless of whether we're rendering a single component or multiple child components.
 
-It prepares the entire tree. It also updates the same tree when data models are modified, as well as when we update state or make any other changes to the component. In three steps, React refreshes the real DOM. The virtual DOM will re-render whenever something changes.The difference between the old and new virtual DOMs will then be computed. Following that, the real DOM will be updated to reflect the modifications. Rather than working with the real DOM all of the time, which is quite expensive, everything is handled virtually until the DOM is absolutely necessary to update. At that moment, we'll make that expensive call.
+It prepares the entire tree, and it also updates the same tree when data models are modified and when we update the state or make other changes to the component. In three steps, React refreshes the real DOM. The virtual DOM will re-render whenever something changes. It will compute the difference between the old and new virtual DOMs, and following that, it will update the real DOM to reflect the modifications. Rather than working with the actual DOM all of the time, which is quite expensive, everything is handled virtually until the DOM is necessary to update. At that moment, we'll make that expensive call.
 
 ### JSX
 
@@ -33,7 +33,7 @@ The JSX syntax extension is a JavaScript syntax extension. Instead of using stan
 
 ### Components
 
-Components are at the heart of React. Everything must be considered a component. When working on larger projects, this will make it easier to maintain the code. There are two approaches to write a React component in the realm of React. One makes use of a function, whereas the other makes use of a class. Functional components are becoming increasingly popular in recent years.
+Components are at the heart of React application, and everything must be considered a component. Working on more significant projects will make it easier to maintain the code. There are two approaches to writing a React component in the realm of React, and one makes use of a function, whereas the other makes use of a class. Functional components are becoming increasingly popular in recent years, though.
 
 <div class="codeback">
 
@@ -53,7 +53,7 @@ const FunctionalComponent = () => {
 </div>
 </br>
 
-The syntax is the first and most obvious difference. A functional component is simply a JavaScript function that returns JSX, as their names suggest. A class component is a React-extended JavaScript class which has a mandatory render method.
+The syntax is the first and most obvious difference. As their names suggest, a functional component is simply a JavaScript function that returns JSX, and a class component is a React-extended JavaScript class with a required render method.
 
 <div class="codeback">
 
@@ -83,15 +83,15 @@ class ClassComponent extends React.Component {
 
 ### Unidirectional data flow and Flux
 
-One-way data flow is implemented in React, making it simple constract your project. Flux is a UI design or pattern based on a unidirectional data flow and a centralized dispatcher in JavaScript.
+One-way data flow is implemented in React, making it simple to construct your project. Flux is a UI design or pattern based on a unidirectional data flow and a centralized dispatcher in JavaScript.
 
 ### Props
 
-A React component's inputs are called props. They're information passed from a parent component to a child component. I f you need to change a value in response to user input or a network response you need to use state instead of props. Thus, it's important to remember that props can only be read. They must not be manipulated with in any way.
+A React component's inputs are called props. They're information passed from a parent component to a child component. If you need to change a value in response to user input or a network response, you need to use state instead of props. Thus, it's important to remember that components can only read props, and child components must not manipulate them in any way.
 
 ### State
 
-When the data linked with a component changes over time, it requires state. A Projects component, for example, may require selectedProjects in its state, while a BlogPosts component may require fetchedPosts in its state. The main distinction between state and props is that props are passed from a parent component, whilst state is controlled by the component. A component's props cannot be changed, but it can change its state.
+A React component's inputs are called props, and they're information passed from a parent component to a child component. If you need to change a value in response to user input or a network response, you need to use state instead of props. Thus, it's important to remember that components can only read props, and child components must not manipulate them in any way.
 
 <div>
     <img  src="../images/propsstate.png" alt="React Props and State Differences"
@@ -119,7 +119,7 @@ A JavaScript compiler takes JavaScript code, converts it, and then returns it in
 
 ### Bundlers
 
-Bundlers take individual JavaScript and CSS modules (sometimes hundreds of them) and combine them into a few files that are more optimised for browsers. Webpack and Browserify are two bundlers that are often used in React apps.
+Bundlers take individual JavaScript and CSS modules (sometimes hundreds of them) and combine them into a few more optimized files for browsers. Webpack and Browserify are two bundlers that are often used in React apps.
 
 ### Package Managers
 
