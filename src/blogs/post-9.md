@@ -2,9 +2,9 @@
 slug: "/blog/how-to-pick-front-end-technology-in-2022"
 date: "2022-06-12"
 humanDate: "June 12, 2022"
-title: "How to pick front-end technology in 2022?"
+title: "How to determine the front-end technology for your new web application in 2022?"
 cardText: "When building a website, I usually use one of three frameworks, Gatsby, Next.js, or React. Let me walk through how I pick my front-end stack."
-image: "../images/web3.jpg"
+image: "../images/gatsy_react_next.jpeg"
 ---
 
 When building a website, I usually use one of three frameworks, [Gatsby](https://www.gatsbyjs.com/), [Next.js,](https://nextjs.org/) or [Create React App](https://reactjs.org/docs/create-a-new-react-app.html). In this article, I want to go over how I choose which one for different projects because I don't think one is strictly better than all the rest, and it just depends and what requirements are for the particular project you're working on.
