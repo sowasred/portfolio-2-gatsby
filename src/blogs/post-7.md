@@ -1,8 +1,8 @@
 ---
-slug: "/blog/strapi-seo-best-practices"
+slug: "/blog/seo-best-practices-with-strapi"
 date: "2021-11-07"
 humanDate: "November 7, 2021"
-title: "Strapi SEO Best Practices"
+title: "SEO Best Practices Using Strapi"
 cardText: "Strapi is the beast when it comes to the headless CMS, let me show you how easy was creating a Search Engine Optimized web application witht it."
 image: "../images/seostrapi.png"
 ---

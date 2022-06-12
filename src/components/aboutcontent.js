@@ -2,9 +2,6 @@ import React from "react"
 import internImage from "../images/ozan-muldur-istanbul-technical-university-internship.jpeg"
 import aboutPageImages from "../constants/aboutPageImages"
 
-import engineerImage from "../images/engineer-ozan-muldur.jpeg"
-import engineerImage2 from "../images/engineer-ozan-muldur-ship.jpeg"
-
 import AwesomeSlider from "react-awesome-slider"
 import withAutoplay from "react-awesome-slider/dist/autoplay"
 import "react-awesome-slider/dist/styles.css"
