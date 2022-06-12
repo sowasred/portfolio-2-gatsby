@@ -3,7 +3,7 @@ slug: "/blog/how-to-pick-front-end-technology-in-2022"
 date: "2022-06-12"
 humanDate: "June 12, 2022"
 title: "How to determine the front-end technology for your new web application in 2022?"
-cardText: "When building a website, I usually use one of three frameworks, Gatsby, Next.js, or React. Let me walk through how I pick my front-end stack."
+cardText: "When building a new web app, I usually use one of three frameworks, Gatsby, Next.js, or React. Let me walk through how I take this decision."
 image: "../images/gatsy_react_next.jpeg"
 ---
 
