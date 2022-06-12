@@ -1,9 +1,17 @@
 import React from "react"
 import internImage from "../images/ozan-muldur-istanbul-technical-university-internship.jpeg"
+import aboutPageImages from "../constants/aboutPageImages"
+
 import engineerImage from "../images/engineer-ozan-muldur.jpeg"
+import engineerImage2 from "../images/engineer-ozan-muldur-ship.jpeg"
+
+import AwesomeSlider from "react-awesome-slider"
+import withAutoplay from "react-awesome-slider/dist/autoplay"
+import "react-awesome-slider/dist/styles.css"
+const AutoplaySlider = withAutoplay(AwesomeSlider)
 
 const AboutContent = () => (
-  <section className="section single-page">
+  <section className="section single-page aboutPage">
     <div className="section-title">
       <h1>About Me</h1>
       <div className="underline"></div>
@@ -55,11 +63,22 @@ const AboutContent = () => (
             After a week I was hooked on being able to create whatever I want in
             terms of coding and this made me dig into deep more and more...
           </p>
-          <img
-            className="aboutPageImage"
-            alt="Ozan Muldur engineer picture"
-            src={engineerImage}
-          ></img>
+          <AutoplaySlider
+            animation="foldOutAnimation"
+            cancelOnInteraction={false}
+            interval={1000}
+            bullets={false}
+          >
+            {aboutPageImages.engineer.map((image, index) => (
+              <div className="slider-item" key={index}>
+                <img
+                  className="aboutPageImage"
+                  alt="Ozan Muldur engineer picture"
+                  src={image}
+                ></img>
+              </div>
+            ))}
+          </AutoplaySlider>
           <span className="number">2</span>
         </article>
         <article className="timeline-item">

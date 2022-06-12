@@ -1771,3 +1771,24 @@ Testimonials Section
 .aboutPageLink {
   text-transform: unset !important;
 }
+
+/* About Page Slider Starts Here  */
+.aboutPage .awssld__content {
+  min-height: auto !important;
+}
+
+.aboutPage .awssld__container,
+.aboutPage .awssld__wrapper,
+.aboutPage .awssld,
+.aboutPage .awssld--organic-arrows,
+.aboutPage .awssld__box .awssld--active,
+.aboutPage .awssld__content {
+  max-height: 100% !important;
+  min-height: 100% !important;
+  border-radius: 10px !important;
+  background: transparent !important;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
