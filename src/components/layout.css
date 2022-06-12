@@ -1761,3 +1761,13 @@ Testimonials Section
     left: 32vw;
   }
 } */
+
+.aboutPageImage {
+  width: 100% !important;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.aboutPageLink {
+  text-transform: unset !important;
+}
