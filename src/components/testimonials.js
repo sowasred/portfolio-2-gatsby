@@ -8,20 +8,20 @@ const AutoplaySlider = withAutoplay(AwesomeSlider)
 const Testimonials = () => {
   return (
     <section id="testimonials" className="testimonials">
-      <AutoplaySlider cancelOnInteraction={false} interval={6000}>
-        {slides.map((slide, index) => (
-          <div className="quote-wrap" key={index}>
-            <p className="quote">
-              <q>{slide.description}</q>
-            </p>
-            <div className="quote-info">
-              <img alt={slide.company} src={slide.logo}></img>
-              <h2>{slide.title}</h2>
-              <h3>{slide.company}</h3>
-            </div>
+      {/* <AutoplaySlider cancelOnInteraction={false} interval={6000}> */}
+      {slides.map((slide, index) => (
+        <div className="quote-wrap" key={index}>
+          <p className="quote">
+            <q>{slide.description}</q>
+          </p>
+          <div className="quote-info">
+            <img alt={slide.company} src={slide.logo}></img>
+            <h2>{slide.title}</h2>
+            <h3>{slide.company}</h3>
           </div>
-        ))}
-      </AutoplaySlider>
+        </div>
+      ))}
+      {/* </AutoplaySlider> */}
     </section>
   )
 }

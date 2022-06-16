@@ -1632,6 +1632,8 @@ Testimonials Section
   line-height: 2em;
   font-weight: 700;
   font-size: 1.1em;
+  padding-right: 40px;
+  font-size: 1.3em;
 }
 .testimonials img {
   max-width: 35vw;
@@ -1791,4 +1793,12 @@ Testimonials Section
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+}
+
+.quote-wrap {
+  display: flex;
+  padding: 200px 100px;
+  align-items: center;
+  justify-content: space-evenly;
+  background: var(--clr-primary-10);
 }
