@@ -7,8 +7,6 @@ cardText: "Looking to build scalable Node.js microservices? In this blog post, w
 image: "../images/node-microservices.png"
 ---
 
-### Building Scalable Node.js Microservices with TypeScript and the CQRS Pattern
-
 In today's fast-paced, digital world, businesses rely on software to drive their operations and interact with customers. As a result, the demands on software systems are constantly increasing, and the ability to scale and adapt quickly is crucial. One way to achieve this is by adopting microservices architecture.
 
 <div>
@@ -27,7 +25,7 @@ The main advantage of microservices is that they allow for greater flexibility a
 ### The CQRS Pattern
 
 <div>
-    <img style="height:30px !important;" src="../images/monolithic-and-microservices-architecture.jpg" alt="Introducing the Command Query Responsibility Segregation Pattern"
+    <img style="height:30px !important;" src="../images/cqrs.png" alt="Introducing the Command Query Responsibility Segregation Pattern"
         title="Introducing the Command Query Responsibility Segregation Pattern"/>
     <p style="text-align:center;">Retrieved from <a style="font-style:italic;" href="https://learn.microsoft.com/en-us/previous-versions/msp-n-p/jj591573(v=pandp.10)" target="_blank">Introducing the Command Query Responsibility Segregation Pattern<a></p>
 </div>
