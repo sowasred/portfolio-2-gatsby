@@ -1,8 +1,8 @@
 ---
-slug: "/blog/building-scalable-nodejs-microservices-with-typescript-and-cqrs-pattern"
+slug: "/blog/building-scalable-nodejs-microservices-with-typescript"
 date: "2022-10-09"
 humanDate: "October 9, 2022"
-title: "Building Scalable Node.js Microservices with TypeScript and the CQRS Pattern"
+title: "Building Scalable Node.js Microservices with TypeScript"
 cardText: "Want to build scalable Node.js microservices? This blog post shows you how TypeScript and CQRS can help you achieve that goal."
 image: "../images/node-microservices.png"
 ---
