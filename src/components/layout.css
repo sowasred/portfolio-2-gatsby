@@ -500,9 +500,6 @@ Hero
   margin-bottom: 0.5rem;
   margin-left: 0;
 }
-.hero-img {
-  display: none;
-}
 .hero {
   background: var(--clr-primary-10);
 }
@@ -513,6 +510,8 @@ Hero
 }
 .hero-info h4 {
   color: var(--clr-grey-5);
+  letter-spacing: 0.15em;
+  font-size: 1.5em !important;
 }
 .location {
   color: var(--clr-grey-5);
@@ -535,10 +534,10 @@ Hero
   margin-top: 1.25rem;
 }
 @media screen and (min-width: 992px) {
-  .hero-img {
-    display: block;
-    position: relative;
-  }
+    .hero-img {
+      display: block;
+      position: relative;
+    }
   .hero-center {
     grid-template-columns: 1fr 1fr;
   }
@@ -553,6 +552,28 @@ Hero
     top: 2rem;
     right: -2rem;
     border-radius: var(--radius);
+  }
+}
+
+@media (max-width:991px){
+  .hero-center > article:first-of-type {
+    order: 2;
+  }
+  .hero-photo {
+    width: 55vw;
+  }
+}
+@media (max-width: 767px) {
+  .hero-img {
+    margin-top: 50px;
+  }
+  .hero-photo {
+    width: 60vw;
+  }
+}
+@media (max-width: 480px) {
+  .project {
+    margin: 10px 0px !important;
   }
 }
 .hero-photo {
@@ -733,6 +754,7 @@ Projects
   display: flex;
   align-items: center;
   margin-top: 1em;
+  font-weight: bold;
 }
 .checkLive .arrowCheck {
   margin-left: 10px;
@@ -744,10 +766,14 @@ Projects
   flex-direction: column;
 }
 .texhnologiesWrapper h5 {
-  font-weight: 700;
+  font-weight: 900;
+  font-size: 1em;
+  margin-top: 5px;
+  font-family: var(--ff-primary);
 }
 .techBadges {
   display: flex;
+  flex-wrap: wrap;
 }
 .techBadges img {
   width: 2em;
@@ -1801,4 +1827,47 @@ Testimonials Section
   align-items: center;
   justify-content: space-evenly;
   background: var(--clr-primary-10);
+}
+
+/* Flexbox layout for the carousel wrapper */
+/* Flexbox layout for the carousel wrapper */
+.carouselWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Adjusts spacing around items */
+  padding: 0 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Default style for each project component */
+.project {
+  flex: 1 1 45%; /* Flex grow, flex shrink, and basis */
+  margin: 20px; /* Margin around each project */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5); /* Optional: adds shadow for depth */
+  transition: transform 0.2s; /* Optional: adds animation on hover */
+  padding: 20px;
+}
+
+.project:hover {
+  transform: scale(1.05); /* Optional: scale up project component on hover */
+}
+
+/* Single column layout for screens less than 480px */
+@media (max-width: 480px) {
+  .project {
+    flex: 1 1 100%; /* Takes full width */
+  }
+}
+
+.timeline-item > h4 {
+  display: flex;
+  align-items: center;
+}
+
+.timeline-item > h4 > img {
+  margin-right: 10px;
+  margin-left: 0 !important;
+  width: 40px !important;
+  max-width: 40px !important;
 }

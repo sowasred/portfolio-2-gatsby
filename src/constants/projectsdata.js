@@ -16,21 +16,61 @@ import figma from "../images/figma.png"
 import strapi from "../images/strapi.png"
 import material from "../images/material.png"
 import bootstrap from "../images/bootstrap.png"
+import stripe from "../images/stripepng.png"
+import python from "../images/python.png"
+import sendgrid from "../images/sendgrid.jpg"
+import postgresql from "../images/postgres.png"
 
 import Pr1 from "../images/screenshotbaladon.png"
+import Pr1B from "../images/balodana.png"
 import Pr2 from "../images/screenshotB2BC.png"
+import Pr2B from "../images/demomarketplace.png"
+
 import Pr4 from "../images/teamarnew.png"
 import Pr5 from "../images/screenshotdiamondcart.png"
 import Pr6 from "../images/screenshotDK.png"
+import Pr6B from "../images/destinationkohler.png"
 import Pr7 from "../images/screenshotFoxhills.png"
+import Pr8 from "../images/yt1.png"
+import Pr9 from "../images/yt2.png"
+import Pr10 from "../images/yt3.png"
 
 export default [
+    {
+    "name": "YouTube Analyzer",
+    "background": Pr10, // Replace with the actual path
+    "collabtype": "Collabrative Work",
+    "description": "YouTube Analyzer Chrome Extension is a powerful tool designed for YouTube enthusiasts and content creators. Leveraging GPT for natural language processing, this extension provides on-the-fly video summaries and in-depth sentiment analysis of comments directly within the YouTube interface.",
+    "techImages": [
+      { "img": gatsbyimg, "alt": "Gatsby.JS" },
+      { "img": nodejs, "alt": "Node.js" },
+      { "img": react, "alt": "React" },
+      { "img": redux, "alt": "Redux" },
+      { "img": javascript, "alt": "JavaScript" },
+      { "img": npm, "alt": "npm" },
+      { "img": webpack, "alt": "Webpack" },
+      { "img": sass, "alt": "Sass" },
+      { "img": git, "alt": "git Version Control" },
+      // {"img": sendgrid, "alt": "SendGrid"},
+      {"img": python, "alt": "Python"},
+      {"img": postgresql, "alt": "PostgreSQL"},
+      {"img": stripe, "alt": "Stripe"},
+    ],
+    "tasks": [
+      "Developed a dynamic data visualization interface for YouTube analytics",
+      "Implemented OAuth for secure YouTube account integration",
+      "Enabled real-time data fetching and analysis of YouTube channels and videos",
+      "Optimized the application for performance and scalability"
+      // Add more tasks as necessary
+    ],
+    "link": "https://youtubeanalyzer.tech/" // Replace with the actual project link if different
+  },
   {
     name: "balodana",
-    background: Pr1,
+    background: Pr1B,
     collabtype: "Collabrative Work",
     description:
-      " Balodana is a company that tailors clothes for women, all made to measure and manufactured from all around the world.",
+      "Balodana is transforming fashion by creating custom women's clothing. It challenges fast fashion with a platform that connects you to worldwide designers and dressmakers for personalized, perfectly fitting clothes.",
     techImages: [
       { img: javascript, alt: "JavaScript" },
       { img: npm, alt: "npm" },
@@ -53,10 +93,10 @@ export default [
   },
   {
     name: "Destination Kohler",
-    background: Pr6,
+    background: Pr6B,
     collabtype: "Collabrative Work",
     description:
-      "Pack your bags! Use Destination Kohler's booking engine to find the perfect place for any occasion. This slick site offers a smooth user experience.",
+      "Booking your visit to Destination Kohler online offers a seamless experience, allowing you to easily select and secure hotel stays, spa appointments, golf tee times, and dining reservations. This streamlined online booking ensures planning your ideal visit is quick and stress-free.",
     techImages: [
       { img: javascript, alt: "JavaScript" },
       { img: jquery, alt: "jQuery" },
@@ -74,10 +114,10 @@ export default [
   },
   {
     name: "Avetti Demo Marketplace",
-    background: Pr2,
+    background: Pr2B,
     collabtype: "Collabrative Work",
     description:
-      "This marketplace has gathered various e-commerce functionalities. Thanks to its latest technology stack, it offers secure and fast e-shopping.",
+      "This marketplace integrates a wide range of online shopping features, leveraging advanced technology to ensure a safe and speedy online shopping experience. Its modern tech infrastructure supports a variety of e-commerce capabilities, providing users with a reliable and efficient way to shop online.",
     techImages: [
       { img: javascript, alt: "JavaScript" },
       { img: npm, alt: "npm" },
@@ -98,7 +138,7 @@ export default [
     background: Pr7,
     collabtype: "Collabrative Work",
     description:
-      "Is it any wonder Foxhills is one of the best resorts in Britain? Their booking engine has the same assertiveness for sure. Check it out for yourself.",
+      "Booking online at Foxhills offers an easy and quick way to organize your visit, allowing you to choose from staying in their cozy rooms, relaxing with spa treatments, playing tennis or golf, joining adult or junior activities, and enjoying their dining options. This efficient online booking lets you plan the perfect visit without any hassle.",
     techImages: [
       { img: javascript, alt: "JavaScript" },
       { img: jquery, alt: "jQuery" },
@@ -116,25 +156,26 @@ export default [
     ],
     link: "https://rsweb.foxhills.co.uk/#/",
   },
-  {
-    name: "THE DIAMOND STORE",
-    background: Pr5,
-    collabtype: "Collabrative Work",
-    description:
-      "Jewelry manufacturer from India converted their front-end technology from Java-Spring to React for sake of speed and reliability.",
-    techImages: [
-      { img: javascript, alt: "JavaScript" },
-      { img: npm, alt: "npm" },
-      { img: react, alt: "React" },
-      { img: redux, alt: "redux" },
-      { img: bootstrap, alt: "bootstrap" },
-      { img: sass, alt: "Sass" },
-      { img: figma, alt: "figma" },
-      { img: git, alt: "git Version Control" },
-    ],
-    tasks: ["Design Implemantations", "Facets Functionality"],
-    link: "https://www.thediamondkart.com/",
-  },
+  
+  // {
+  //   name: "THE DIAMOND STORE",
+  //   background: Pr5,
+  //   collabtype: "Collabrative Work",
+  //   description:
+  //     "Jewelry manufacturer from India converted their front-end technology from Java-Spring to React for sake of speed and reliability.",
+  //   techImages: [
+  //     { img: javascript, alt: "JavaScript" },
+  //     { img: npm, alt: "npm" },
+  //     { img: react, alt: "React" },
+  //     { img: redux, alt: "redux" },
+  //     { img: bootstrap, alt: "bootstrap" },
+  //     { img: sass, alt: "Sass" },
+  //     { img: figma, alt: "figma" },
+  //     { img: git, alt: "git Version Control" },
+  //   ],
+  //   tasks: ["Design Implemantations", "Facets Functionality"],
+  //   link: "https://www.thediamondkart.com/",
+  // },
   // {
   //   name: "teamAR",
   //   background: Pr4,

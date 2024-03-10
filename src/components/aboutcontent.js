@@ -2,10 +2,19 @@ import React from "react"
 import internImage from "../images/ozan-muldur-istanbul-technical-university-internship.jpeg"
 import aboutPageImages from "../constants/aboutPageImages"
 
+// import logos, and images
+import itulogo from "../images/itu.svg"
+import izmirshipyardlogo from "../images/izmirship.jpeg"
+import georgianlogo from "../images/georgian.png"
+import avettilogo from "../images/avetti.svg"
+import aglogo from "../images/agilysys.png"
+
 import AwesomeSlider from "react-awesome-slider"
 import withAutoplay from "react-awesome-slider/dist/autoplay"
 import "react-awesome-slider/dist/styles.css"
 const AutoplaySlider = withAutoplay(AwesomeSlider)
+
+
 
 const AboutContent = () => (
   <section className="section single-page aboutPage">
@@ -15,8 +24,9 @@ const AboutContent = () => (
     </div>
     <div className="section-center page-info">
       <div className="section-center timeline-center">
-        <article className="timeline-item">
+        <article className="timeline-items">
           <h4>
+            <img className="aboutPageImage" alt="Istanbul Technical University" src={itulogo}></img>
             <a
               className="aboutPageLink"
               target="_blank"
@@ -27,11 +37,7 @@ const AboutContent = () => (
           </h4>
           <h4 className="timeline-title">Ocean Engineering | 2010 - 2015</h4>
           <p className="item-text">
-            I found my passion later in life but that is okay. At the end of my
-            high school years, I was thinking about designing huge ships would
-            be a cool job to do. Seeing them being constructed each day to the
-            real dimensions and being able to walk on it would give me joy and
-            motivation for life.
+            Discovering my passion later in life was perfectly fine with me. Toward the end of my high school years, the idea of designing massive ships captivated me. I imagined how rewarding it would be to see them take shape each day, growing to their full dimensions. The thought of walking on something that I had helped create filled me with joy and motivation for the future.
           </p>
           <img
             className="aboutPageImage"
@@ -42,6 +48,7 @@ const AboutContent = () => (
         </article>
         <article className="timeline-item">
           <h4>
+            <img src={izmirshipyardlogo} alt="Izmir Shipyard Logo" className="aboutPageLogo" />
             <a
               className="aboutPageLink"
               target="_blank"
@@ -52,13 +59,9 @@ const AboutContent = () => (
           </h4>
           <h4 className="timeline-title">Design Engineer | 2015 – 2017</h4>
           <p className="item-text">
-            When I started working in the field, I quickly figured out that it
-            is fun and all, but it is not the sole job that I want to do for the
-            rest of my life. In the meantime, I was coming across programming
-            videos on YouTube and even started to code along with some of them.
+            Upon starting my career in the field, I quickly realized that, while enjoyable, it wasn't the sole pursuit I wanted to dedicate my life to. Around this time, I stumbled upon programming tutorials on YouTube and began coding along with them. 
             <br></br>
-            After a week I was hooked on being able to create whatever I want in
-            terms of coding and this made me dig into deep more and more...
+            Within a week, the ability to create virtually anything through code had me thoroughly captivated, leading me to delve deeper into the world of programming.
           </p>
           <AutoplaySlider
             animation="foldOutAnimation"
@@ -80,6 +83,7 @@ const AboutContent = () => (
         </article>
         <article className="timeline-item">
           <h4>
+            <img src={georgianlogo} alt="Georgian College Logo" className="aboutPageLogo" />
             <a
               className="aboutPageLink"
               target="_blank"
@@ -90,13 +94,13 @@ const AboutContent = () => (
           </h4>
           <h4 className="timeline-title">Computer Programmer | 2017 – 2019</h4>
           <p className="item-text">
-            Those desires have led me to study abroad in Canada. It was a great
-            challenge but I've tackled it well and finished the program on time.
+            This newfound interest led me to pursue studies abroad in Canada, a formidable challenge that I embraced wholeheartedly. I successfully completed the program, on time and enriched by the experience. The decision to study computer programming was a pivotal step in my journey, marking a transition from a fascination with physical engineering to the boundless possibilities of software development.
           </p>
           <span className="number">3</span>
         </article>
         <article className="timeline-item">
           <h4>
+            <img src={avettilogo} alt="Avetti Commerce Logo" className="aboutPageLogo" />
             <a
               className="aboutPageLink"
               target="_blank"
@@ -107,36 +111,28 @@ const AboutContent = () => (
           </h4>
           <h4 className="timeline-title">Front-end Developer | 2019 – 2021</h4>
           <p className="item-text">
-            Thanks to my React knowledge in web application development helped
-            me to get into Avetti Commerce as a front-end developer. Working
-            internationally with cross-functional teams has contributed
-            significantly to my coding and organizational skills. It was a great
-            experience in terms of being part of multiple projects that I'm
-            proud of most.
+            My proficiency in React and web application development opened the door to a front-end developer position at Avetti Commerce. Working in an international environment with cross-functional teams significantly enhanced my coding and organizational skills. It was an enriching experience to contribute to multiple projects, many of which I hold in high regard as some of my proudest achievements.
           </p>
           <span className="number">4</span>
         </article>
         <article className="timeline-item">
           <h4>
+            <img src={aglogo} alt="Agilysys Logo" className="aboutPageLogo" />
             <a
               className="aboutPageLink"
               target="_blank"
-              href="https://www.resortsuite.com/"
+              href="https://discover.agilysys.com/"
             >
-              ResortSuite
+              Agilysys
             </a>
           </h4>
           <h4 className="timeline-title">
-            Full Stack Developer | 2021 - Current
+            Software Engineer | 2021 - Current
           </h4>
           <p className="item-text">
-            In my current position I'm working on company's various hospitality
-            managements softwares as a full-stack dev. Dealing with multiple
-            projects based on different technology stacks has made me more
-            versatile since I've started. I'm also grateful for being part of
-            such a great team and culture in ResortSuite.
+            Currently, as a software engineer at Agilysys, I am involved in developing various hospitality management software. This role allows me to engage with multiple projects across different technology stacks, further broadening my skill set and making me a more versatile developer. I am deeply grateful for the opportunity to be part of such an exceptional team and company culture at Agilysys.
           </p>
-          <a href="mailto:ozanmuldur@outlook.com" className="btn hero-btn">
+          <a href="mailto:muldurozan@gmail.com" className="btn hero-btn">
             Contact Me
           </a>
           <span className="number">5</span>

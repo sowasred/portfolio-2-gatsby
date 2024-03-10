@@ -91,14 +91,6 @@ const Navigation = () => {
               <img src={Close} className="fas fa-times"></img>
             </button>
           ) : null}
-          <a
-            target="_blank"
-            href="https://drive.google.com/file/d/1Zb0z3PmsCGUloL_3In4sI1IFtDJip8Lw/view?usp=sharing"
-            id="resume"
-            className="resume btn hero-btn"
-          >
-            Resume
-          </a>
         </div>
         <motion.ul
           initial="hidden"
@@ -141,7 +133,7 @@ const Navigation = () => {
             </AnchorLink>
           </motion.li>
 
-          <motion.li variants={item}>
+          {/* <motion.li variants={item}>
             <AnchorLink
               to="/blogposts"
               duration={500}
@@ -151,7 +143,7 @@ const Navigation = () => {
             >
               Blog
             </AnchorLink>
-          </motion.li>
+          </motion.li> */}
           <motion.li variants={item}>
             <Link
               to="/about"
@@ -195,7 +187,7 @@ const Navigation = () => {
               <li onClick={toggleChecked}>
                 <AnchorLink to="/#contact">Contact</AnchorLink>
               </li>
-              <li onClick={toggleChecked}>
+              {/* <li onClick={toggleChecked}>
                 <AnchorLink
                   to="/blogposts"
                   style={{
@@ -204,7 +196,7 @@ const Navigation = () => {
                 >
                   Blog
                 </AnchorLink>
-              </li>
+              </li> */}
               <li onClick={toggleChecked}>
                 <AnchorLink
                   to="/about"
@@ -214,15 +206,6 @@ const Navigation = () => {
                 >
                   About
                 </AnchorLink>
-              </li>
-
-              <li>
-                <a
-                  target="_blank"
-                  href="https://drive.google.com/file/d/1Zb0z3PmsCGUloL_3In4sI1IFtDJip8Lw/view?usp=sharing"
-                >
-                  Resume
-                </a>
               </li>
             </ul>
             <div className="navfooter">

@@ -27,7 +27,7 @@ const ProjectComponent = item => {
             ))}
           </div>
           <span className="checkLive">
-            Check the live site <FaLongArrowAltRight className="arrowCheck" />
+            Check the project <FaLongArrowAltRight className="arrowCheck" />
           </span>
         </div>
       </a>

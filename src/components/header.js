@@ -59,7 +59,7 @@ const Header = () => {
               style={{ x }}
               whileTap={{ scale: 1.2 }}
             >
-              Full Stack Developer
+              Software Engineer
             </motion.h4>
             <motion.div
               drag="x"
@@ -73,9 +73,14 @@ const Header = () => {
             </motion.div>
           </motion.div>
           <motion.div className="mailwrap" animate={controls}>
-            <a href="mailto:ozanmuldur@outlook.com" className="mailbtn btn hero-btn">
+            <a href="mailto:muldurozan@gmail.com" className="mailbtn btn hero-btn">
                Contact Me
               <FiMail className="mailicon" />
+            </a>
+          </motion.div>
+          <motion.div className="mailwrap" animate={controls}>
+            <a href="/#projects" className="mailbtn btn hero-btn">
+               Check My Projects
             </a>
           </motion.div>
           <motion.ul

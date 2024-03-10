@@ -18,8 +18,8 @@ const IndexPage = ({ data }) => (
     <SEO title="Home" />
     <Header />
     <Projects />
-    <Testimonials />
-    <Blogposts data={data} />
+    {/* <Testimonials /> */}
+    {/* <Blogposts data={data} /> */}
     <Getintouch />
   </Layout>
 )
