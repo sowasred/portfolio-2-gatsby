@@ -24,9 +24,9 @@ const AboutContent = () => (
     </div>
     <div className="section-center page-info">
       <div className="section-center timeline-center">
-        <article className="timeline-items">
+        <article className="timeline-item">
           <h4>
-            <img className="aboutPageImage" alt="Istanbul Technical University" src={itulogo}></img>
+            <img className="aboutPageLogo" alt="Istanbul Technical University" src={itulogo}></img>
             <a
               className="aboutPageLink"
               target="_blank"
