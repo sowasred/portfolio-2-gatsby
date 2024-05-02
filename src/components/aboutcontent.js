@@ -109,9 +109,9 @@ const AboutContent = () => (
               Avetti Commerce
             </a>
           </h4>
-          <h4 className="timeline-title">Front-end Developer | 2019 – 2021</h4>
+          <h4 className="timeline-title">Full Stack Developer | 2019 – 2021</h4>
           <p className="item-text">
-            My proficiency in React and web application development opened the door to a front-end developer position at Avetti Commerce. Working in an international environment with cross-functional teams significantly enhanced my coding and organizational skills. It was an enriching experience to contribute to multiple projects, many of which I hold in high regard as some of my proudest achievements.
+            My expertise in React and web application development led to a position at Avetti Commerce, where my role evolved into full stack development. Working in an international environment with cross-functional teams, I honed not only my frontend skills but also developed a robust capability in backend technologies. This position was crucial in enhancing my overall coding skills and understanding of complete software solutions, contributing to projects that rank among my proudest achievements.
           </p>
           <span className="number">4</span>
         </article>
