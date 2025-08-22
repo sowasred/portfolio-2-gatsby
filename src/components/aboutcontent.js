@@ -8,9 +8,9 @@ import izmirshipyardlogo from "../images/izmirship.jpeg"
 import georgianlogo from "../images/georgian.png"
 import avettilogo from "../images/avetti.svg"
 import aglogo from "../images/agilysys.png"
-
 import AwesomeSlider from "react-awesome-slider"
 import withAutoplay from "react-awesome-slider/dist/autoplay"
+import compasslogo from "../images/compass.svg"
 import "react-awesome-slider/dist/styles.css"
 const AutoplaySlider = withAutoplay(AwesomeSlider)
 
@@ -127,10 +127,33 @@ const AboutContent = () => (
             </a>
           </h4>
           <h4 className="timeline-title">
-            Software Engineer | 2021 - Current
+            Software Engineer | 2021 - 2024
           </h4>
           <p className="item-text">
-            Currently, as a software engineer at Agilysys, I am involved in developing various hospitality management software. This role allows me to engage with multiple projects across different technology stacks, further broadening my skill set and making me a more versatile developer. I am deeply grateful for the opportunity to be part of such an exceptional team and company culture at Agilysys.
+            As a software engineer at Agilysys, I was involved in developing various hospitality management software. This role allowed me to engage with multiple projects across different technology stacks, further broadening my skill set and making me a more versatile developer. I am deeply grateful for the opportunity to be part of such an exceptional team and company culture at Agilysys.
+          </p>
+          <a href="mailto:muldurozan@gmail.com" className="btn hero-btn">
+            Contact Me
+          </a>
+          <span className="number">5</span>
+        </article>
+                <article className="timeline-item">
+          <h4>
+            <img src={compasslogo} alt="Compass Digital Logo" className="aboutPageLogo" />
+            <a
+              className="aboutPageLink"
+              target="_blank"
+              href="https://compassdigital.io/"
+            >
+              Compass Digital
+            </a>
+          </h4>
+          <h4 className="timeline-title">
+            Senior Software Engineer | 2024 - Current
+          </h4>
+          <p className="item-text">
+            At Compass Digital, I’m fortunate to take on a rewarding role in a fast-paced environment, contributing to innovative solutions alongside a talented team.
+            Working with a dynamic group, I’ve also mentored junior developers, which has been a fulfilling part of my role. This experience continues to shape my professional growth as I work on impactful projects that benefit our clients and the industry.
           </p>
           <a href="mailto:muldurozan@gmail.com" className="btn hero-btn">
             Contact Me
