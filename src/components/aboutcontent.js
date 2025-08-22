@@ -132,9 +132,6 @@ const AboutContent = () => (
           <p className="item-text">
             As a software engineer at Agilysys, I was involved in developing various hospitality management software. This role allowed me to engage with multiple projects across different technology stacks, further broadening my skill set and making me a more versatile developer. I am deeply grateful for the opportunity to be part of such an exceptional team and company culture at Agilysys.
           </p>
-          <a href="mailto:muldurozan@gmail.com" className="btn hero-btn">
-            Contact Me
-          </a>
           <span className="number">5</span>
         </article>
                 <article className="timeline-item">
