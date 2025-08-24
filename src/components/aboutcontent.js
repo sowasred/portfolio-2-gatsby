@@ -155,7 +155,7 @@ const AboutContent = () => (
           <a href="mailto:muldurozan@gmail.com" className="btn hero-btn">
             Contact Me
           </a>
-          <span className="number">5</span>
+          <span className="number">6</span>
         </article>
       </div>
     </div>
