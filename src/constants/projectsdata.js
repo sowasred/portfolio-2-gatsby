@@ -59,7 +59,6 @@ export default [
         { "img": nextjs, "alt": "Next.js" },
         { "img": nodejs, "alt": "Node.js" },
         { "img": redis, "alt": "Redis" },
-        { "img": bullmq, "alt": "BullMQ" },
         { "img": postgresql, "alt": "PostgreSQL" },
         { "img": stripe, "alt": "Stripe" },
         { "img": pinecone, "alt": "Pinecone" },
