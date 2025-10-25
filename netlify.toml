@@ -1,8 +1,8 @@
 [build]
-  command = "rm -rf /opt/build/cache && gatsby build"
+  command = "rm -rf /opt/build/cache && rm -rf .cache && rm -rf node_modules/.cache && gatsby build && rm -rf .cache/adapters"
   publish = "public"
 
-# Explicitly disable Netlify’s auto Gatsby runtime/plugins
+# Explicitly disable Netlify's auto Gatsby runtime/plugins
 [functions]
   node_bundler = "esbuild"
 
@@ -11,3 +11,5 @@
   NETLIFY_USE_LEGACY_GATSBY_PLUGIN = "false"
   GATSBY_SKIP_PLUGIN_GATSBY_CACHE = "true"
   NETLIFY_CACHE_DIR = "/opt/build/cache"
+  GATSBY_CACHE_DIR = ".cache"
+  GATSBY_DISABLE_CACHE = "true"
