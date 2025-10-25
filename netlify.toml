@@ -1,5 +1,5 @@
 [build]
-  command = "gatsby build"
+  command = "rm -rf /opt/build/cache && gatsby build"
   publish = "public"
 
 # Explicitly disable Netlify’s auto Gatsby runtime/plugins
@@ -10,3 +10,4 @@
   NETLIFY_SKIP_GATSBY_CACHE = "true"
   NETLIFY_USE_LEGACY_GATSBY_PLUGIN = "false"
   GATSBY_SKIP_PLUGIN_GATSBY_CACHE = "true"
+  NETLIFY_CACHE_DIR = "/opt/build/cache"
