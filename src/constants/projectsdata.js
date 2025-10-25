@@ -20,6 +20,15 @@ import stripe from "../images/stripepng.png"
 import python from "../images/python.png"
 import sendgrid from "../images/sendgrid.jpg"
 import postgresql from "../images/postgres.png"
+import redis from "../images/redis.png"
+import telegram from "../images/telegram.png"
+import whatsapp from "../images/whatsapp.jpg"
+import nextjs from "../images/nextjs.png"
+import pinecone from "../images/pinecone.png"
+import openai from "../images/openai.png"
+import typescript from "../images/typescript.png"
+import nestjs from "../images/nestjs.png"
+
 
 import Pr1 from "../images/screenshotbaladon.png"
 import Pr1B from "../images/balodana.png"
@@ -34,8 +43,39 @@ import Pr7 from "../images/screenshotFoxhills.png"
 import Pr8 from "../images/yt1.png"
 import Pr9 from "../images/yt2.png"
 import Pr10 from "../images/yt3.png"
+import Pr11 from "../images/thrive.png"
+import Pr12 from "../images/boost.png"
+import Pr13 from "../images/replyfan.jpeg"
 
 export default [
+    {
+      "name": "ReplyFan",
+      "background": Pr13, // Replace with the actual image path
+      "collabtype": "Founder Project",
+      "description": "ReplyFan is an AI persona platform that turns creators’ content into interactive chatbots on WhatsApp and Telegram. It enables fans to have authentic, ongoing conversations with their favorite creators while monetizing engagement through subscriptions.",
+      "techImages": [
+        { "img": typescript, "alt": "TypeScript" },
+        { "img": react, "alt": "React" },
+        { "img": nextjs, "alt": "Next.js" },
+        { "img": nodejs, "alt": "Node.js" },
+        { "img": redis, "alt": "Redis" },
+        { "img": bullmq, "alt": "BullMQ" },
+        { "img": postgresql, "alt": "PostgreSQL" },
+        { "img": stripe, "alt": "Stripe" },
+        { "img": pinecone, "alt": "Pinecone" },
+        { "img": openai, "alt": "OpenAI" },
+        { "img": telegram, "alt": "Telegram API" },
+        { "img": whatsapp, "alt": "WhatsApp API" },
+      ],
+      "tasks": [
+        "Architected a mono-repo microservice system with Redis-based BullMQ queues for event-driven communication between services.",
+        "Developed a YouTube content pipeline that ingests video transcripts, cleans text, and generates OpenAI embeddings stored in Pinecone for RAG-based retrieval.",
+        "Built a conversation engine that dynamically combines chat history and relevant transcript context to produce real-time responses via GPT-4-powered LLMs.",
+        "Integrated Stripe subscriptions and access control, enabling free limited messaging and paid premium fan interactions with voice/text support.",
+        "Connected multi-channel message adapters for WhatsApp and Telegram with webhooks for real-time two-way messaging."
+      ],
+      "link": "https://replyfan.com/"
+    },
     {
     "name": "YouTube Analyzer",
     "background": Pr10, // Replace with the actual path
@@ -64,6 +104,31 @@ export default [
       // Add more tasks as necessary
     ],
     "link": "https://youtubeanalyzer.tech/" // Replace with the actual project link if different
+  },
+  {
+    "name": "Boost&Thrive - Food Ordering Apps",
+    "background": [Pr12, Pr11], // Replace with the actual path
+    "collabtype": "Collabrative Work",
+    "description": "Developed and maintained backend microservices powering the Boost and Thrive food-ordering platforms. Contributed to core domains such as Order, Shopping Cart, Discount, Promo, and Location services within a distributed, event-driven architecture. Leveraged AWS (Lambda, EventBridge, SQS, DynamoDB, RDS PostgreSQL) to build scalable, fault-tolerant infrastructure supporting thousands of daily transactions.",
+    "techImages": [
+      { "img": typescript, "alt": "TypeScript" },
+      { "img": nodejs, "alt": "Node.js" },
+      { "img": nestjs, "alt": "NestJS" },
+      { "img": vue, "alt": "Vue.js" },
+      {"img": postgresql, "alt": "PostgreSQL"},
+      {"img": figma, "alt": "Figma"},
+      {"img": aws, "alt": "AWS"},
+    ],
+    "tasks": [
+      "Built and maintained backend microservices for Order, Shopping Cart, Discount, Promo, and Location domains within an event-driven architecture.",
+      "Integrated AWS EventBridge and SQS for asynchronous communication between microservices, improving system scalability and fault tolerance.",
+      "Designed and optimized data models using DynamoDB and PostgreSQL for high-performance and reliable data persistence.",
+      "Developed APIs in Node.js following clean architecture and repository patterns to ensure modular and maintainable code.",
+      "Implemented caching, validation, and monitoring layers to enhance service reliability and observability.",
+      "Collaborated with front-end, DevOps, and QA teams to align backend delivery with product and UI requirements.",
+      "Contributed to AWS infrastructure provisioning and deployment pipelines, leveraging Lambda, ECS, and CloudFormation.",
+      "Participated in system-wide performance tuning, incident resolution, and continuous integration improvements."    ],
+    "link": "https://boostapp.io/" // Replace with the actual project link if different
   },
   {
     name: "balodana",
@@ -131,7 +196,7 @@ export default [
       "Compare Feature Building",
       "Wish List Feature Building",
     ],
-    link: "https://demob2b3shop.avetti.io/",
+    link: "https://avetticommerce.com/demo-stores/",
   },
   {
     name: "Foxhills",

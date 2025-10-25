@@ -1,21 +1,35 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import { FaLongArrowAltRight } from "react-icons/fa"
 
-const ProjectComponent = item => {
+const ProjectComponent = ({ item }) => {
+  const backgrounds = Array.isArray(item.background)
+    ? item.background.filter(Boolean)
+    : [item.background].filter(Boolean)
+  const primaryBackground = backgrounds[0] || ""
+  const [imageSrc, setImageSrc] = useState(primaryBackground)
+
+  useEffect(() => {
+    setImageSrc(primaryBackground)
+  }, [primaryBackground])
+
   return (
     <div className="project">
-      <a href={item.item.link} target="_blank">
+      <a href={item.link} target="_blank" rel="noopener noreferrer">
         <img
-          src={item.item.background}
+          src={imageSrc}
           alt="single project"
           className="project-img"
+          onMouseEnter={() =>
+            backgrounds[1] ? setImageSrc(backgrounds[1]) : undefined
+          }
+          onMouseLeave={() => setImageSrc(primaryBackground)}
         />
-        <h4 className="projectTitle">{item.item.name}</h4>
+        <h4 className="projectTitle">{item.name}</h4>
         <div className="texhnologiesWrapper">
-          <p>{item.item.description}</p>
+          <p>{item.description}</p>
           <h5>Technologies</h5>
           <div className="techBadges">
-            {item.item.techImages.map((techimg, i) => (
+            {item.techImages.map((techimg, i) => (
               <img
                 key={i}
                 src={techimg.img}
