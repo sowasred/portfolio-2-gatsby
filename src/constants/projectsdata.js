@@ -44,7 +44,7 @@ import Pr8 from "../images/yt1.png"
 import Pr9 from "../images/yt2.png"
 import Pr10 from "../images/yt3.png"
 import Pr11 from "../images/Thrive.png"
-import Pr12 from "../images/boost.png"
+import Pr12 from "../images/Boostapp.png"
 import Pr13 from "../images/replyfan.jpeg"
 
 export default [
