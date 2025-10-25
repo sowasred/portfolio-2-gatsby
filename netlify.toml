@@ -1,0 +1,12 @@
+[build]
+  command = "gatsby build"
+  publish = "public"
+
+# Explicitly disable Netlify’s auto Gatsby runtime/plugins
+[functions]
+  node_bundler = "esbuild"
+
+[build.environment]
+  NETLIFY_SKIP_GATSBY_CACHE = "true"
+  NETLIFY_USE_LEGACY_GATSBY_PLUGIN = "false"
+  GATSBY_SKIP_PLUGIN_GATSBY_CACHE = "true"
