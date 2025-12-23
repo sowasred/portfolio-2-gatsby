@@ -776,7 +776,9 @@ Projects
   flex-wrap: wrap;
 }
 .techBadges img {
-  width: 2em;
+  width: 2.5em;
+  height: 2.5em;
+  object-fit: contain;
   margin: 10px;
 }
 .arrowCarousel {
