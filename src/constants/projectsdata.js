@@ -49,7 +49,7 @@ import Pr13 from "../images/replyfan.jpeg"
 
 export default [
     {
-      "name": "ReplyFan",
+      "name": "ReplyFan - AI Persona Platform",
       "background": Pr13, // Replace with the actual image path
       "collabtype": "Founder Project",
       "description": "ReplyFan is an AI persona platform that turns creators’ content into interactive chatbots on WhatsApp and Telegram. It enables fans to have authentic, ongoing conversations with their favorite creators while monetizing engagement through subscriptions.",
@@ -76,7 +76,7 @@ export default [
       "link": "https://replyfan.com/"
     },
     {
-    "name": "YouTube Analyzer",
+    "name": "YouTube Analyzer - Chrome Extension",
     "background": Pr10, // Replace with the actual path
     "collabtype": "Collabrative Work",
     "description": "YouTube Analyzer Chrome Extension is a powerful tool designed for YouTube enthusiasts and content creators. Leveraging GPT for natural language processing, this extension provides on-the-fly video summaries and in-depth sentiment analysis of comments directly within the YouTube interface.",
@@ -130,7 +130,7 @@ export default [
     "link": "https://boostapp.io/" // Replace with the actual project link if different
   },
   {
-    name: "balodana",
+    name: "balodana - Custom Clothing Platform",
     background: Pr1B,
     collabtype: "Collabrative Work",
     description:
@@ -156,7 +156,7 @@ export default [
     link: "https://www.balodana.com/",
   },
   {
-    name: "Destination Kohler",
+    name: "Destination Kohler - Hotel Booking Application",
     background: Pr6B,
     collabtype: "Collabrative Work",
     description:
@@ -198,7 +198,7 @@ export default [
     link: "https://avetticommerce.com/demo-stores/",
   },
   {
-    name: "Foxhills",
+    name: "Foxhills - Hotel Booking Application",
     background: Pr7,
     collabtype: "Collabrative Work",
     description:
