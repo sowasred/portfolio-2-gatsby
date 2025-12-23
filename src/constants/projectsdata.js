@@ -105,7 +105,7 @@ export default [
     "link": "https://youtubeanalyzer.tech/" // Replace with the actual project link if different
   },
   {
-    "name": "Boost&Thrive - Food Ordering Apps",
+    "name": "Boost&Thrive - Food Ordering Application",
     "background": [Pr12, Pr11], // Replace with the actual path
     "collabtype": "Collabrative Work",
     "description": "Developed and maintained backend microservices powering the Boost and Thrive food-ordering platforms. Contributed to core domains such as Order, Shopping Cart, Discount, Promo, and Location services within a distributed, event-driven architecture. Leveraged AWS (Lambda, EventBridge, SQS, DynamoDB, RDS PostgreSQL) to build scalable, fault-tolerant infrastructure supporting thousands of daily transactions.",
