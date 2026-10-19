@@ -132,6 +132,16 @@ const Navigation = () => {
               Contact
             </AnchorLink>
           </motion.li>
+          <motion.li variants={item}>
+            <Link
+              to="/notes"
+              style={{
+                textDecoration: `none`,
+              }}
+            >
+              Notes
+            </Link>
+          </motion.li>
 
           {/* <motion.li variants={item}>
             <AnchorLink
@@ -186,6 +196,16 @@ const Navigation = () => {
               </li>
               <li onClick={toggleChecked}>
                 <AnchorLink to="/#contact">Contact</AnchorLink>
+              </li>
+              <li onClick={toggleChecked}>
+                <Link
+                  to="/notes"
+                  style={{
+                    textDecoration: `none`,
+                  }}
+                >
+                  Notes
+                </Link>
               </li>
               {/* <li onClick={toggleChecked}>
                 <AnchorLink

@@ -10,6 +10,7 @@ import Getintouch from "../components/getintouch"
 import Blogposts from "../components/blogposts"
 import AboutContent from "../components/aboutcontent"
 import Testimonials from "../components/testimonials"
+import LatestNotes from "../components/latestnotes"
 
 import "react-awesome-slider/dist/styles.css"
 
@@ -17,6 +18,7 @@ const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
     <Header />
+    <LatestNotes notes={data.notes} />
     <Projects />
     {/* <Testimonials /> */}
     {/* <Blogposts data={data} /> */}
@@ -26,7 +28,24 @@ const IndexPage = ({ data }) => (
 
 export const query = graphql`
   query MyQuery {
-    allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
+    notes: allMarkdownRemark(
+      sort: { frontmatter: { date: DESC } }
+      filter: {
+        fields: { collection: { eq: "notes" } }
+        frontmatter: { draft: { ne: true } }
+      }
+      limit: 3
+    ) {
+      edges {
+        node {
+          ...NoteListFields
+        }
+      }
+    }
+    allMarkdownRemark(
+      sort: { frontmatter: { date: DESC } }
+      filter: { fileAbsolutePath: { regex: "/src/blogs/" } }
+    ) {
       edges {
         node {
           wordCount {

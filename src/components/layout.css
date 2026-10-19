@@ -1873,3 +1873,39 @@ Testimonials Section
   width: 40px !important;
   max-width: 40px !important;
 }
+
+.notes-list {
+  width: 90vw;
+  max-width: 42rem;
+  margin: 0 auto 3rem;
+  text-align: left;
+}
+.note-row {
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--clr-grey-9);
+}
+.note-row h3 {
+  margin-bottom: 0.25rem;
+}
+.note-meta,
+.note-feed-link,
+.note-empty {
+  color: var(--clr-grey-5);
+}
+.note-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.note-tag {
+  border: 1px solid var(--clr-grey-8);
+  border-radius: var(--radius);
+  padding: 0.1rem 0.55rem;
+  font-size: 0.8rem;
+}
+.note-x {
+  margin-top: 2rem;
+}
+.note-feed-link {
+  text-align: center;
+}
