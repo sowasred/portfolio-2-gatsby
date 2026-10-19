@@ -1,5 +1,6 @@
-import { Link } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 import React from "react"
+import { xHandleFromProfile } from "../utils/x"
 import Fb from "../images/fb.svg"
 import Tw from "../images/tw.svg"
 import Li from "../images/li.svg"
@@ -17,6 +18,17 @@ import {
 } from "framer-motion"
 
 const Header = () => {
+  const { site } = useStaticQuery(graphql`
+    query HeaderXProfile {
+      site {
+        siteMetadata {
+          xProfile
+        }
+      }
+    }
+  `)
+  const xProfile = site.siteMetadata.xProfile
+  const xHandle = xHandleFromProfile(xProfile)
   const controls = useAnimation()
   const x = useMotionValue(0)
   controls.start({
@@ -99,15 +111,17 @@ const Header = () => {
                 <img className="social-icon" src={Li} />
               </a>
             </motion.li>
-            {/* <motion.li  whileHover={{ scale: 1.2, rotate: 270 }} variants={item}>
+            <motion.li  whileHover={{ scale: 1.2, rotate: 270 }} variants={item}>
               <a
                 target="_blank"
-                href="https://twitter.com/ozanmuldur1"
+                rel="noopener noreferrer"
+                href={xProfile}
                 className="social-icon"
+                aria-label={`Ozan Muldur on X (${xHandle})`}
               >
-                <img className="social-icon" src={Tw} />
+                <img className="social-icon" src={Tw} alt="" />
               </a>
-            </motion.li> */}
+            </motion.li>
             <motion.li  whileHover={{ scale: 1.2, rotate: 270 }} variants={item}>
               <a
                 target="_blank"

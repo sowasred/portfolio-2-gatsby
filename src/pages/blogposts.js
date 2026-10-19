@@ -87,7 +87,10 @@ const BlogPosts = props => {
 
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
+    allMarkdownRemark(
+      sort: { frontmatter: { date: DESC } }
+      filter: { fileAbsolutePath: { regex: "/src/blogs/" } }
+    ) {
       edges {
         node {
           wordCount {

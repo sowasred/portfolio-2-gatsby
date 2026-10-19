@@ -9,8 +9,9 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+import { xHandleFromProfile } from "../utils/x"
 
-function SEO({ description, lang, meta, title }) {
+function SEO({ description, lang, meta, title, ogType, canonical, publishedTime }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -18,7 +19,7 @@ function SEO({ description, lang, meta, title }) {
           siteMetadata {
             title
             description
-            author
+            xProfile
           }
         }
       }
@@ -26,6 +27,20 @@ function SEO({ description, lang, meta, title }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
+  const handle = xHandleFromProfile(site.siteMetadata.xProfile)
+  const extras = []
+  if (canonical) {
+    extras.push({
+      property: `og:url`,
+      content: canonical,
+    })
+  }
+  if (publishedTime) {
+    extras.push({
+      property: `article:published_time`,
+      content: publishedTime,
+    })
+  }
 
   return (
     <Helmet
@@ -34,6 +49,7 @@ function SEO({ description, lang, meta, title }) {
       }}
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
+      link={canonical ? [{ rel: `canonical`, href: canonical }] : []}
       meta={[
         {
           name: `description`,
@@ -49,15 +65,19 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:type`,
-          content: `website`,
+          content: ogType,
         },
         {
           name: `twitter:card`,
-          content: `https://twitter.com/ozanmuldur1`,
+          content: `summary_large_image`,
+        },
+        {
+          name: `twitter:site`,
+          content: handle,
         },
         {
           name: `twitter:creator`,
-          content: site.siteMetadata.author,
+          content: handle,
         },
         {
           name: `twitter:title`,
@@ -67,7 +87,9 @@ function SEO({ description, lang, meta, title }) {
           name: `twitter:description`,
           content: metaDescription,
         },
-      ].concat(meta)}
+      ]
+        .concat(extras)
+        .concat(meta)}
     />
   )
 }
@@ -76,6 +98,7 @@ SEO.defaultProps = {
   lang: `en`,
   meta: [],
   description: ``,
+  ogType: `website`,
 }
 
 SEO.propTypes = {
@@ -83,6 +106,9 @@ SEO.propTypes = {
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
+  ogType: PropTypes.string,
+  canonical: PropTypes.string,
+  publishedTime: PropTypes.string,
 }
 
 export default SEO

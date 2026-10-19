@@ -16,3 +16,16 @@ Gatsby version: 5.14.6
   Note: this is the Gatsby version for the site at: /Users/ozan/Desktop/Desktop/code/portfolio
 
 <!-- AUTO-GENERATED-CONTENT:END -->
+
+## Adding a note
+
+Notes are Markdown files in `src/notes/`. Copy `src/notes/example-note.md` and rename it.
+
+- `title`, `date` (`YYYY-MM-DD`), and `description` are required.
+- `tags` is optional.
+- Keep `collection: notes`.
+- `draft: true` keeps the note off `/notes`, the homepage, tag pages, and `/rss.xml`. Set `draft: false` to publish it.
+- Leave `slug` unset to publish at `/notes/<filename>/`. Or set `slug` to a path starting with `/notes/`.
+- The checked-in example stays `draft: true` so it does not go live. Write your own note instead of publishing that file.
+
+Push the file and the site rebuilds. The three newest published notes show on the homepage.

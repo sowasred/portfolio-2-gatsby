@@ -1,11 +1,26 @@
 import React from "react"
+import { graphql, useStaticQuery } from "gatsby"
 
 import { SiFacebook, SiLinkedin } from "react-icons/si"
 import { VscTwitter, VscGithub } from "react-icons/vsc"
+import { xHandleFromProfile } from "../utils/x"
 
 import gatsby from "../images/gatsby.png"
 
-const Footer = () => (
+const Footer = () => {
+  const { site } = useStaticQuery(graphql`
+    query FooterXProfile {
+      site {
+        siteMetadata {
+          xProfile
+        }
+      }
+    }
+  `)
+  const xProfile = site.siteMetadata.xProfile
+  const xHandle = xHandleFromProfile(xProfile)
+
+  return (
   <footer className="footer">
     <ul className="social-icons">
       {/* <li>
@@ -26,15 +41,17 @@ const Footer = () => (
           <SiLinkedin />
         </a>
       </li>
-      {/* <li>
+      <li>
         <a
           target="_blank"
-          href="https://twitter.com/ozanmuldur1"
+          rel="noopener noreferrer"
+          href={xProfile}
           className="social-icon twitter"
+          aria-label={`Ozan Muldur on X (${xHandle})`}
         >
           <VscTwitter />
         </a>
-      </li> */}
+      </li>
       <li>
         <a
           target="_blank"
@@ -62,6 +79,7 @@ const Footer = () => (
       </a>
     </p>
   </footer>
-)
+  )
+}
 
 export default Footer
