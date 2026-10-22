@@ -20,12 +20,13 @@ import stripe from "../images/stripepng.png"
 import python from "../images/python.png"
 import sendgrid from "../images/sendgrid.jpg"
 import postgresql from "../images/postgres.png"
-import redis from "../images/redis.png"
-import telegram from "../images/telegram.png"
-import whatsapp from "../images/whatsapp.jpg"
-import nextjs from "../images/nextjs.jpg"
-import pinecone from "../images/pinecone.png"
-import openai from "../images/openai.png"
+// Hidden because Reply Fan is no longer live. Uncomment with the project entry below to bring the card back.
+// import redis from "../images/redis.png"
+// import telegram from "../images/telegram.png"
+// import whatsapp from "../images/whatsapp.jpg"
+// import nextjs from "../images/nextjs.jpg"
+// import pinecone from "../images/pinecone.png"
+// import openai from "../images/openai.png"
 import typescript from "../images/typescript.png"
 import nestjs from "../images/nestjs.png"
 
@@ -45,36 +46,38 @@ import Pr9 from "../images/yt2.png"
 import Pr10 from "../images/yt3.png"
 import Pr11 from "../images/Thrive.png"
 import Pr12 from "../images/Boostapp.png"
-import Pr13 from "../images/replyfan.jpeg"
+// Hidden because Reply Fan is no longer live. Uncomment to bring the card back.
+// import Pr13 from "../images/replyfan.jpeg"
 
 export default [
-    {
-      "name": "ReplyFan - AI Persona Platform",
-      "background": Pr13, // Replace with the actual image path
-      "collabtype": "Founder Project",
-      "description": "ReplyFan is an AI persona platform that turns creators’ content into interactive chatbots on WhatsApp and Telegram. It enables fans to have authentic, ongoing conversations with their favorite creators while monetizing engagement through subscriptions.",
-      "techImages": [
-        { "img": typescript, "alt": "TypeScript" },
-        { "img": react, "alt": "React" },
-        { "img": nextjs, "alt": "Next.js" },
-        { "img": nodejs, "alt": "Node.js" },
-        { "img": redis, "alt": "Redis" },
-        { "img": postgresql, "alt": "PostgreSQL" },
-        { "img": stripe, "alt": "Stripe" },
-        { "img": pinecone, "alt": "Pinecone" },
-        { "img": openai, "alt": "OpenAI" },
-        { "img": telegram, "alt": "Telegram API" },
-        { "img": whatsapp, "alt": "WhatsApp API" },
-      ],
-      "tasks": [
-        "Architected a mono-repo microservice system with Redis-based BullMQ queues for event-driven communication between services.",
-        "Developed a YouTube content pipeline that ingests video transcripts, cleans text, and generates OpenAI embeddings stored in Pinecone for RAG-based retrieval.",
-        "Built a conversation engine that dynamically combines chat history and relevant transcript context to produce real-time responses via GPT-4-powered LLMs.",
-        "Integrated Stripe subscriptions and access control, enabling free limited messaging and paid premium fan interactions with voice/text support.",
-        "Connected multi-channel message adapters for WhatsApp and Telegram with webhooks for real-time two-way messaging."
-      ],
-      "link": "https://replyfan.com/"
-    },
+    // Hidden because Reply Fan is no longer live. Uncomment this entry and the image imports above to show the card again.
+    // {
+    //   "name": "ReplyFan - AI Persona Platform",
+    //   "background": Pr13, // Replace with the actual image path
+    //   "collabtype": "Founder Project",
+    //   "description": "ReplyFan is an AI persona platform that turns creators’ content into interactive chatbots on WhatsApp and Telegram. It enables fans to have authentic, ongoing conversations with their favorite creators while monetizing engagement through subscriptions.",
+    //   "techImages": [
+    //     { "img": typescript, "alt": "TypeScript" },
+    //     { "img": react, "alt": "React" },
+    //     { "img": nextjs, "alt": "Next.js" },
+    //     { "img": nodejs, "alt": "Node.js" },
+    //     { "img": redis, "alt": "Redis" },
+    //     { "img": postgresql, "alt": "PostgreSQL" },
+    //     { "img": stripe, "alt": "Stripe" },
+    //     { "img": pinecone, "alt": "Pinecone" },
+    //     { "img": openai, "alt": "OpenAI" },
+    //     { "img": telegram, "alt": "Telegram API" },
+    //     { "img": whatsapp, "alt": "WhatsApp API" },
+    //   ],
+    //   "tasks": [
+    //     "Architected a mono-repo microservice system with Redis-based BullMQ queues for event-driven communication between services.",
+    //     "Developed a YouTube content pipeline that ingests video transcripts, cleans text, and generates OpenAI embeddings stored in Pinecone for RAG-based retrieval.",
+    //     "Built a conversation engine that dynamically combines chat history and relevant transcript context to produce real-time responses via GPT-4-powered LLMs.",
+    //     "Integrated Stripe subscriptions and access control, enabling free limited messaging and paid premium fan interactions with voice/text support.",
+    //     "Connected multi-channel message adapters for WhatsApp and Telegram with webhooks for real-time two-way messaging."
+    //   ],
+    //   "link": "https://replyfan.com/"
+    // },
     {
     "name": "YouTube Analyzer - Chrome Extension",
     "background": Pr10, // Replace with the actual path
