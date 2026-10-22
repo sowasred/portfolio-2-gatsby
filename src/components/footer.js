@@ -2,8 +2,7 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 
 import { SiFacebook, SiLinkedin } from "react-icons/si"
-import { VscTwitter, VscGithub } from "react-icons/vsc"
-import { xHandleFromProfile } from "../utils/x"
+import { VscGithub } from "react-icons/vsc"
 
 import gatsby from "../images/gatsby.png"
 
@@ -18,7 +17,6 @@ const Footer = () => {
     }
   `)
   const xProfile = site.siteMetadata.xProfile
-  const xHandle = xHandleFromProfile(xProfile)
 
   return (
   <footer className="footer">
@@ -47,9 +45,15 @@ const Footer = () => {
           rel="noopener noreferrer"
           href={xProfile}
           className="social-icon twitter"
-          aria-label={`Ozan Muldur on X (${xHandle})`}
+          aria-label="X"
+          title="X"
         >
-          <VscTwitter />
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path
+              fill="currentColor"
+              d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"
+            />
+          </svg>
         </a>
       </li>
       <li>

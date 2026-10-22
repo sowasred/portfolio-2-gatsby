@@ -1,8 +1,7 @@
 import { graphql, useStaticQuery } from "gatsby"
 import React from "react"
-import { xHandleFromProfile } from "../utils/x"
 import Fb from "../images/fb.svg"
-import Tw from "../images/tw.svg"
+import XLogo from "../images/x.svg"
 import Li from "../images/li.svg"
 import Gh from "../images/gh.svg"
 import Pp from "../images/pp2.jpg"
@@ -28,7 +27,6 @@ const Header = () => {
     }
   `)
   const xProfile = site.siteMetadata.xProfile
-  const xHandle = xHandleFromProfile(xProfile)
   const controls = useAnimation()
   const x = useMotionValue(0)
   controls.start({
@@ -117,9 +115,10 @@ const Header = () => {
                 rel="noopener noreferrer"
                 href={xProfile}
                 className="social-icon"
-                aria-label={`Ozan Muldur on X (${xHandle})`}
+                aria-label="X"
+                title="X"
               >
-                <img className="social-icon" src={Tw} alt="" />
+                <img className="social-icon" src={XLogo} alt="" />
               </a>
             </motion.li>
             <motion.li  whileHover={{ scale: 1.2, rotate: 270 }} variants={item}>
