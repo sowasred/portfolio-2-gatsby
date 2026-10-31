@@ -7,6 +7,8 @@
   node_bundler = "esbuild"
 
 [build.environment]
+  # sanitize-html 2.18+ require()s ESM-only htmlparser2, which needs Node >= 22.12.
+  NODE_VERSION = "22"
   NETLIFY_SKIP_GATSBY_CACHE = "true"
   NETLIFY_USE_LEGACY_GATSBY_PLUGIN = "false"
   GATSBY_SKIP_PLUGIN_GATSBY_CACHE = "true"
