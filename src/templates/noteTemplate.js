@@ -3,13 +3,11 @@ import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { tagToPath } from "../utils/tags"
-import { xHandleFromProfile } from "../utils/x"
 
 export default function NoteTemplate({ data }) {
   const { markdownRemark, site } = data
   const { frontmatter, html, wordCount, fields } = markdownRemark
-  const { siteUrl, xProfile } = site.siteMetadata
-  const handle = xHandleFromProfile(xProfile)
+  const { siteUrl } = site.siteMetadata
   const tags = frontmatter.tags || []
   const minutes = Math.max(1, Math.ceil((wordCount?.words || 0) / 200))
   const canonical = `${siteUrl}${fields.slug}`
@@ -47,13 +45,6 @@ export default function NoteTemplate({ data }) {
               className="blog-post-content"
               dangerouslySetInnerHTML={{ __html: html }}
             />
-            <p className="note-x">
-              I write about this on{" "}
-              <a href={xProfile} target="_blank" rel="noopener noreferrer">
-                X ({handle})
-              </a>
-              .
-            </p>
             <p>
               <Link to="/notes">All notes</Link>
             </p>
@@ -69,7 +60,6 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         siteUrl
-        xProfile
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
