@@ -48,7 +48,7 @@ export default function NoteTemplate({ data }) {
               dangerouslySetInnerHTML={{ __html: html }}
             />
             {fields.slug ===
-            "/notes/why-loyalty-points-worked-on-dev-and-silently-failed-in-prod/" ? null : (
+            "/notes/why-our-loyalty-system-worked-on-dev-and-silently-failed-in-prod/" ? null : (
               <p className="note-x">
                 I write about this on{" "}
                 <a href={xProfile} target="_blank" rel="noopener noreferrer">
