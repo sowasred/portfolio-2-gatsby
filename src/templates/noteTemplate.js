@@ -47,13 +47,16 @@ export default function NoteTemplate({ data }) {
               className="blog-post-content"
               dangerouslySetInnerHTML={{ __html: html }}
             />
-            <p className="note-x">
-              I write about this on{" "}
-              <a href={xProfile} target="_blank" rel="noopener noreferrer">
-                X ({handle})
-              </a>
-              .
-            </p>
+            {fields.slug ===
+            "/notes/why-loyalty-points-worked-on-dev-and-silently-failed-in-prod/" ? null : (
+              <p className="note-x">
+                I write about this on{" "}
+                <a href={xProfile} target="_blank" rel="noopener noreferrer">
+                  X ({handle})
+                </a>
+                .
+              </p>
+            )}
             <p>
               <Link to="/notes">All notes</Link>
             </p>
