@@ -169,6 +169,9 @@ const AboutContent = () => (
           <h4 className="timeline-title">
             Senior Software Engineer | Oct 2026 – Present
           </h4>
+          <p className="item-text">
+            At HaknaSoft, I work as a senior full-stack engineer on an advisor portal for a Canadian wealth management firm. I build features across a Next.js frontend, a Node.js/Express BFF, a new .NET BFF and a GraphQL data API, and ship new dashboard modules such as Accounts, Holdings and Clients & Households behind Firebase Remote Config flags so they can be released safely. I also help shape how the team ships, from release checklists and deploy order to AI-assisted pull request reviews in GitHub Actions.
+          </p>
           <a href="mailto:muldurozan@gmail.com" className="btn hero-btn">
             Contact Me
           </a>
