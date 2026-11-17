@@ -11,6 +11,7 @@ import aglogo from "../images/agilysys.png"
 import AwesomeSlider from "react-awesome-slider"
 import withAutoplay from "react-awesome-slider/dist/autoplay"
 import compasslogo from "../images/compass.svg"
+import haknasoftlogo from "../images/haknasoft.jpg"
 import "react-awesome-slider/dist/styles.css"
 const AutoplaySlider = withAutoplay(AwesomeSlider)
 
@@ -167,6 +168,7 @@ const AboutContent = () => (
         </article>
         <article className="timeline-item">
           <h4>
+            <img src={haknasoftlogo} alt="HaknaSoft Logo" className="aboutPageLogo" />
             <a
               className="aboutPageLink"
               target="_blank"
