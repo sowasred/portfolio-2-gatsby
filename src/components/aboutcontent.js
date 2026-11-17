@@ -170,7 +170,7 @@ const AboutContent = () => (
             Senior Software Engineer | Oct 2026 – Present
           </h4>
           <p className="item-text">
-            At HaknaSoft, I work as a senior full-stack engineer on an advisor portal for iA, a Canadian wealth management firm. I build features across a Next.js frontend, a Node.js/Express BFF, a new .NET BFF and a GraphQL data API, and ship new dashboard modules such as Accounts, Holdings and Clients & Households on Google Cloud. I also help the team leverage AI by standardizing how it is used and by creating AI tools and libraries for the team.
+            At HaknaSoft, I work as a senior full-stack engineer on an advisor portal for iA Private Wealth, a Canadian wealth management firm. I build features across a Next.js frontend, a Node.js/Express BFF, a new .NET BFF and a GraphQL data API, and ship new dashboard modules such as Accounts, Holdings and Clients & Households on Google Cloud, using Cloud Run, Firestore and BigQuery. I also help the team leverage AI by standardizing how it is used and by creating AI tools and libraries for the team.
           </p>
           <a href="mailto:muldurozan@gmail.com" className="btn hero-btn">
             Contact Me
