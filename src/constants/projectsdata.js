@@ -198,7 +198,7 @@ export default [
       "Compare Feature Building",
       "Wish List Feature Building",
     ],
-    link: "https://avetticommerce.com/demo-stores/",
+    link: "https://avetticommerce.com/",
   },
   {
     name: "Foxhills - Hotel Booking Application",
