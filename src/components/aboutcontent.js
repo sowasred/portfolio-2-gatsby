@@ -166,7 +166,15 @@ const AboutContent = () => (
           <span className="number">6</span>
         </article>
         <article className="timeline-item">
-          <h4>HaknaSoft</h4>
+          <h4>
+            <a
+              className="aboutPageLink"
+              target="_blank"
+              href="https://www.linkedin.com/company/haknasoft/posts/?feedView=all"
+            >
+              HaknaSoft
+            </a>
+          </h4>
           <h4 className="timeline-title">
             Senior Software Engineer | Oct 2026 – Present
           </h4>
