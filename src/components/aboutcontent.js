@@ -107,15 +107,10 @@ const AboutContent = () => (
               target="_blank"
               href="https://www.avetticommerce.com/"
             >
-              Avetti Commerce Corporation
+              Avetti Commerce
             </a>
           </h4>
-          <h4 className="timeline-title">
-            Full Stack Developer | Apr 2019 – Dec 2020
-          </h4>
-          <p className="timeline-title">
-            Contract Full-time · Barrie, Ontario, Canada
-          </p>
+          <h4 className="timeline-title">Full Stack Developer | 2019 – 2021</h4>
           <p className="item-text">
             My expertise in React and web application development led to a position at Avetti Commerce, where my role evolved into full stack development. Working in an international environment with cross-functional teams, I honed not only my frontend skills but also developed a robust capability in backend technologies. This position was crucial in enhancing my overall coding skills and understanding of complete software solutions, contributing to projects that rank among my proudest achievements.
           </p>
@@ -133,11 +128,8 @@ const AboutContent = () => (
             </a>
           </h4>
           <h4 className="timeline-title">
-            Full Stack Developer | Dec 2020 – Sep 2024
+            Software Engineer | Dec 2020 – Sep 2024
           </h4>
-          <p className="timeline-title">
-            Permanent Full-time · Toronto, Ontario, Canada
-          </p>
           <p className="item-text">
             As a software engineer at Agilysys, I was involved in developing various hospitality management software. This role allowed me to engage with multiple projects across different technology stacks, further broadening my skill set and making me a more versatile developer. I am deeply grateful for the opportunity to be part of such an exceptional team and company culture at Agilysys.
           </p>
@@ -157,9 +149,6 @@ const AboutContent = () => (
           <h4 className="timeline-title">
             Senior Software Engineer | Sep 2024 – Oct 2026
           </h4>
-          <p className="timeline-title">
-            Permanent Full-time · Toronto, Ontario, Canada
-          </p>
           <p className="item-text">
             At Compass Digital, I’m fortunate to take on a rewarding role in a fast-paced environment, contributing to innovative solutions alongside a talented team.
             Working with a dynamic group, I’ve also mentored junior developers, which has been a fulfilling part of my role. This experience continues to shape my professional growth as I work on impactful projects that benefit our clients and the industry.
@@ -180,9 +169,6 @@ const AboutContent = () => (
           <h4 className="timeline-title">
             Senior Software Engineer | Oct 2026 – Present
           </h4>
-          <p className="timeline-title">
-            Permanent Full-time · Toronto, Ontario, Canada (Remote)
-          </p>
           <a href="mailto:muldurozan@gmail.com" className="btn hero-btn">
             Contact Me
           </a>
