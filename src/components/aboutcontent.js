@@ -11,6 +11,7 @@ import aglogo from "../images/agilysys.png"
 import AwesomeSlider from "react-awesome-slider"
 import withAutoplay from "react-awesome-slider/dist/autoplay"
 import compasslogo from "../images/compass.svg"
+import haknasoftlogo from "../images/haknasoft.jpg"
 import "react-awesome-slider/dist/styles.css"
 const AutoplaySlider = withAutoplay(AwesomeSlider)
 
@@ -127,14 +128,14 @@ const AboutContent = () => (
             </a>
           </h4>
           <h4 className="timeline-title">
-            Software Engineer | 2021 - 2024
+            Software Engineer | Dec 2020 – Sep 2024
           </h4>
           <p className="item-text">
             As a software engineer at Agilysys, I was involved in developing various hospitality management software. This role allowed me to engage with multiple projects across different technology stacks, further broadening my skill set and making me a more versatile developer. I am deeply grateful for the opportunity to be part of such an exceptional team and company culture at Agilysys.
           </p>
           <span className="number">5</span>
         </article>
-                <article className="timeline-item">
+        <article className="timeline-item">
           <h4>
             <img src={compasslogo} alt="Compass Digital Logo" className="aboutPageLogo" />
             <a
@@ -146,16 +147,32 @@ const AboutContent = () => (
             </a>
           </h4>
           <h4 className="timeline-title">
-            Senior Software Engineer | 2024 - Current
+            Senior Software Engineer | Sep 2024 – Oct 2026
           </h4>
           <p className="item-text">
             At Compass Digital, I’m fortunate to take on a rewarding role in a fast-paced environment, contributing to innovative solutions alongside a talented team.
             Working with a dynamic group, I’ve also mentored junior developers, which has been a fulfilling part of my role. This experience continues to shape my professional growth as I work on impactful projects that benefit our clients and the industry.
           </p>
+          <span className="number">6</span>
+        </article>
+        <article className="timeline-item">
+          <h4>
+            <img src={haknasoftlogo} alt="HaknaSoft Logo" className="aboutPageLogo" />
+            <a
+              className="aboutPageLink"
+              target="_blank"
+              href="https://www.linkedin.com/company/haknasoft/posts/?feedView=all"
+            >
+              HaknaSoft
+            </a>
+          </h4>
+          <h4 className="timeline-title">
+            Senior Software Engineer | Oct 2026 – Present
+          </h4>
           <a href="mailto:muldurozan@gmail.com" className="btn hero-btn">
             Contact Me
           </a>
-          <span className="number">6</span>
+          <span className="number">7</span>
         </article>
       </div>
     </div>
