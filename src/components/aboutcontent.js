@@ -169,6 +169,9 @@ const AboutContent = () => (
           <h4 className="timeline-title">
             Senior Software Engineer | Oct 2026 – Present
           </h4>
+          <p className="item-text">
+            At HaknaSoft, I’m a senior full-stack engineer building an advisor portal for iA Private Wealth, a Canadian wealth management firm. My work spans a Next.js frontend, Node.js/Express and .NET BFFs, and a GraphQL data API. I develop and ship dashboard modules, including Accounts, Holdings, and Clients & Households, on Google Cloud using Cloud Run, Firestore, and BigQuery. I also help shape the team’s adoption of AI by establishing shared practices and building internal AI tools and libraries.
+          </p>
           <a href="mailto:muldurozan@gmail.com" className="btn hero-btn">
             Contact Me
           </a>
